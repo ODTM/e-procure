@@ -1,5 +1,28 @@
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
     
@@ -9,7 +32,7 @@
     
 
     <head>
-        <title>e-GP Platform - Tenders of Opened Bids</title>
+        <title>e-GP Platform - Advanced Search</title>
 
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         
@@ -373,7 +396,7 @@ function openPopup(url) {
 
 <div id="Search">
     <p class="Time" id="time"> 
-        16:00:44 CAT
+        13:43:25 CAT
     </p>
         
     <form id="quickSearchForm" method="post" action="/epps/quickSearchAction.do" onsubmit="javascript: return checkSubmit()" target="_self">
@@ -384,15 +407,11 @@ function openPopup(url) {
                 
                     
                     
-                      <option value="6">Tenders</option>
+                      <option value="6" selected="selected">Tenders</option>
                     
                 
                 <option value="2">Organisation</option>
-				                       
-					
 				  
-				                       
-					
 				
 				<option value="5">Plan</option></select>
             <input type="text" name="searchInput" value="" id="SearchInput" class="Text" />
@@ -454,54 +473,33 @@ $j(document).ready(function () {
 
 
 
-    
-
 
 <div class="Menu">
     <p><span>Log In</span></p>
     <div class="MenuContent" id="LoginMenuContent">
     
-
-     
-    
         
-       
-        <div class="UserInfo">
-            Logged in as:<br />
-            <strong>
-                Andrew Mbushi
-                (Procurement Admin			) 
-                - 
-            </strong>
-            MINISTRY OF AGRICULTURE <br />
-
-                Last login on : <br />
-                08/08/2024 - 15:44:53
-            
-
-            
-        </div>
         
+            <ul>
+                <li>
+                    <a href="/epps/authenticate/login">Log In</a>
+                </li>
+            </ul>
+        
+        
+        
+
         <ul>
-            
-              
-                <li>
-                    <a href="/epps/prepareEditAccount.do?id=126561">Edit Profile</a>
-                </li>
-                
-                <li>
-                    <a href="/">Homepage</a>
-                </li>
-            
             <li>
-                
-                              
-                        <a  href="auth/login">Log Out</a>  
-                    
-                           
-                                 
+                <a href="/epps/forgotPassword.do">Forgot your password?</a>
+            </li>
+            <li>
+                <a href="/epps/prepareRegisterEOOrg.do?registerEO=true">Register as a Supplier</a>
             </li>
         </ul>
+    
+
+     
     
 	    <ul>
 	        <li><a href="https://eprocure.zppa.org.zm/cpms">e-Contracts</a></li>
@@ -530,7 +528,7 @@ $j(document).ready(function () {
 <!--
 $j('document').ready(function(ev){
 	var contextRoot = "/epps";
-	var selectedItem = escape("common/viewOpenedTenders.do");
+	var selectedItem = escape("quickSearchAction.do?searchSelect=6");
 	$j('.MenuContent li').find('a').each(function() {
 		var link = this.href;
 		var item = escape(link.substring(link.indexOf(contextRoot) + contextRoot.length + 1));
@@ -549,73 +547,6 @@ $j('document').ready(function(ev){
 	
 //-->
 </script>
-
-
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	 
-	
-	
-	
-	 
-	 
-	
-		<div class="Menu">
-		<p><span>Tender Management</span></p>
-		<div class="MenuContent" id="AdminMenuContent">
-		<ul>
-			
-		    
-		    	
-		       	
-				  	<li><a href="/epps/cft/listMyCFTFromFTS.do">List of my Tenders</a></li>
-		       	
-		    
-		</ul>
-		</div>
-		</div>
-		<div class="Menu">
-		<p><span>Supplier Administration			</span></p>
-		<div class="MenuContent" id="AdminMenuContent1">
-		<ul>
-			<li><a href="/epps/prepareViewEOOrganisation.do?id=34534">Supplier Management</a></li>
-
-			<li><a href="/epps/viewOrgAccounts.do?id=34534">User Management</a></li>
-			
-			
-				
-			    
-			    	
-			       	
-					  	<li><a href="/epps/reports/prepareAuditingReport.do?caId=34534&amp;isFts=true">Auditing Reports</a></li>
-			       	
-			    
-			
-		</ul>
-		</div>
-		</div>
-	
-	
-	
-
-	
-	
-	
-	
-	  
-	
-	
-	
-     
 
 
 
@@ -638,8 +569,6 @@ $j('document').ready(function(ev){
         <ul>
     
          
-	            
-	       	
 	       	
 	        
 	        <li>
@@ -647,7 +576,7 @@ $j('document').ready(function(ev){
         	</li>
 	        
 	        <li>
-				<a href="/currentTenders">Current Tenders</a>
+                <a href="/currentTenders">Current Tenders</a>
             </li>
         	
         	<li>
@@ -655,7 +584,7 @@ $j('document').ready(function(ev){
    			 <a href="/epps/notices/viewPublishedNotices.do?formId=301">Upcoming Tenders</a>  
    			 </li>
         	<li>
- 				<a href="/viewOpenedTenders">Opened Bid Details</a>
+ 				<a href="/epps/common/viewOpenedTenders.do">Opened Bid Details</a>
         	</li>
         	
             <li>
@@ -720,33 +649,9 @@ $j('document').ready(function(ev){
 
 
 
+
 	
-	<h2>Tenders of Opened Bids</h2>
-
-
-
-                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	<h2>Simple search</h2>
 
 
                     
@@ -762,426 +667,543 @@ $j('document').ready(function(ev){
 
 
 
-<div class="SearchResults">
-	<div class="Tabular Hscroll" id="OTDResults">
-		
-			
+
+
+
+
+
+
+
+
+
+
+
+                    
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    $j('document').ready(function(ev){
+        $j("#T01").tableSet({hidden: [8,9], icon: "/epps/images/sh_icon.gif"});
+    });  
+
+	$j('document').ready(function(ev){
+		$j("#btnAddSelectedCft").click(function() {
+			var opener = window.opener;
+			var selBox = $j("input[type='radio']:checked").val();
+			if (selBox != null || selBox !="" || selBox != 'undefined'){
+				opener.addSelectedEntry(selBox);
+				window.close();
+			}else{
+				alert('???prompt.select.atleast.one.entry???');
+			}
+		});
+	});
+
+    function addSelectedEntries() {
+        $j('[id^=selectedCft]').each(function() {
+            if ($j(this).is(":checked")) {
+                var optionValue = $j(this).val();
+                var optionTitle = $j(this).attr("title");
+                window.opener.submitCfts(optionValue, optionTitle);
+            }
+        });
+        window.close();
+    }
+</script>
+
+
+
+
+<form name="searchCfTWorkspaceForm" method="post" action="/epps/viewCFTSAction.do" target="_self">
+    <input type="hidden" name="isExport" value="true">
+    <input type="hidden" name="isFTS" value="true">
+    <input type="hidden" name="isQuickSearch" value="true">
+    <input type="hidden" name="freeText" value="">
+    <input type="hidden" name="uniqueId" value="">
+    <input type="hidden" name="title" value="">
+    <input type="hidden" name="status" value="">
+    <input type="hidden" name="description" value="">
+    <input type="hidden" name="contractType" value="">
+    <input type="hidden" name="procedure" value="">
+    <input type="hidden" name="nuts" value="">
+    <input type="hidden" name="estimatedValueMin" value="">
+    <input type="hidden" name="estimatedValueMax" value="">
+    <input type="hidden" name="unspscLabels" value="">
+    <input type="hidden" name="tenderOpeningFromDate" value="">
+    <input type="hidden" name="tenderOpeningUntilDate" value="">
+    <input type="hidden" name="submissionFromDate" value="">
+    <input type="hidden" name="submissionUntilDate" value="">
+    <input type="hidden" name="publicationFromDate" value="">
+    <input type="hidden" name="publicationUntilDate" value="">
+    <input type="hidden" name="contractAuthority" value="">
+    <input type="hidden" name="captcha" value="">
+
+	
+		<div class="SearchResults">
+			<h3>Search Results</h3>
+			<div class="Tabular Hscroll" id="CFTResults">
+				
 <table id="T01">
 <thead>
 <tr>
 <th>#</th>
-<th>CfT Title
-	<a href="?d-3680181-s=title.keyword&amp;selectedItem=common%2FviewOpenedTenders.do&amp;d-3680181-o=2&amp;d-3680181-p=1&amp;d-3680181-n=1">
-		<div class="THSort">
-			<img src="/epps/images/ascending.gif" alt="Sort ascending" />
-			<img src="/epps/images/descending.gif" alt="Sort descending" class="Descending" />
-		</div>
-	</a>
-</th>
-<th>Reference number
-	<a href="?d-3680181-s=caUniqueCfTNumber.keyword&amp;selectedItem=common%2FviewOpenedTenders.do&amp;d-3680181-o=2&amp;d-3680181-p=1&amp;d-3680181-n=1">
-		<div class="THSort">
-			<img src="/epps/images/ascending.gif" alt="Sort ascending" />
-			<img src="/epps/images/descending.gif" alt="Sort descending" class="Descending" />
-		</div>
-	</a>
-</th>
-<th>PE
-	<a href="?d-3680181-s=caName.keyword&amp;selectedItem=common%2FviewOpenedTenders.do&amp;d-3680181-o=2&amp;d-3680181-p=1&amp;d-3680181-n=1">
-		<div class="THSort">
-			<img src="/epps/images/ascending.gif" alt="Sort ascending" />
-			<img src="/epps/images/descending.gif" alt="Sort descending" class="Descending" />
-		</div>
-	</a>
-</th>
-<th>Bids Submission Deadline
-	<a href="?d-3680181-s=submissionDeadline&amp;selectedItem=common%2FviewOpenedTenders.do&amp;d-3680181-o=2&amp;d-3680181-p=1&amp;d-3680181-n=1">
-		<div class="THSort">
-			<img src="/epps/images/ascending.gif" alt="Sort ascending" />
-			<img src="/epps/images/descending.gif" alt="Sort descending" class="Descending" />
-		</div>
-	</a>
-</th>
-<th>Procurement Method
-	<a href="?d-3680181-s=procedure&amp;selectedItem=common%2FviewOpenedTenders.do&amp;d-3680181-o=2&amp;d-3680181-p=1&amp;d-3680181-n=1">
-		<div class="THSort">
-			<img src="/epps/images/ascending.gif" alt="Sort ascending" />
-			<img src="/epps/images/descending.gif" alt="Sort descending" class="Descending" />
-		</div>
-	</a>
-</th>
-<th>Opened Bids</th>
-<th>Award Date
-	<a href="?d-3680181-s=awardDate&amp;selectedItem=common%2FviewOpenedTenders.do&amp;d-3680181-o=2&amp;d-3680181-p=1&amp;d-3680181-n=1">
-		<div class="THSort">
-			<img src="/epps/images/ascending.gif" alt="Sort ascending" />
-			<img src="/epps/images/descending.gif" alt="Sort descending" class="Descending" />
-		</div>
-	</a>
-</th>
-<th>Status
-	<a href="?d-3680181-s=status&amp;selectedItem=common%2FviewOpenedTenders.do&amp;d-3680181-o=2&amp;d-3680181-p=1&amp;d-3680181-n=1">
-		<div class="THSort">
-			<img src="/epps/images/ascending.gif" alt="Sort ascending" />
-			<img src="/epps/images/descending.gif" alt="Sort descending" class="Descending" />
-		</div>
-	</a>
-</th></tr></thead>
+<th>Title<a href="?d-3680175-s=title.keyword&amp;selectedItem=quickSearchAction.do%3FsearchSelect%3D6&amp;d-3680175-o=2&amp;d-3680175-n=1&amp;d-3680175-p=1&amp;searchSelect=6"><a href="?d-3680175-s=title.keyword&amp;selectedItem=quickSearchAction.do%3FsearchSelect%3D6&amp;d-3680175-o=2&amp;d-3680175-n=1&amp;d-3680175-p=1&amp;searchSelect=6"><div class="THSort"><img src="./images/ascending.gif" alt="Sort ascending"><img src="./images/descending.gif" alt="Sort descending" class="Descending"></div></a></th>
+<th>PE<a href="?d-3680175-s=caName.keyword&amp;selectedItem=quickSearchAction.do%3FsearchSelect%3D6&amp;d-3680175-o=2&amp;d-3680175-n=1&amp;d-3680175-p=1&amp;searchSelect=6"><a href="?d-3680175-s=caName.keyword&amp;selectedItem=quickSearchAction.do%3FsearchSelect%3D6&amp;d-3680175-o=2&amp;d-3680175-n=1&amp;d-3680175-p=1&amp;searchSelect=6"><div class="THSort"><img src="./images/ascending.gif" alt="Sort ascending"><img src="./images/descending.gif" alt="Sort descending" class="Descending"></div></a></th>
+<th>Info</th>
+<th>Bids Submission Deadline<a href="?d-3680175-s=submissionDeadline&amp;selectedItem=quickSearchAction.do%3FsearchSelect%3D6&amp;d-3680175-o=2&amp;d-3680175-n=1&amp;d-3680175-p=1&amp;searchSelect=6"><a href="?d-3680175-s=submissionDeadline&amp;selectedItem=quickSearchAction.do%3FsearchSelect%3D6&amp;d-3680175-o=2&amp;d-3680175-n=1&amp;d-3680175-p=1&amp;searchSelect=6"><div class="THSort"><img src="./images/ascending.gif" alt="Sort ascending"><img src="./images/descending.gif" alt="Sort descending" class="Descending"></div></a></th>
+<th>Procedure<a href="?d-3680175-s=procedure&amp;selectedItem=quickSearchAction.do%3FsearchSelect%3D6&amp;d-3680175-o=2&amp;d-3680175-n=1&amp;d-3680175-p=1&amp;searchSelect=6"><a href="?d-3680175-s=procedure&amp;selectedItem=quickSearchAction.do%3FsearchSelect%3D6&amp;d-3680175-o=2&amp;d-3680175-n=1&amp;d-3680175-p=1&amp;searchSelect=6"><div class="THSort"><img src="./images/ascending.gif" alt="Sort ascending"><img src="./images/descending.gif" alt="Sort descending" class="Descending"></div></a></th>
+<th>Status<a href="?d-3680175-s=status&amp;selectedItem=quickSearchAction.do%3FsearchSelect%3D6&amp;d-3680175-o=2&amp;d-3680175-n=1&amp;d-3680175-p=1&amp;searchSelect=6"><a href="?d-3680175-s=status&amp;selectedItem=quickSearchAction.do%3FsearchSelect%3D6&amp;d-3680175-o=2&amp;d-3680175-n=1&amp;d-3680175-p=1&amp;searchSelect=6"><div class="THSort"><img src="./images/ascending.gif" alt="Sort ascending"><img src="./images/descending.gif" alt="Sort descending" class="Descending"></div></a></th>
+<th>Notice PDF  </th>
+<th>Award Date<a href="?d-3680175-s=awardDate&amp;selectedItem=quickSearchAction.do%3FsearchSelect%3D6&amp;d-3680175-o=2&amp;d-3680175-n=1&amp;d-3680175-p=1&amp;searchSelect=6"><a href="?d-3680175-s=awardDate&amp;selectedItem=quickSearchAction.do%3FsearchSelect%3D6&amp;d-3680175-o=2&amp;d-3680175-n=1&amp;d-3680175-p=1&amp;searchSelect=6"><div class="THSort"><img src="./images/ascending.gif" alt="Sort ascending"><img src="./images/descending.gif" alt="Sort descending" class="Descending"></div></a></th></tr></thead>
 <tbody>
 <tr>
 <td>1</td>
-<td>
-					
-						<a href="/prepareView">Supply of D Compound and Urea Fertilizer </a>
-					
-					
-				</td>
-<td>
-	MOA/72/10/23 
-				</td>
-<td>
-	Bright Treasure General Trading Limited 
-
-				</td>
-<td>
-					
-						08/08/2024 14:00:00				
-					
-				</td>
-<td>
-					
+<td style="display:block; text-align:left">
 						
-						Simplified Bidding
-					
-				</td>
+                            
+								<a href="/tenderDetails">Tender for Supply and delivery of one (1) Brand New Motor Grader</a>
+		                    
+		                    
+						
+						
+					</td>
 <td>
-					<a href="/showOpenedTenderDetails">View Opened Bids</a>
-				</td>
+						LUPOSOSHI TOWN COUNCIL
+					</td>
 <td>
-									
-				</td>
-<td>	
-					
-					Awarded
-				</td></tr>
+						
+						<img src="/epps/images/icon_information.gif" alt="Description" title='Procurement of Motor Grader' />
+						
+					</td>
+<td>
+						
+							10/09/2024 16:00:00				
+						
+					</td>
+<td>
+						
+							
+							Open Bidding National
+						
+					</td>
+<td>
+						
+						Bid Submission
+					</td>
+<td>
+						
+							<a href="/epps/cft/downloadNoticeForAdvSearch.do?resourceId=8530743"><img src="/epps/images/acrobat.gif" alt="Contract Notice PDF" title="Contract Notice PDF" /></a>
+						
+					</td>
+<td>
+						
+					</td></tr>
 <tr>
 <td>2</td>
-<td>
-					
-						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8491758">Tender for the Provision of One Round-Trip Ticket: Lusaka to Diani, Kenya (23.08.2024), Diani to Port Louis, Mauritius (01.09.2024), and Port Louis to Lusaka (07.09.2024) for the Securities and Exchange Commission</a>
-					
-					
-				</td>
-<td>
-					74581/3/158/2024
-				</td>
-<td>
-					Securities and Exchange Commission
-				</td>
-<td>
-					
-						08/08/2024 14:30:00				
-					
-				</td>
-<td>
-					
+<td style="display:block; text-align:left">
 						
-						Simplified Bidding
-					
-				</td>
+                            
+								<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8467839">TENDER FOR SUPPLY AND DELIVERY OF 1845 DESKS (FIRST PRIORITY WILL BE GIVEN TO LUPOSOSHI DOMICILED  SUPPLIERS )</a>
+		                    
+		                    
+						
+						
+					</td>
 <td>
-					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8491758">View Opened Bids</a>
-				</td>
+						LUPOSOSHI TOWN COUNCIL
+					</td>
 <td>
-									
-				</td>
-<td>	
-					
-					Evaluation
-				</td></tr>
+						
+						<img src="/epps/images/icon_information.gif" alt="Description" title='TENDER FOR SUPPLY AND DELIVERY OF 1845 DESKS ( FIRST PRIORITY WILL BE GIVEN TO LUPOSOSHI DOMICILED SUPPLIERS)' />
+						
+					</td>
+<td>
+						
+							09/09/2024 16:00:00				
+						
+					</td>
+<td>
+						
+							
+							Open Bidding National
+						
+					</td>
+<td>
+						
+						Bid Submission
+					</td>
+<td>
+						
+							<a href="/epps/cft/downloadNoticeForAdvSearch.do?resourceId=8467839"><img src="/epps/images/acrobat.gif" alt="Contract Notice PDF" title="Contract Notice PDF" /></a>
+						
+					</td>
+<td>
+						
+					</td></tr>
 <tr>
 <td>3</td>
-<td>
-					
-						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8478713">TENDER FOR SUPPLY AND DELIVERY OF 100 ROUNDNECK T-SHIRTS.</a>
-					
-					
-				</td>
-<td>
-					20115/2/477/2024
-				</td>
-<td>
-					National Savings and Credit Bank
-				</td>
-<td>
-					
-						08/08/2024 08:55:00				
-					
-				</td>
-<td>
-					
+<td style="display:block; text-align:left">
 						
-						Direct Bidding 
-					
-				</td>
+                            
+								<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8518851">TENDER FOR PROVISION OF PROPERTY MANAGEMENT SERVICES AT LEVY SHOPPING MALL AND OFFICE BLOCK IN LUSAKA ON A THREE (03 NO.) YEAR RUNNING CONTRACT, SUBJECT TO REVIEW AND RENEWAL FOR A PERIOD OF THREE (03 NO.) YEARS BASED ON SATISFACTORY PERFORMANCE - NAPSA/DI/28/24</a>
+		                    
+		                    
+						
+						
+					</td>
 <td>
-					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8478713">View Opened Bids</a>
-				</td>
+						National Pension Scheme Authority
+					</td>
 <td>
-									
-				</td>
-<td>	
-					
-					Evaluation
-				</td></tr>
+						
+						<img src="/epps/images/icon_information.gif" alt="Description" title='Property Management Services' />
+						
+					</td>
+<td>
+						
+							11/09/2024 10:30:00				
+						
+					</td>
+<td>
+						
+							
+							Open Bidding National
+						
+					</td>
+<td>
+						
+						Bid Submission
+					</td>
+<td>
+						
+							<a href="/epps/cft/downloadNoticeForAdvSearch.do?resourceId=8518851"><img src="/epps/images/acrobat.gif" alt="Contract Notice PDF" title="Contract Notice PDF" /></a>
+						
+					</td>
+<td>
+						
+					</td></tr>
 <tr>
 <td>4</td>
-<td>
-					
-						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8473750">Procurement of conference facilities</a>
-					
-					
-				</td>
-<td>
-					21739/2/147/2024
-				</td>
-<td>
-					Ministry of Tourism
-				</td>
-<td>
-					
-						08/08/2024 10:30:00				
-					
-				</td>
-<td>
-					
+<td style="display:block; text-align:left">
 						
-						Simplified Bidding
-					
-				</td>
+                            
+								<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8511586">TENDER FOR THE SUPPLY AND DELIVERY OF IP RADIOS AND MEDIA CONVERTERS ON ONE (1No.) YEAR FRAMEWORK AGREEMENT</a>
+		                    
+		                    
+						
+						
+					</td>
 <td>
-					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8473750">View Opened Bids</a>
-				</td>
+						Zambia Telecommunications Company Limited
+					</td>
 <td>
-									
-				</td>
-<td>	
-					
-					Evaluation
-				</td></tr>
+						
+						<img src="/epps/images/icon_information.gif" alt="Description" title='TENDER FOR THE SUPPLY AND DELIVERY OF IP RADIOS AND MEDIA CONVERTERS ON ONE (1No.) YEAR FRAMEWORK AGREEMENT' />
+						
+					</td>
+<td>
+						
+							12/09/2024 10:00:00				
+						
+					</td>
+<td>
+						
+							
+							Open Bidding National
+						
+					</td>
+<td>
+						
+						Bid Submission
+					</td>
+<td>
+						
+							<a href="/epps/cft/downloadNoticeForAdvSearch.do?resourceId=8511586"><img src="/epps/images/acrobat.gif" alt="Contract Notice PDF" title="Contract Notice PDF" /></a>
+						
+					</td>
+<td>
+						
+					</td></tr>
 <tr>
 <td>5</td>
-<td>
-					
-						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8471337">Procurement of grader blade of earth moving equipment</a>
-					
-					
-				</td>
-<td>
-					80683/2/60/2024
-				</td>
-<td>
-					Rufunsa Town Council
-				</td>
-<td>
-					
-						08/08/2024 10:00:00				
-					
-				</td>
-<td>
-					
+<td style="display:block; text-align:left">
 						
-						Simplified Bidding
-					
-				</td>
+                            
+								<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8501216">Supply and Delivery of Water Treatment Chemicals (Aluminium Sulphate, Calcium Hypochlorite and 900kg Chlorine Gas Cylinders)</a>
+		                    
+		                    
+						
+						
+					</td>
 <td>
-					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8471337">View Opened Bids</a>
-				</td>
+						Kafubu Water And Sanitation Company Ltd
+					</td>
 <td>
-									
-				</td>
-<td>	
-					
-					Evaluation
-				</td></tr>
+						
+						<img src="/epps/images/icon_information.gif" alt="Description" title='Supply and Delivery of Water Treatment Chemicals (Aluminium Sulphate, Calcium Hypochlorite and 900kg Chlorine Gas Cylinders)' />
+						
+					</td>
+<td>
+						
+							13/09/2024 10:00:00				
+						
+					</td>
+<td>
+						
+							
+							Open Bidding National
+						
+					</td>
+<td>
+						
+						Bid Submission
+					</td>
+<td>
+						
+							<a href="/epps/cft/downloadNoticeForAdvSearch.do?resourceId=8501216"><img src="/epps/images/acrobat.gif" alt="Contract Notice PDF" title="Contract Notice PDF" /></a>
+						
+					</td>
+<td>
+						
+					</td></tr>
 <tr>
 <td>6</td>
-<td>
-					
-						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8468783">Urgent RFQ for the service of Nissan hardbody Reg No. BAV1016</a>
-					
-					
-				</td>
-<td>
-					17702/3/384/2024
-				</td>
-<td>
-					Zambia National Broadcasting Corporation
-				</td>
-<td>
-					
-						08/08/2024 10:30:00				
-					
-				</td>
-<td>
-					
+<td style="display:block; text-align:left">
 						
-						Direct Bidding 
-					
-				</td>
+                            
+								<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8512140">TENDER FOR THE PROCUREMENT OF FLOOR CLEANING SERVICES FOR CHIPATA CENTRAL HOSPITAL</a>
+		                    
+		                    
+						
+						
+					</td>
 <td>
-					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8468783">View Opened Bids</a>
-				</td>
+						Chipata Central Hospital
+					</td>
 <td>
-									
-				</td>
-<td>	
-					
-					Evaluation
-				</td></tr>
+						
+						<img src="/epps/images/icon_information.gif" alt="Description" title='PROCUREMENT OF FLOOR CLEANING SERVICES FOR CHIPATA CENTRAL HOSPITAL' />
+						
+					</td>
+<td>
+						
+							09/09/2024 10:00:00				
+						
+					</td>
+<td>
+						
+							
+							Open Bidding National
+						
+					</td>
+<td>
+						
+						Bid Submission
+					</td>
+<td>
+						
+							<a href="/epps/cft/downloadNoticeForAdvSearch.do?resourceId=8512140"><img src="/epps/images/acrobat.gif" alt="Contract Notice PDF" title="Contract Notice PDF" /></a>
+						
+					</td>
+<td>
+						
+					</td></tr>
 <tr>
 <td>7</td>
-<td>
-					
-						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8466005">Procurement of Return Ticket to Nairobi Kenya- DASS</a>
-					
-					
-				</td>
-<td>
-					31430/3/497/2024
-				</td>
-<td>
-					Civil Aviation Authority
-				</td>
-<td>
-					
-						07/08/2024 16:00:00				
-					
-				</td>
-<td>
-					
+<td style="display:block; text-align:left">
 						
-						Simplified Bidding
-					
-				</td>
+                            
+								<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8506812">TENDER FOR SUPPLY AND DELIVERY OF WATER BOWSER</a>
+		                    
+		                    
+						
+						
+					</td>
 <td>
-					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8466005">View Opened Bids</a>
-				</td>
+						SINDA TOWN COUNCIL
+					</td>
 <td>
-									
-				</td>
-<td>	
-					
-					Evaluation
-				</td></tr>
+						
+						<img src="/epps/images/icon_information.gif" alt="Description" title='Purchase of Water Bowser' />
+						
+					</td>
+<td>
+						
+							12/09/2024 14:00:00				
+						
+					</td>
+<td>
+						
+							
+							Open Bidding National
+						
+					</td>
+<td>
+						
+						Bid Submission
+					</td>
+<td>
+						
+							<a href="/epps/cft/downloadNoticeForAdvSearch.do?resourceId=8506812"><img src="/epps/images/acrobat.gif" alt="Contract Notice PDF" title="Contract Notice PDF" /></a>
+						
+					</td>
+<td>
+						
+					</td></tr>
 <tr>
 <td>8</td>
-<td>
-					
-						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8467678">TENDER FOR THE PROCUREMENT OF AIRTIME-ZAMTEL</a>
-					
-					
-				</td>
-<td>
-					75975/3/726/2024
-				</td>
-<td>
-					JUDICIARY OF ZAMBIA 
-				</td>
-<td>
-					
-						07/08/2024 16:00:00				
-					
-				</td>
-<td>
-					
+<td style="display:block; text-align:left">
 						
-						Direct Bidding 
-					
-				</td>
+                            
+								<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8492251">TENDER FOR SUPPLY AND DELIVERY OF A ROLLER COMPACTOR</a>
+		                    
+		                    
+						
+						
+					</td>
 <td>
-					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8467678">View Opened Bids</a>
-				</td>
+						SINDA TOWN COUNCIL
+					</td>
 <td>
-									
-				</td>
-<td>	
-					
-					Evaluation
-				</td></tr>
+						
+						<img src="/epps/images/icon_information.gif" alt="Description" title='Purchase of Roller Compactor' />
+						
+					</td>
+<td>
+						
+							12/09/2024 14:30:00				
+						
+					</td>
+<td>
+						
+							
+							Open Bidding National
+						
+					</td>
+<td>
+						
+						Bid Submission
+					</td>
+<td>
+						
+							<a href="/epps/cft/downloadNoticeForAdvSearch.do?resourceId=8492251"><img src="/epps/images/acrobat.gif" alt="Contract Notice PDF" title="Contract Notice PDF" /></a>
+						
+					</td>
+<td>
+						
+					</td></tr>
 <tr>
 <td>9</td>
-<td>
-					
-						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8467120">TENDER FOR THE SUPPLY AND DELIVERY OF MAINTENANCE ELECTRICALS</a>
-					
-					
-				</td>
-<td>
-					85470/2/278/2024
-				</td>
-<td>
-					UNIVERSITY TEACHING HOSPITAL-CHILDRENS HOSPITAL
-				</td>
-<td>
-					
-						08/08/2024 10:00:00				
-					
-				</td>
-<td>
-					
+<td style="display:block; text-align:left">
 						
-						Simplified Bidding
-					
-				</td>
+                            
+								<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8487239">DRILLING AND EQUIPPING OF BOREHOLES IN MAGOYE CONSTITUENCY OF MAZABUKA DISTRICT UNDER CDF 2024</a>
+		                    
+		                    
+						
+						
+					</td>
 <td>
-					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8467120">View Opened Bids</a>
-				</td>
+						Mazabuka Municipal Council
+					</td>
 <td>
-									
-				</td>
-<td>	
-					
-					Evaluation
-				</td></tr>
+						
+						<img src="/epps/images/icon_information.gif" alt="Description" title='Drilling and equipping of boreholes in Magoye Constituency under CDF 2024' />
+						
+					</td>
+<td>
+						
+							20/09/2024 14:00:00				
+						
+					</td>
+<td>
+						
+							
+							Open Bidding National
+						
+					</td>
+<td>
+						
+						Bid Submission
+					</td>
+<td>
+						
+							<a href="/epps/cft/downloadNoticeForAdvSearch.do?resourceId=8487239"><img src="/epps/images/acrobat.gif" alt="Contract Notice PDF" title="Contract Notice PDF" /></a>
+						
+					</td>
+<td>
+						
+					</td></tr>
 <tr>
 <td>10</td>
-<td>
-					
-						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8466778">TENDER FOR THE SUPPLY  AND DELIVERY OF CONFERENCE PACKAGE FOR SCHOOL OF HUMANITIES AT UNIVERSITY OF ZAMBIA</a>
-					
-					
-				</td>
-<td>
-					28896/3/792/2024
-				</td>
-<td>
-					The University of Zambia
-				</td>
-<td>
-					
-						08/08/2024 15:01:00				
-					
-				</td>
-<td>
-					
+<td style="display:block; text-align:left">
 						
-						Direct Bidding 
-					
-				</td>
+                            
+								<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8481126">Request for Proposals for provision of external audit services for a period of three Years</a>
+		                    
+		                    
+						
+						
+					</td>
 <td>
-					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8466778">View Opened Bids</a>
-				</td>
+						ZAMBIA DAILY MAIL LIMITED
+					</td>
 <td>
-									
-				</td>
-<td>	
-					
-					Evaluation
-				</td></tr></tbody></table><input type="hidden" name="tableUid" value="searchOTD"><div class="Pagination"><p class="Results">38,660 results in total.    Displaying: <strong>1-10</strong></p><p class="PageNav">Page <strong>1</strong> of <strong>3,866</strong><button type="button" class="SearchBtn Disabled" title="First">&laquo;</button><button type="button" class="SearchBtn Disabled" title="Previous">&lsaquo;</button><button type="button" class="SearchBtn" title="Next" onclick=window.location.href=this.getAttribute("href") href="?selectedItem=common%2FviewOpenedTenders.do&amp;d-3680181-p=2">&rsaquo;</button><button type="button" class="SearchBtn" title="Last" onclick=window.location.href=this.getAttribute("href") href="?selectedItem=common%2FviewOpenedTenders.do&amp;d-3680181-p=3866">&raquo;</button></p><p class="PageNav"><script type="text/javascript">writePageSelection("3,866","?selectedItem=common%2FviewOpenedTenders.do&amp;d-3680181-p=",this);</script></p></div>
-		
-	</div>
-</div>
+						
+						<img src="/epps/images/icon_information.gif" alt="Description" title='External Auditing Services' />
+						
+					</td>
+<td>
+						
+							10/09/2024 10:30:00				
+						
+					</td>
+<td>
+						
+							
+							Open Selection National
+						
+					</td>
+<td>
+						
+						Bid Submission
+					</td>
+<td>
+						
+							<a href="/epps/cft/downloadNoticeForAdvSearch.do?resourceId=8481126"><img src="/epps/images/acrobat.gif" alt="Contract Notice PDF" title="Contract Notice PDF" /></a>
+						
+					</td>
+<td>
+						
+					</td></tr></tbody></table><input type="hidden" name="tableUid" value="searchCft"><div class="Pagination"><p class="Results">2,486 results in total.    Displaying: <strong>1-10</strong></p><p class="PageNav">Page <strong>1</strong> of <strong>249</strong><button type="button" class="SearchBtn Disabled" title="First">&laquo;</button><button type="button" class="SearchBtn Disabled" title="Previous">&lsaquo;</button><button type="button" class="SearchBtn" title="Next" onclick=window.location.href=this.getAttribute("href") href="?selectedItem=quickSearchAction.do%3FsearchSelect%3D6&amp;d-3680175-p=2&amp;searchSelect=6">&rsaquo;</button><button type="button" class="SearchBtn" title="Last" onclick=window.location.href=this.getAttribute("href") href="?selectedItem=quickSearchAction.do%3FsearchSelect%3D6&amp;d-3680175-p=249&amp;searchSelect=6">&raquo;</button></p><p class="PageNav"><script type="text/javascript">writePageSelection("249","?selectedItem=quickSearchAction.do%3FsearchSelect%3D6&amp;d-3680175-p=&amp;searchSelect=6",this);</script></p></div>
+			</div><!-- end "CFTResults" -->
+		</div><!-- end SearchResults -->
+        
+        
+            
+        
+	
+</form>
+
                 </div><!-- Content -->
                 <div class="clear"></div>
             </div><!-- Main -->
@@ -1193,7 +1215,7 @@ $j('document').ready(function(ev){
     <p id="UpdateInfo">	
 	Last Update: 
 	
-	08 August 2024
+	09 August 2024
         
     </p>
     <p id="CopyrightInfo">

@@ -373,7 +373,7 @@ function openPopup(url) {
 
 
 <div id="Search">
-    <p class="Time"> 
+    <p class="Time" id="time"> 
         15:55:57 CAT
     </p>
         
@@ -400,7 +400,7 @@ function openPopup(url) {
             <input type="submit" value="Search" class="SearchBTN" />
             <button type="button" onclick="advancedSearch();" class="AdvancedSearchBTN">Advanced Search</button>
             
-            <a href="/epps/quickSearchAction.do?searchSelect=6">Current Tenders</a>
+            <a href="/currentTenders">Current Tenders</a>
         </p>
     </form>
     
@@ -464,9 +464,6 @@ $j(document).ready(function () {
     
 
      
-    
-        
-       
         <div class="UserInfo">
             Logged in as:<br />
             <strong>
@@ -479,7 +476,7 @@ $j(document).ready(function () {
             
             
                 Last login on : <br />
-                08/08/2024 - 15:44:53
+                09/08/2024 - 12:50:56
             
 
             
@@ -499,7 +496,7 @@ $j(document).ready(function () {
             <li>
                 
                               
-                        <a href="/epps/authenticate/logout">Log Out</a>  
+                        <a  href="auth/login">Log Out</a>  
                     
                            
                                  
@@ -650,7 +647,7 @@ $j('document').ready(function(ev){
         	</li>
 	        
 	        <li>
-                <a href="/epps/quickSearchAction.do?searchSelect=6">Current Tenders</a>
+                <a href="/currentTenders">Current Tenders</a>
             </li>
         	
         	<li>

@@ -1,0 +1,1826 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    
+        <!-- ceproc.ok -->
+    
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    
+
+    <head>
+        <title>e-GP Platform - Notice & Contract Documents</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        <meta name="Description" content="e-Procurement platform home page"/>
+		<meta content="e-Procurement platform - Home page" name="Title"/>
+		<meta content="57" name="Type"/>
+		<meta content="DOCUMENTS/COMM/EN" name="Reference"/>
+		<meta content="European Dynamics" name="Creator"/>
+		<meta name="Language" content="En"/>
+		<meta content="25" name="Classification"/>
+		<meta content="tenders, e-procurement, documents, european law, legislation, economic operator, tenderer, procurement, contract, contracting authority, supplier, awarding authority, institutions, european union, eu" name="Keywords"/>
+        
+
+        <link rel="shortcut icon"   type="image/ico" href="images/favicon.ico" />
+
+        <link rel="stylesheet" type="text/css" href="/epps/css/screen.css" media="screen, projection" />
+        <!--[if IE]>
+        <link rel="stylesheet"	type="text/css" href="/epps/css/ie-fix.css" media="screen, projection" />
+        <![endif]-->
+        <!--[if IE 7]>
+        <link rel="stylesheet"	type="text/css" href="/epps/css/ie-fix-7.css" media="screen, projection" />
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet"	type="text/css" href="/epps/css/ie-fix-lt7.css" media="screen, projection" />
+        
+        <script type="text/javascript" src="/epps/scripts/buttonfix.js"></script>
+
+        <![endif]-->
+        
+        <link rel="stylesheet" type="text/css" href="/epps/css/font-awesome.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/epps/css/font-awesome.min.css" media="screen" />          
+        <link rel="stylesheet" type="text/css" href="/epps/css/print.css" media="print" />
+        
+        <script type="text/javascript" src="/epps/scripts/jquery.min.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jquery-migrate-1.2.1.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jquery.formatCurrency-1.4.0.min.js"></script>
+       	<script type="text/javascript"> 
+			var RESULTS_PER_PAGE_LITERAL = 'Results per page'; 
+         	var GOTO_PAGE_LITERAL = 'Goto page'; 
+            var INVALID_CHARACTERS = '<>&%';
+		</script>
+        <script type="text/javascript" src="/epps/scripts/common.js"></script>
+        <script type="text/javascript">
+        //<![CDATA[
+        var $j = jQuery.noConflict();
+        //]]>
+        </script>
+
+        <script type="text/javascript">
+        //<![CDATA[
+        jQuery(function($){
+            $.datepicker.regional["en"] = {
+                clearText: "Clear", 
+                clearStatus: "Erase the current date",
+                closeText: "Close", 
+                closeStatus: "Close without change",
+                prevText: "&#x3c;Prev", 
+                prevStatus: "Show the previous month",
+                nextText: "Next&#x3e;", 
+                nextStatus: "Show the next month",
+                    currentText: "Today", 
+                    currentStatus: "Show the current month",
+                    monthNames: ["January","February",
+                                "March", "April",
+                                "May","June",
+                                "July","August",
+                                "September", "October",
+                                "November","December"],
+                    monthNamesShort: ["Jan", "Feb", 
+                                "Mar", "Apr", 
+                                "May", "Jun", 
+                                "Jul", "Aug", 
+                                "Sep", "Oct", 
+                                "Nov", "Dec"],
+                    monthStatus: "Show a different month", 
+                    yearStatus: "Show a different year",
+                    weekHeader: "Wk", 
+                    weekStatus: "Week of the Year",
+                    dayNames: ["Sunday", "Monday", 
+                        "Tuesday", "Wednesday", 
+                        "Thursday", "Friday", 
+                        "Saturday"],
+                    dayNamesShort: ["Sun", "Mon", 
+                        "Tue", "Wed", 
+                        "Thu", "Fri", 
+                        "Sat"],
+                    dayNamesMin: ["Su","Mo",
+                        "Tu", "We",
+                        "Th","Fr",
+            "Sa"],
+                    dayStatus: "Set DD as first week day", 
+                    dateStatus: "Select DD, M d",
+                    dateFormat: "mm/dd/yy", 
+                    firstDay: 1, 
+                    initStatus: "Select a Date", isRTL: false};
+                $.datepicker.setDefaults($.datepicker.regional["en"]);
+            }); 
+        //]]>
+        </script>
+        <script type="text/javascript" src="/epps/scripts/jquery.cookie.js"></script>
+        <script type="text/javascript" src="/epps/scripts/popup.js"></script>
+        <script type="text/javascript" src="/epps/scripts/tender.structure.js"></script>	
+        <script type="text/javascript" src="/epps/scripts/add.criteria.js"></script>
+        <script type="text/javascript" src="/epps/scripts/ui.datepicker.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jqComm.js"></script>
+        <script type="text/javascript" src="/epps/scripts/tabber-minimized.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jqForm.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jqTableSet.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jqModal.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jqDnR.js"></script>
+        <script type="text/javascript" src="/epps/scripts/staticValidatorScript.js"></script>
+        <script type="text/javascript" src="/epps/scripts/iframe.js"></script>
+        <script type="text/javascript">
+	        /*@cc_on
+			if (document && document.execCommand) {
+				try { 
+					document.execCommand("BackgroundImageCache",false, true); 
+				}
+				catch (e) {}
+			}
+			@*/
+        </script>	
+        
+        <script type="text/javascript">
+        //<![CDATA[
+        $j('document').ready(function(ev){
+			$j('#Content').showHideMenu("/epps");
+			$j('.Menu').showHideBox();
+            $j('#ToggleSubmenu').toggleCfTVisibility({hide:"Hide Menu", show:"Show Menu"});	
+            $j("#ShowCFTInfo").toggleNextDiv();					
+            $j('.tabber').tabify();
+            $j('.lottabber').tabify({ MenuClass:'ScrollList', ActiveClass:'Selected'});
+             $j('.lotstabber').tabify({ MenuClass:'LotList', ActiveClass:'Selected'});
+            $j("table").tableZebra();
+            $j('.countdown').textCountdown({remaining_text: " remaining characters"});
+            $j("button[id='MClose']").hideAlert();
+            $j("form").prepareForm();
+        });
+
+        function jcv_handleErrors(messages, focusField) {
+            if (focusField && focusField != null) {
+                var doFocus = true;
+                if (focusField.disabled || focusField.type == 'hidden') {
+                    doFocus = false;
+                }
+                if (doFocus &&
+                        focusField.style &&
+                        focusField.style.visibility &&
+                        focusField.style.visibility == 'hidden') {
+                    doFocus = false;
+                }
+                if (doFocus) {
+                    focusField.focus();
+                }
+            }
+
+            if ($j("#Message")) {
+                $j("#Message").remove();
+            }
+            var mesagesCont = document.createElement("div");
+            $j(mesagesCont)
+                .attr("id", "Message")
+                .addClass("Error");
+            var errorMSG = document.createElement("p");
+            $j(errorMSG)
+                .html("<strong>An error has occurred:</strong>");
+            var msg = document.createElement("ul");
+            for (i=0; i< messages.length; i++){
+                $j(msg)
+                    .append("<li>" + messages[i] + "</li>");
+            }
+            var closeP = document.createElement("p");
+            $j(closeP)
+                .addClass("Buttons")
+                .html("<button id=\"MClose\" type=\"submit\">Close</button>");
+            $j(mesagesCont)
+                .append(errorMSG)
+                .append(msg)
+                .append(closeP);
+            $j(mesagesCont).find("button").click(function() {
+                $j("#Message").remove();
+            });
+            $j("#Content h2")
+                .after(mesagesCont);
+        } 
+        //]]>
+        </script>	
+        
+        <script type="text/javascript">
+        //<![CDATA[
+        $j("document").ready(function(ev){
+			// fix IE7/IE6 pagination issue
+        	$j("div .THSort").each(function() {
+        		try {
+	        		var hrefValue = $j(this).parent("a").attr("href");
+					if (hrefValue != null && hrefValue.indexOf("javascript:" != -1)) {
+						var sJsFunction = hrefValue.substring("javascript:".length, hrefValue.length);
+						var jsFunction = new Function(sJsFunction);
+						$j(this).children("img").click(jsFunction);
+					}
+        		} catch (err) {}
+        	});
+        });
+        //]]>
+        </script>	
+        
+		<script type="text/javascript">
+
+			function setParentHref(link){
+				 window.location.href=link;
+			}
+		</script>
+    </head>
+	
+    <body>
+    
+    	
+
+
+
+
+
+
+
+
+
+
+    	
+        <div id="Container">
+            
+
+
+
+
+
+<div id="YPOLogo">
+	<h1 title="Electronic Tendering System">e-GP Platform <span></span></h1>
+</div>
+<!-- YPOLogo // -->
+
+
+<div id="SystemTitle">
+	<p>Electronic Tendering</p>
+</div>
+<!-- SystemTitle // -->
+
+
+            
+
+
+
+
+
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function openPopup(url) {    
+    newwindow=window.open(url,'name','height=550,width=810,scrollbars=yes,resizable=yes,left=60,top=10');
+    if (window.focus) {
+        newwindow.focus();
+    } 
+}
+
+    $j('document').ready(function(ev){
+    	$j("a.PopUp").click(function(){
+    		PopUpOpts = {
+        		windowname: 'popupwindow',
+        		width:		810,
+        		height:		600,
+        		scroll:		1,
+        		resizable:	0
+        	};
+           	$j(this).PopUp(this.href, PopUpOpts); 
+            return false; 
+        }); 
+    })    
+//]]>
+</script>
+
+
+
+
+<div id="GlobalNav">
+    <ul>
+        
+
+        <li class="First" id="Homepage">
+            <a href="/">Homepage</a>
+        </li>
+        <li id="About">
+            <a href="/epps/DisplayHeaderStaticTextAction.do" class="PopUp">About</a>
+        </li>
+        <li id="FAQ">           
+             <a href="/epps/viewInfo.do?selectedItem=viewInfo.do%3Fsection%3Dfaq&amp;section=faq">Frequently Asked Questions</a>
+        </li>
+        <li id="Help">
+            <a href="/epps/viewInfo.do?isPopup=true&amp;section=userManual" class="PopUp">User Manuals</a>
+        </li>
+        
+        <li class="Last" id="Contact">
+            <a href="/epps/PrepareContactUsAction.do" class="PopUp">Contact Us</a>
+        </li>
+    </ul>
+</div><!-- Global_nav // -->
+
+            
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	function checkSubmit() {
+		var	quicSearchForm = document.forms["quickSearchForm"];
+		var col = document.getElementsByName("searchSelect")[0];
+		if (col.selectedIndex != 0) {
+			if(checkInputField(quicSearchForm))quicSearchForm.submit();
+    	}
+    	return false;
+	}
+	
+	function checkInputField(form){
+		var input = form[1].value;
+		if(containForbidenChars(input)){
+			form[1].value = '*';
+			alert("An invalid character was provided for search. Invalid characters include: <, >, &, % .");
+			return false;
+		}
+		return true;
+	}
+	
+	function containForbidenChars(input){
+    	return input.indexOf("<")!=-1 || input.indexOf(">")!=-1 || input.indexOf("%")!=-1 || input.indexOf("&")!=-1;
+    }
+	
+	$j(document).ready(function(){
+		$j('#SearchInput').mouseover(function() {
+		   $j(this).attr('title', "Tip: provide a relevant term within asterisks, eg. *consultancy*");
+
+	  	});
+	});
+	
+	function advancedSearch() {
+        if(true){
+            window.location.href = "/epps/prepareAdvancedSearch.do?type=cftFTS";
+        } else {
+            window.location.href = "/epps/prepareAdvancedSearch.do?type=cft";
+        }
+    }
+
+</script>
+
+
+
+
+<div id="Search">
+    <p class="Time" id="time"> 
+        19:32:48 CAT
+    </p>
+        
+    <form id="quickSearchForm" method="post" action="/epps/quickSearchAction.do" onsubmit="javascript: return checkSubmit()" target="_self">
+        <p>
+            <label for="SearchSelect">Search:</label> 
+            <select name="searchSelect"><option value="Select...">Select</option>
+                
+                
+                    
+                    
+                      <option value="6">Tenders</option>
+                    
+                
+                <option value="2">Organisation</option>
+				                       
+					
+				  
+				                       
+					
+				
+				<option value="5">Plan</option></select>
+            <input type="text" name="searchInput" value="" id="SearchInput" class="Text" />
+            <input type="submit" value="Search" class="SearchBTN" />
+            <button type="button" onclick="advancedSearch();" class="AdvancedSearchBTN">Advanced Search</button>
+            
+            <a href="/currentTenders">Current Tenders</a>
+        </p>
+    </form>
+    
+
+	 
+</div><!-- Search -->
+
+
+            <div id="Main">
+                <div id="Navigation">
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+$j(document).ready(function() {
+
+     $j('#loginButton').click(function(event) {
+            $j.cookie('loginButton', null);
+            $j.cookie('loginButton', 'enabled');
+            if ($j.cookie('loginButton')) {
+            } else {
+
+              $j.cookie('loginButton', null);
+              
+              alert("Please enable session cookies for using this site with your web browser.");
+              event.preventDefault();
+            }
+          });
+
+});
+
+$j(document).ready(function () {
+    $j("#Username").attr("autocomplete","off");
+    });
+
+
+</script>
+
+
+
+    
+
+
+<div class="Menu">
+    <p><span>Log In</span></p>
+    <div class="MenuContent" id="LoginMenuContent">
+    
+
+        <div class="UserInfo">
+            Logged in as:<br />
+            <strong>
+                Comfort namboo 
+                (Supplier Admin			) 
+                - 
+            </strong>
+            NAMBOO BUSINESS SOLUTIONS ZAMBIA LIMITED <br />
+            
+            
+            
+                Last login on : <br />
+                09/08/2024 - 12:50:56
+            
+
+            
+        </div>
+        
+        <ul>
+            
+              
+                <li>
+                    <a href="/epps/prepareEditAccount.do?id=126561">Edit Profile</a>
+                </li>
+                
+                <li>
+                    <a href="/">Homepage</a>
+                </li>
+            
+            <li>
+                
+                              
+                        <a href="auth/login">Log Out</a>  
+                    
+                           
+                                 
+            </li>
+        </ul>
+    
+	    <ul>
+	        <li><a href="https://eprocure.zppa.org.zm/cpms">e-Contracts</a></li>
+        </ul>    
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+$j('document').ready(function(ev){
+	var contextRoot = "/epps";
+	var selectedItem = escape("null");
+	$j('.MenuContent li').find('a').each(function() {
+		var link = this.href;
+		var item = escape(link.substring(link.indexOf(contextRoot) + contextRoot.length + 1));
+		// check if this <a> is seleted item and add css class 'Selected'
+		if (item == selectedItem) {
+			$j(this).parent().addClass('Selected');	
+		}
+		// prepare links
+		if (link.indexOf('?') != -1) {
+			this.href = link + '&selectedItem=' + item;
+		} else {
+			this.href = link + '?selectedItem=' + item;
+		}
+	});
+});
+	
+//-->
+</script>
+
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 
+	
+	
+	
+	 
+	 
+	
+		<div class="Menu">
+		<p><span>Tender Management</span></p>
+		<div class="MenuContent" id="AdminMenuContent">
+		<ul>
+			
+		    
+		    	
+		       	
+				  	<li><a href="/epps/cft/listMyCFTFromFTS.do">List of my Tenders</a></li>
+		       	
+		    
+		</ul>
+		</div>
+		</div>
+		<div class="Menu">
+		<p><span>Supplier Administration			</span></p>
+		<div class="MenuContent" id="AdminMenuContent1">
+		<ul>
+			<li><a href="/epps/prepareViewEOOrganisation.do?id=34534">Supplier Management</a></li>
+
+			<li><a href="/epps/viewOrgAccounts.do?id=34534">User Management</a></li>
+			
+			
+				
+			    
+			    	
+			       	
+					  	<li><a href="/epps/reports/prepareAuditingReport.do?caId=34534&amp;isFts=true">Auditing Reports</a></li>
+			       	
+			    
+			
+		</ul>
+		</div>
+		</div>
+	
+	
+	
+
+	
+	
+	
+	
+	  
+	
+	
+	
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="Menu">
+    <p><span>Information</span></p>
+    <div class="MenuContent" id="InfoMenuContent">
+        <ul>
+    
+         
+	            
+	       	
+	       	
+	        
+	        <li>
+ 				<a href="/epps/app/viewPublication.do">Annual Procurement Plan Publication</a>
+        	</li>
+	        
+	        <li>
+                <a href="/currentTenders">Current Tenders</a>
+            </li>
+        	
+        	<li>
+        	   
+   			 <a href="/epps/notices/viewPublishedNotices.do?formId=301">Upcoming Tenders</a>  
+   			 </li>
+        	<li>
+ 				<a href="/epps/common/viewOpenedTenders.do">Opened Bid Details</a>
+        	</li>
+        	
+            <li>
+               <a href="/epps/viewInfo.do?section=newItems">News</a>
+            </li>
+
+            
+            <li>
+              <a href="/epps/viewInfo.do?section=faq">Frequently Asked Questions</a>
+            </li>
+            <li>
+            	<a href="/epps/viewInfo.do?section=legal">Electronic Public Procurement</a>
+            </li>
+            <li>
+            	<a href="/epps/viewInfo.do?section=eproc">Procurement Legislation</a>
+            </li>
+            <li>
+            	<a href="/epps/viewInfo.do?section=statistics">Statistics</a>
+            </li>
+            <li>
+            	<a href="/epps/viewInfo.do?section=links">Relevant Links</a>
+            </li>
+            <li>
+            	<a href="/epps/viewInfo.do?section=calendar">Events Calendar</a>
+            </li>
+            <li>
+                <a href="/epps/viewInfo.do?section=userGuides">User Guides</a>
+            </li>
+            <li>
+                <a href="/epps/viewInfo.do?section=eLearning">e-Learning Materials</a>
+            </li>                        
+            
+         	
+        </ul>
+    </div><!-- MenuContent -->
+</div><!-- Menu // -->
+
+
+
+                </div><!-- Navigation -->
+
+                <div id="Content">
+                	
+
+
+
+
+<noscript>
+	<div class="NoScript">
+		<p>To enjoy the full functionality of this application, please ensure that Javascript is enabled in your browser.</p>
+	</div>
+</noscript>
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+	
+	
+	
+	
+			
+				<p class="UserRole">
+						
+					<strong>
+						
+					</strong>
+				</p>
+			 
+
+
+                    
+                        
+                    
+
+
+
+
+
+
+	
+	<h2>Notice & Contract Documents</h2>
+
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script type="text/javascript" src="/epps/scripts/jquery.cookie.js"></script>
+ <script type="text/javascript" src="/epps/scripts/setdefaultvisiblecolumn.js"></script>
+ 
+ <script type="text/javascript">
+	//<![CDATA[
+	     $j('document').ready(function(ev){
+			$j("#T01").tableSet({hidden: [5]},'/pageIterator/view.contract.notices.do');	   
+			var contractNotTbl =$j("#T02").tableSet({hidden: [5]},'/pageIterator/view.contract.notices.do');
+			setDefaultVisible(contractNotTbl,"T02_5","T02");
+			var noticeList = $j("#noticeList").val();
+			if (noticeList == 1) {
+				$j("#selectedNotice").attr("checked","checked");
+			}   	              
+			$j("#T03").tableSet({hidden: [5]},'/pageIterator/view.contract.notices.do');	              
+	      });         
+    //]]>
+ </script>
+
+
+
+	
+	 
+	<div class="ExtraInfo">
+		<a href="#" id="ToggleSubmenu">Show Menu</a>	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    //<![CDATA[
+    $j('document').ready(function(ev){
+        $j('#ToggleSubmenu').unbind("click");
+        var clickedMenu = false;
+        $j('#ToggleSubmenu').click(function(){
+            if (($j("#Submenu li a:first").html() == "Loading....") && (clickedMenu == false)){
+                clickedMenu = true;
+                $j('#Submenu').retrieveCftMenu("/epps/common/commonAjaxCall.do", "requestType=cftMenu&resourceId=8531715&groupId=148174",
+                {hide:"Hide Menu", show:"Show Menu"});
+            }
+            return false;
+        }).bind("doubleclick", function(){
+            return false;
+        });
+    });
+    //]]>
+</script>
+<div class="Submenu" id="Submenu" style="z-index: 999">
+	<ul>
+		<li>
+			<a href="#">Loading....</a>
+		</li>
+	</ul>
+</div><!-- Submenu // -->
+
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+<p id="ShowCFTInfo">
+		Tender:&nbsp;<strong>Tender for the Procurement of Banqueting and Catering services for State and Official Functions on a framework agreement</strong>
+        
+	</p>
+	<div id="MoreCFTInfo">
+		<h3>Workspace Information</h3>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="Grid">
+    
+        <dt>Bid submission deadline in (days/hours):</dt>
+        <dd>31/14</dd>
+    
+    <dt>Name of Procuring Entity:</dt> 
+    <dd>
+        <a href="/epps/prepareViewCAOrganisation.do?id=32076">Cabinet Office</a>
+    </dd>
+    
+    
+        <dt>APP Reference Number:</dt> 
+        <dd>1010/32076/CO13</dd>
+    
+    <dt>Tender Unique ID:</dt>
+    <dd>32076/3/404/2024</dd>
+    <dt>Title:</dt> 
+    <dd>Tender for the Procurement of Banqueting and Catering services for State and Official Functions on a framework agreement</dd>
+    
+        <dt>Status:</dt>
+        <dd>Bid Submission</dd>
+    
+    
+    <dt>Description:</dt>
+    <dd style="text-align:justify;">Provision of Banqueting and Catering Services for State and Official Functions on a Framework Agreement</dd>
+    
+        <dt>Procurement Method Rationale:</dt>
+        <dd style="text-align:justify;">Within Threshold</dd>
+    
+    
+        <dt>Award Criteria Details:</dt>
+        <dd style="text-align:justify;">Best Evaluated</dd>
+    
+    
+        <dt>Submission Method Details:</dt>
+        <dd style="text-align:justify;">Online</dd>
+    
+    
+    <dt>Procurement Type:</dt>
+    <dd>Non-consulting Services</dd>
+    <dt>Procedure:</dt> 
+    <dd>Open Bidding National</dd>
+    
+        <dt>Commencement Type:</dt> 
+        <dd>Advertisement of Notice</dd>
+    
+    
+        <dt>Threshold:</dt> 
+        <dd>Below</dd>
+    
+    
+        <dt>Procurement Technique:</dt>
+        <dd>Invitation To Bid (ITB)</dd>
+    
+    
+        <dt>Number of Stages:</dt>
+        <dd>1</dd>
+    
+    
+        <dt>Evaluation Mechanism:</dt>
+        <dd>Least Cost Selection (LCS) </dd>
+    
+    
+        <dt>CEEC Preference Type:</dt> 
+        <dd>No Preference</dd>
+    
+    <dt>Framework Agreement Establishment:</dt>
+    <dd>Yes</dd>
+    
+    <dt>Postqualification:</dt>
+    <dd>No</dd>
+    
+        <dt>UNSPSC Codes:</dt>
+        <dd>
+            
+                93151500-Public administration<br/>
+            
+        </dd>
+    
+    
+    
+        <dt>Payment Type:</dt>
+        <dd>Participation Fee Required</dd>
+    
+    
+        <dt>Payment Amount&nbsp;(ZMW):</dt>
+        <dd>1,000</dd>
+    
+    
+        <dt>Payment Terms and Method:</dt>
+        <dd style="text-align:justify;">Online</dd>
+    
+    
+        <dt>Bid Security Type:</dt>
+        <dd>Bid Securing Declaration Required</dd>
+    
+    
+    
+    <dt>Contract Awarded in Lots:</dt>
+    <dd>Yes</dd>
+    
+        <dt>Bids for Lots:</dt>
+        <dd>All Lots</dd>
+        <dt>Number of Lots:</dt>
+        <dd>3</dd>
+        
+            <dt>Lot Name&nbsp;(0):</dt>
+            <dd>Provision of Banqueting and Catering Services for VVIP (5 Star Hotel)</dd>
+        
+            <dt>Lot Name&nbsp;(1):</dt>
+            <dd>Provision of Banqueting and Catering Services for VIP (4 Star Hotel)</dd>
+        
+            <dt>Lot Name&nbsp;(2):</dt>
+            <dd>Provision of Banqueting and Catering Services for others (3 Star)</dd>
+        
+    
+    
+        <dt>Deadline for Bid Submission:</dt>               
+        <dd>10/09/2024 10:00:00</dd>
+    
+    
+        <dt>End of Clarification Period:</dt>
+        <dd>30/08/2024 16:00:00</dd>
+    
+    
+        <dt>Bid Opening Date:</dt>
+        <dd>10/09/2024 10:30:00</dd>
+    
+    
+        <dt>Date of Publication/Invitation:</dt> 
+        <dd>09/08/2024 17:28:26</dd>
+    
+    
+    
+        <dt>Contract Notice Date:</dt>
+        <dd>09/08/2024 17:28:40</dd>
+    
+    
+</dl>
+
+<script type="text/javascript">
+
+    var RESOURCE_ID = "8531715";
+    var IS_MANUAL = false;
+    var EXECUTING = false;
+
+    function stopComplaints() {
+   		var complaintDays = "10";
+   		//Cannot use '\n' directly in application resources (it breaks the page), therefore use the 'replaceAll' instead
+        var msg = "You are about to end the " + complaintDays + " days standstill period. Kindly ensure the following are in place:<br/>1. " + complaintDays + " working days have elapsed from the date of the start of the standstill period<br/>2. All issues brought forward during the standstill period have been resolved<br/>Are you sure you want to proceed to end the standstill period?"; 
+        msg = msg.replaceAll("<br/>", "\n");
+        if (confirm(msg)) {
+            window.location.href = "/epps/eawarding/stopComplaint.do?resourceId=" + RESOURCE_ID;
+        }
+    }
+
+    function editCFT() {
+        if (IS_MANUAL) {
+            window.location.href = "/epps/cft/prepareManualModifyCfT.do?resourceId=" + RESOURCE_ID;
+        } else {
+            window.location.href = "/epps/cft/prepareModifyCfT.do?resourceId=" + RESOURCE_ID;
+        }
+    }
+
+    function cancelCFT() {
+		if ($j('#cancelationReason').val() == '') {
+			alert('Cancelation Reason is mandatory');
+			return;
+		}
+		if (confirm("Are you sure you want to cancel this Tender?")) {
+	        $j('#cancelCft').submit();
+		}
+    }
+
+    function deleteCFT() {
+        if (confirm("Are you sure you want to cancel this Tender?")) {
+            window.location.href = "/epps/cft/cancelCFTWorkspace.do?resourceId=" + RESOURCE_ID;
+        }
+    }
+
+    function startNewEvaluationCycle() {
+        if (confirm("You are about to initiate a new evaluation cycle. This will entail a new round of tendering activities, such as definition of tender structure, dispatching of invitations, tender submission and tender evaluation. Please click OK to proceed initiating a new evaluation cycle, otherwise please click Cancel to abort.")) {
+            document.getElementById("startNewCycle").setAttribute("disabled", true);
+            window.location.href = "/epps/cft/createNewEvaluationCycle.do?resourceId=" + RESOURCE_ID;
+        }
+    }
+    
+    function award() {
+        if (IS_MANUAL) {
+            window.location.href = "/epps/cft/prepareManualAwarding.do?resourceId=" + RESOURCE_ID;
+        } else {
+            window.location.href = "/epps/eawarding/prepareViewAwarding.do?resourceId=" + RESOURCE_ID;
+        }
+    }
+
+    function exportCompetition() {
+        if (EXECUTING) {
+            cftBeingProcessed(RESOURCE_ID);
+        } else {
+            window.location.href = "/epps/cft/exportCompetition.do?resourceId=" + RESOURCE_ID;         
+        }
+    }
+
+    function archiveCompetition() {
+        if (EXECUTING) {
+            cftBeingProcessed(RESOURCE_ID);
+        } else {
+            window.location.href = "/epps/cft/prepareAcrhiveCft.do?resourceId=" + RESOURCE_ID;         
+        }
+    }
+
+    function exportCfTInfo() {
+        window.location.href = "/epps/cft/exportCfTInfo.do?resourceId=" + RESOURCE_ID;
+    }
+
+    function downloadCompetition() {
+        window.location.href = "/epps/cft/downloadCompetition.do?resourceId=" + RESOURCE_ID;
+    }
+
+    function provideHardCopyInfo() {
+        window.location.href = "/epps/cft/prepareHcInfo.do?resourceId=" + RESOURCE_ID;
+    }
+
+    function copyCft() {
+        window.location.href = "/epps/cft/copyCftWorkspace.do?resourceId=" + RESOURCE_ID;
+    }
+
+    function exportRunning() {
+        alert("Competition is currently being processed, please click on Refresh page button to check again.");
+        window.location.href = "/epps/cft/prepareViewCfTWS.do?resourceId=" + RESOURCE_ID;
+    }
+
+    function cftBeingProcessed() {
+        alert("Competition is currently being processed, please click on Refresh page button to check again.");
+        window.location.href = "/epps/cft/prepareViewCfTWS.do?resourceId=" + RESOURCE_ID;
+    }
+
+    function reloadPage() {
+        window.location.href = "/epps/cft/prepareViewCfTWS.do?resourceId=" + RESOURCE_ID;
+    }
+</script>
+    </div>
+
+					
+	</div><!-- ExtraInfo // -->	
+				
+	
+	
+
+
+
+<script type="text/javascript">
+
+
+
+function validateNoticePublicationDate (tenderSubmissionDeadline, QAendDate){
+ 	
+ 	 var str = "09/08/2024 19:32";
+ 	 var createDay = str.substring(0,2);
+ 	 var createMonth= str.substring(3,5);
+ 	 var createYear= str.substring(6,10);
+ 	 var createHrs= str.substring(11,13);
+ 	 var createMins= str.substring(14,16);
+ 	
+ 	 var strtsd = tenderSubmissionDeadline;
+ 	 var tsdDay= strtsd.substring(0,2);
+ 	 var tsdMonth= strtsd.substring(3,5);
+ 	 var tsdYear= strtsd.substring(6,10);
+ 	 var tsdHrs= strtsd.substring(11,13);
+ 	 var tsdMins= strtsd.substring(14,16);
+ 	
+ 	 var strqadate = QAendDate;
+ 	 var qaDay= strqadate.substring(0,2);
+ 	 var qaMonth= strqadate.substring(3,5);
+ 	 var qaYear= strqadate.substring(6,10);
+ 	 var qaHrs= strqadate.substring(11,13);
+  	 var qaMins= strqadate.substring(14,16);
+  	
+  	    var answer;
+  	    var result;
+  	
+  	    var createDate = new Date();
+  	    var tsdDate = new Date(tsdYear,tsdMonth-1,tsdDay, tsdHrs, tsdMins);
+  	    var qaDate = new Date(qaYear,qaMonth-1,qaDay, qaHrs, qaMins);
+  	
+  	    
+  	
+  	    createDate.setDate(createDate.getDate() + 28);
+  	    if(tsdDate < createDate) {
+  	     result = "Your current bid submission deadline does not comply with the Procurement Regulations for this type of procedure. Please adjust the bid submission deadline to be at least 28 days from the publication date.";
+  	    }
+  	
+  	    if(result != null) {
+  	     confirm(result);
+  	     answer = false;
+  	    } else {
+  	     answer = true;
+  	    }
+  	
+  	    return answer;
+} 
+	 
+</script>	 
+
+
+<script type="text/javascript">
+
+	var xsdVersion = "2.0.8";
+   
+	function publishNotice(isCFNotice){
+		var areYouSure = false;
+		if(isCFNotice) {
+			areYouSure = confirm("You are about to publish a notice on Contract Finder site. Please click OK to confirm its publication, otherwise please click Cancel to abort.");	
+		} else {
+			areYouSure = confirm("You are about to publish a notice. Please click OK to confirm its publication, otherwise please click Cancel to abort.");
+		}
+        if (areYouSure) {
+        	if(isCFNotice) {
+        		document.getElementById("resubmitCF").value = "true";
+        	}
+        	var notices = document.forms['noticeForm'].selectedNotice;  
+    		document.getElementById("PublishNotice").disabled = true;
+        	var selectedNot = "";
+        	
+	        if (notices != undefined) {
+	        	
+	        	if (notices.length){
+	        		for (var i = 0; i < notices.length; i++) {
+	    				if (notices[i].checked) {
+	    					selectedNot = notices[i].value
+	    				}
+	    			}
+	        	}else{
+	        	        if (notices.checked) {
+	        			selectedNot = document.getElementById("selectedNotice").value;
+	        			}
+	        		
+	        	}
+	        }
+	        	
+	    		if(selectedNot==""){
+	    			alert("Please select the notice you want to publish.");
+	    			document.getElementById("PublishNotice").disabled = false;
+	    		}else{
+	    			var noticeParams = selectedNot.split(",");
+	    			var notId = noticeParams[0];
+	    			if(document.getElementById('islinked'+notId)!=null){
+	    				if(document.getElementById('islinked'+notId).value == 'true'){
+	    					alert("This notice can not be published from here since it is linked to a Tender.");
+	    					return;
+	    				}
+	    			}
+	    			var status = noticeParams[3];
+	    			if (status == "prompt.published"){
+	    				$j('#PublishNotice').prop("disabled", false);
+	    				alert("The selected notice has been already published.");
+	    			}else if (status == "prompt.draft"){
+	    				$j('#PublishNotice').prop("disabled", false);
+	    				alert("A Draft notice cannot be published.");
+	    			}else if (status == "prompt.sent.publishing") {
+	    				alert("Please try later, the Notice is being published on CF Site.");
+	    			}else if (status == "prompt.final"){
+	    				var formId = noticeParams[1];
+	    				var resubmitBTN = document.getElementsByName("resubmitCFBTN")[0];
+	    				if(!isCFNotice && resubmitBTN != null && (formId == '1000' || formId == '1100')) {
+	    					alert("Please use &quot;Submit to CF&quot; button to submit the notice to Contract Finder site.")
+	    					return false;
+	    				}
+	    				var answer = true;
+	    				var cftContractNotice;
+	    				if(xsdVersion == "2.0.8") {
+	    					cftContractNotice = ["2","4","5","7","10","11","12","17","19","21","51","302"];
+	    				} else if(xsdVersion == "2.0.7") {
+	    					cftContractNotice = ["2","4","5","11","12","21","51"];
+	    				}
+	    				if (cftContractNotice.contains(formId)){// if notice is contract notice, validate cft dates
+	    					answer = validateNoticePublicationDate("10/09/2024 10:00","30/08/2024 16:00");
+	    				}
+	    				if(answer==true){
+	    					document.forms['noticeForm'].publishButton.value="true";
+	    					document.forms['noticeForm'].submit();
+	    				}
+	    			}
+	    		}
+        } else {
+        }
+	
+	}
+	
+	Array.prototype.contains = function (element) {
+		for (var i = 0; i < this.length; i++) {
+			if (this[i] == element) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	function addExistingNotice(){
+		var url_existing="/epps/cft/viewContractNotices.do?existingNotices=true&resourceId=8531715";
+		window.location.href = url_existing;
+	}
+	
+	function deleteNotice(){
+		var areYouSure = confirm("You are about to delete a Notice. Once deleted, the Notice will be completely removed from the system and there will be no mechanism for restoring it. Please click OK to proceed in deleting the notice, otherwise please click Cancel to abort."); 
+        if (areYouSure) {
+        	var notices = document.forms['noticeForm'].selectedNotice;  
+    		
+        	var selectedNot = "";
+        	
+        	
+        	if (notices != undefined) {
+        	
+	        	if (notices.length !=undefined){
+	        		for (var i = 0; i < notices.length; i++) {
+	    				if (notices[i].checked) {
+	    					selectedNot = notices[i].value
+	    				}
+	    			}
+	        	} else {
+	        			if (notices.checked) {
+	        			selectedNot = notices.value;
+	        			
+	        			}
+	        	}
+        	}
+        	
+        	
+    		if(selectedNot==""){
+    			alert("Please select the notice you want to delete.");
+    		}else{
+    			var noticeParams = selectedNot.split(",");
+    			var status = noticeParams[3];
+    			var published = "prompt.published";
+    			var final = "prompt.final";
+    			var linkedNotice = document.getElementById('islinked'+noticeParams[0]).value;
+    			if(linkedNotice == 'true'){
+    				
+    				alert("You do not have sufficient rights for this operation");
+    			}else{
+    				if (status != published) {
+    					// CF Notice can't be deleted if CfT is published!
+    					if("cft.status.tender.submission" == "cft.status.tender.submission" && (noticeParams[1] == '1000' || noticeParams[1] == '1100')) {
+    						alert("The selected notice cannot be deleted.");
+    						return;
+    					}
+    					
+    					document.forms['noticeForm'].publishButton.value="false";
+    					document.forms['noticeForm'].deleteButton.value="true";
+    					document.forms['noticeForm'].submit();
+    				}else{
+    					alert("The selected notice cannot be deleted.");
+    				}
+    			}
+    		}
+        } else {
+        }
+		
+		
+	}
+	
+	function deleteLinkedCftPin(noticeParamsVal){
+		var cftLinkedPinForm = document.forms['linkedPinForm'];
+		cftLinkedPinForm.actionToPerform.value = "deleteLink";
+	    cftLinkedPinForm.action="/epps/notices/cftLinkedPins.do?resourceId="+8531715;
+		cftLinkedPinForm.selectedPinLink.value = noticeParamsVal[0]; 
+		cftLinkedPinForm.submit();
+	}
+	
+	function createNotice() {	
+		var url = "/epps/cft/getNoticeForms.do?resourceId="+8531715;
+		if(xsdVersion == "2.0.8") {
+			window.open(url,'name','height=500,width=620,scrollbars=yes,resizable=yes,left=60,top=10');
+		} else if(xsdVersion == "2.0.7") {
+	window.open(url,'name','height=420,width=620,scrollbars=yes,resizable=yes,left=60,top=10');
+	
+	}
+	}
+	
+	function createTestNotice() {	
+	var url = "/epps/cft/getNoticeForms.do?test=true&resourceId="+8531715;
+	window.open(url,'name','height=420,width=620,scrollbars=yes,resizable=yes,left=60,top=10');
+	
+	}
+	
+	function editNotice(){
+	
+		var notices = document.forms['noticeForm'].selectedNotice;  
+		
+    	var selectedNot = "";
+    	
+    	
+    if (notices != undefined) {
+    	if (notices.length){
+    		for (var i = 0; i < notices.length; i++) {
+				if (notices[i].checked) {
+					selectedNot = notices[i].value
+				}
+			}
+    	}else{
+    			selectedNot = document.getElementById("selectedNotice").value;
+    	
+    	}
+    }
+		if(selectedNot==""){
+			alert("Please select the notice you want to edit.");
+		}else{
+			var noticeParams = selectedNot.split(",");
+			var noticeId = noticeParams[0];
+			var fId = noticeParams[1];
+			var lg = noticeParams[2];
+			var status = noticeParams[3];
+			var refFormId = noticeParams[4];
+			if(document.getElementById('islinked'+noticeId)!=null){
+				if(document.getElementById('islinked'+noticeId).value == 'true'){
+					alert("This notice can not be edited from here since it is linked to a Tender.");
+					return;
+				}
+			}		
+					
+			if (status != "prompt.published"){//edit of draft notice
+				if(fId == 1000 || fId == 1100) {// Contract Finder publication
+					window.location.href = "/epps/cft/createNationalPubOfficeNotice.do?resourceId=" + 8531715 + "&noticeId=" + noticeId ;
+				} else {
+					window.location.href = "/epps/cft/accessFFM.do?formId=" + fId + "&lang=" + lg +"&sectionId=" + 8531715 + "&noticeId=" + noticeId + "&refFormId="+ refFormId + "&isPin=false";
+				}
+			}else { 
+				if (fId == "14"){
+					alert("A Published Corrigendum Notice cannot be edited.");
+				} else if (fId == "314"){
+						alert("Published Addendum Notice cannot be edited.");
+				}else{ //issue corrigendum - edit of published notice.
+					if(fId == 1000 || fId == 1100) {// Contract Finder publication
+						alert("At the moment, the published National Publication Notice editing is not available.");
+					} else {
+						var returnedValue = false;
+						var corrigendumId = 14;
+						if(fId == 302 || fId == 306) {
+							returnedValue = confirm("This notice has been published, do you want to issue an Addendum Notice?");
+							corrigendumId = 314;
+						} else {
+							returnedValue = confirm("This notice has been published, do you want to issue a Corrigendum?");	
+						}
+				    	if (returnedValue == true) {
+				    		window.location.href = "/epps/cft/accessFFM.do?formId=" + corrigendumId + "&lang=" + lg +"&sectionId=" + 8531715 + "&noticeId=-1&refId=" + noticeId + "&refFormId="+ fId + "&isPin=false";
+				    	}
+				    }
+				}
+			}
+		}
+	}
+	
+	function skipPublishVeatnNotice(){
+	document.forms['noticeForm'].action = "/epps/notices/skipPublishVeatn.do?resourceId="+8531715;
+	document.forms['noticeForm'].submit();
+	}
+
+</script>
+
+
+   
+<form id="noticeForm" method="post" action="/epps/cft/noticesController.do" enctype="multipart/form-data"> 
+	<input type="hidden" id="resubmitCF" name="resubmitCF" value="false"/>
+	<h3>Notices</h3>	      										
+	<div class="tabbertab">   
+		<ul class="tabbernav">
+            <li class="tabberactive">
+				<a href="/notices">Notices</a>				
+			</li>
+			
+			<li class="">
+				<a href="/tenderDocumentList">Tender Documents</a>
+			</li>	
+			
+			
+		</ul>
+	</div>	
+		 
+	<div class="Tabular"> 
+		<table id="T02">
+			<thead>
+				<tr>
+					
+					<th>
+						<a href="javascript:sortBy('type','sort')"><div class="THSort">
+			                
+				            
+				              <img src="/epps/images/ascending.gif" alt="Sort ascending" />
+			                  <img src="/epps/images/descending.gif" alt="Sort descending" class="Descending" />
+				                 
+						   </div></a>Type:
+					</th>
+					
+					<th abbr="Date Uploaded">
+						<a href="javascript:sortBy('dateCreated','sort')"><div class="THSort">
+			               
+					            
+					              <img src="/epps/images/ascending.gif" alt="Sort ascending" />
+				                  <img src="/epps/images/descending.gif" alt="Sort descending" class="Descending" />
+					                     
+								</div></a>Date Upl.:
+						</th>
+						
+						<th abbr="Language">
+							<a href="javascript:sortBy('language','sort')"><div class="THSort">
+				               
+					            
+					              <img src="/epps/images/ascending.gif" alt="Sort ascending" />
+				                  <img src="/epps/images/descending.gif" alt="Sort descending" class="Descending" />
+					            
+								</div></a>Lang.:
+						</th>	
+						<th>
+							<a href="javascript:sortBy('status','sort')"><div class="THSort">
+				               
+					            
+					              <img src="/epps/images/ascending.gif" alt="Sort ascending" />
+				                  <img src="/epps/images/descending.gif" alt="Sort descending" class="Descending" />
+					               
+								</div></a>Status:
+						</th>
+						
+						<th>
+							<a href="javascript:sortBy('datePublished','sort')"><div class="THSort">
+				               
+					            
+					              <img src="/epps/images/ascending.gif" alt="Sort ascending" />
+				                  <img src="/epps/images/descending.gif" alt="Sort descending" class="Descending" />
+					               
+								</div></a>Date Pub.:
+						</th>
+						<!-- <th>Bugzilla Bug 10706: OJS URL not updatingOJS URL</th> -->
+						
+					</tr>
+				</thead>
+					
+				<tbody>
+				
+						<tr>
+						
+						
+							
+							
+							<td align="left"><a  download="notice.pdf" href="/upload/notice.pdf" > Tender Notice</a></td>
+							 
+					  		<td>09/08/2024 17:23:33</td>
+							<td>EN</td>
+							<td>Published</td>	
+							<td>09/08/2024 17:28:25</td>
+							<!-- <td>Bugzilla Bug 10706: OJS URL not updating
+				     	 		
+				     	 	</td> 	-->							
+				     	 	
+					     	
+						</tr>
+					  									
+				</tbody>
+			</table>
+	</div><!-- Tabular ends -->
+	<input type="hidden" name="resourceId" value="8531715"/>
+	
+		<input type="hidden" name="noticeList" id="noticeList" value="1"/>
+	
+    
+					<input type="hidden" id="islinked8548046" value="false"/>
+				
+	
+	<div class="Pagination">        
+				
+			    <!-- code starts  here for pagination purpose -->
+					           
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+       //<![CDATA[  
+        function goPage2(actionKind) {
+           var link = "";
+           
+           
+               link = "javascript:sortBy(' ', ?, 'true')";
+               link = link.replace("?", "'" + actionKind + "'");
+               
+                
+           
+			
+           window.location = link;       
+        }
+     function passValueToListbox(val){
+     var returnval="";
+     if(val!=null)
+     returnval=val;
+     
+     listval=returnval;
+     
+     }
+      //]]>
+    </script>
+    
+	
+    
+        
+        <p class="Results">
+        <strong>1</strong> results in total. &nbsp;&nbsp;&nbsp;
+        Displaying: 
+        <strong>1-1</strong>
+    &nbsp;&nbsp;</p>
+    
+    
+    <p class="PageNav"> Page <strong>1</strong> of <strong>1</strong>
+   
+   
+    <button class="SearchBtn Disabled" disabled="disabled" title="First">&laquo;</button>
+    &nbsp;
+    
+    
+    
+    <button class="SearchBtn Disabled" disabled="disabled" title="Previous" type="button">&lsaquo;</button>
+    &nbsp;&nbsp;
+    
+    
+    
+    <button class="SearchBtn Disabled" disabled="disabled" title="Next">&rsaquo;</button>
+    
+    
+    
+    <button class="SearchBtn Disabled" disabled="disabled" title="Last">&raquo;</button>
+    
+    </p>
+    
+   
+
+    
+    
+      
+	
+    <!--    
+    
+		    <input type="hidden" name="paging_results_per_page" value="paging_results_per_page2" />
+		    Results per page:
+		    <select name="paging_results_per_page2" id="paging_results_per_page2" onchange="goPage2('paging_results_per_page')">
+		         
+		        	<option value="5" >5</option>
+		        
+		        	<option value="10" selected="selected">10</option>
+		        
+		        	<option value="15" >15</option>
+		        
+		        	<option value="20" >20</option>
+		        
+		        	<option value="25" >25</option>
+		        
+		        	<option value="30" >30</option>
+		        
+		        	<option value="50" >50</option>
+		        
+		        	<option value="75" >75</option>
+		        
+		    </select>
+		    
+		    Goto page: 
+		    <select name="paging_go_to_page2" onchange="goPage2('paging_go_to_page')">
+		        
+		            <option value="1" selected="selected">1</option>
+		          
+		        
+		    </select>
+		    -->
+
+
+
+						
+			     
+			     <!-- code ends here for pagination purpose -->
+	</div>
+		
+	 
+	
+			<p class="Buttons">	
+			
+			
+			
+			<input type="hidden" name="deleteButton" value=""/>
+			
+				<input type="hidden" name="createButton" value=""/>
+			
+			
+			
+			    <input type="hidden" name="publishButton" value=""/>
+			 
+			 	
+			</p>	
+			 
+					
+</form>			
+<form id="linkedPinForm" method="post" action="/epps/notices/cftLinkedPins.do">
+	<input type="hidden" name="linkedCft" value="" />
+	<input type="hidden" name="actionToPerform" value="" />
+	<input type="hidden" name="selectedPinLink" value="" />
+</form>
+
+
+
+	<form name="sortForm" action="/epps/pageIterator/view.contract.notices.do" method="get">
+	    <input type="hidden" name="subKey" value="" />
+	    <input type="hidden" name="masterKey" value="" />
+	    <input type="hidden" name="paths" value="" />
+	    <input type="hidden" name="currentPath" value="" />
+	    <input type="hidden" name="actionKind" value="" />
+	    <input type="hidden" name="sortByField" value="" />
+	    <input type="hidden" name="selectedLessonIds" value="" />
+		<input type="hidden" name="selectedPos" value="" />
+	    <input type="hidden" name="hiddenPos" value="" />
+	    <input type="hidden" name="paging_results_per_page" value="" />
+	    <input type="hidden" name="paging_go_to_page" value="" />		    
+	    <input type="hidden" name="resourceId" value="8531715" /> 
+	    <input type="hidden" name="contractNoticeTask" value="false" />
+	    <input type="hidden" name="awardNoticeTask" value="false" />
+	     <input type="hidden" name="contractVeatnTask" value="false" />
+	</form>
+<script type="text/javascript">
+	
+	function viewNoticeOnTED(tedUDL){
+		window.open(tedUDL,'TEDWin','width=800,height=600,scrollbars=yes,resizable=yes');
+	}
+	
+    function getSelected() {
+        var check = document.forms['noticeForm'].attachDocsCheckBox;
+        var pos = 0;
+        var selectedPos = "";
+        if (check) {
+            if (check.length) {
+                for (i = 0; i < check.length; i++) {
+                    if (check[i].checked && check[i].id == 'visible') {
+                        selectedPos = selectedPos + "," + pos;
+                    }
+                    pos++;
+                }
+            } else {
+                if (check.checked  && check.id == 'visible') {
+                    selectedPos = selectedPos + "," + pos;
+                }
+            }
+        }
+        selectedPos = selectedPos.substring(1);
+        return selectedPos;
+    }
+    
+    function getSelectedLessonIds(previousSelection) {
+    	var returnString = previousSelection;
+    	var theForm = document.forms['noticeForm'];
+    	for(var z=0; z<theForm.length;z++){
+	        if(theForm[z].type == 'checkbox' && theForm[z].name == 'selectedISO' && theForm[z].checked) {
+	            if (returnString.length!=0) returnString = returnString + ",";
+	            returnString = returnString + theForm[z].value;	            
+	        }
+	    }
+    	return returnString;
+    }
+
+    function sortBy(sortByField, actionKind, secondPaging) {
+        document.sortForm.subKey.value="results['entriesCollection']";
+        document.sortForm.masterKey.value="273785cbac22aee8:-70b2b1ba:191382e9066:-7742";
+        document.sortForm.paths.value="results['entriesCollection']";
+        document.sortForm.currentPath.value="results[entriesCollection]";
+        document.sortForm.actionKind.value=actionKind;
+       
+        if (sortByField != ' ') {
+            document.sortForm.sortByField.value=sortByField;
+            
+        }
+		document.sortForm.hiddenPos.value="";
+        document.sortForm.selectedPos.value=getSelected();
+        document.sortForm.selectedLessonIds.value=getSelectedLessonIds(document.sortForm.selectedLessonIds.value);
+	   if (actionKind == 'paging_results_per_page') {
+            var rpp = document.cftListForm.paging_results_per_page;
+            if (secondPaging == 'true') {
+                rpp = document.cftListForm.paging_results_per_page2;
+            }
+            document.sortForm.paging_results_per_page.value=rpp.options[rpp.selectedIndex].value;
+        }
+        if (actionKind == 'paging_go_to_page') {
+            var pag = document.cftListForm.paging_go_to_page;
+            if (secondPaging == 'true') {
+                pag = document.cftListForm.paging_go_to_page2;
+            }
+            document.sortForm.paging_go_to_page.value=pag.options[pag.selectedIndex].value;
+        }
+         document.sortForm.submit();
+    }
+</script>				
+
+                </div><!-- Content -->
+                <div class="clear"></div>
+            </div><!-- Main -->
+
+            
+
+
+<div id="Footer">
+    <p id="UpdateInfo">	
+	Last Update: 
+	
+	09 August 2024
+        
+    </p>
+    <p id="CopyrightInfo">
+        &copy;2024 Government of the Republic of Zambia. All rights reserved.		
+    </p>
+    <ul>
+
+    </ul>
+</div><!-- Footer // -->
+
+            <br style="clear:both; width:100%;" />
+        </div><!-- Container -->
+    </body>
+</html>

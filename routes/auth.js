@@ -54,13 +54,17 @@ router.post('/register',async (req, res, next) =>{
 
 router.post("/login",(req, res, next) => {
 
-    if(true){
+    if(req.body.userName =='MbushiMOA' && req.body.password =='Mo@2026'){
 
-      console.log(req.user)
+      // console.log(req.user)
           
       res.render("pages/getTaskList", {
 
       });
+    }else{
+      res.render("auth/login", {
+
+      }); 
     }
 
 });

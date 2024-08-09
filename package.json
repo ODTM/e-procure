@@ -1,7 +1,7 @@
 {
-  "name": "tayantpay_admin",
+  "name": "eprocurezppa",
   "version": "1.0.0",
-  "description": "zppa procurement clone",
+  "description": "zppa procurement",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

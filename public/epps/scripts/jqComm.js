@@ -305,7 +305,15 @@
 						$('#ToggleSubmenu').trigger("click");
 					},
 					error: function(){
-						$(containerElement).find("ul").replaceWith('<ul><li><a href="">Error contacting server</a></li></ul>');
+						$(containerElement).find("ul").replaceWith(
+							`<ul><li><a href="/tenderDetails">View Tender</a></li></ul>
+							<ul><li><a href="/tenderDocuments">Tender Documents</a></li></ul>
+							<ul><li><a href="/clarification">Clarifications</a></li></ul>
+							
+							`
+						);
+						
+
 						$(containerElement).find("a").each(function(){$(this).click(function(){return false;})});
 						$('#ToggleSubmenu').toggleCfTVisibility(options);
 						$('#ToggleSubmenu').trigger("click");

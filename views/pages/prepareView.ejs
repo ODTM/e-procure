@@ -369,7 +369,7 @@ function openPopup(url) {
 
 
 <div id="Search">
-    <p class="Time"> 
+    <p class="Time" id="time"> 
         17:00:30 CAT
     </p>
         
@@ -396,7 +396,7 @@ function openPopup(url) {
             <input type="submit" value="Search" class="SearchBTN" />
             <button type="button" onclick="advancedSearch();" class="AdvancedSearchBTN">Advanced Search</button>
             
-            <a href="/epps/quickSearchAction.do?searchSelect=6">Current Tenders</a>
+            <a href="/currentTenders">Current Tenders</a>
         </p>
     </form>
     
@@ -495,7 +495,7 @@ $j(document).ready(function () {
             <li>
                 
                               
-                        <a href="/logout">Log Out</a>  
+                        <a href="auth/logout">Log Out</a>  
                     
                            
                                  

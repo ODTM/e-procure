@@ -321,7 +321,7 @@ function openPopup(url) {
         
 
         <li class="First" id="Homepage">
-            <a href="/epps/home.do">Homepage</a>
+            <a href="/">Homepage</a>
         </li>
         <li id="About">
             <a href="/epps/DisplayHeaderStaticTextAction.do" class="PopUp">About</a>
@@ -395,7 +395,7 @@ function openPopup(url) {
 
 
 <div id="Search">
-    <p class="Time"> 
+    <p class="Time" id="time"> 
         07:09:19 CAT
     </p>
         
@@ -418,7 +418,7 @@ function openPopup(url) {
             <input type="submit" value="Search" class="SearchBTN" />
             <button type="button" onclick="advancedSearch();" class="AdvancedSearchBTN">Advanced Search</button>
             
-            <a href="/epps/quickSearchAction.do?searchSelect=6">Current Tenders</a>
+            <a href="/currentTenders">Current Tenders</a>
         </p>
     </form>
     
@@ -576,7 +576,7 @@ $j('document').ready(function(ev){
         	</li>
 	        
 	        <li>
-                <a href="/epps/quickSearchAction.do?searchSelect=6">Current Tenders</a>
+                <a href="/currentTenders">Current Tenders</a>
             </li>
         	
         	<li>
