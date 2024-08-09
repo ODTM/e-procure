@@ -25,4 +25,30 @@ router.get("/viewOpenedTenders100", async (req, res) => {
 });
 
 
+
+router.get("/getTaskList", async (req, res) => {
+ 
+  res.render("pages/getTaskList", {
+
+  });
+});
+
+router.get("/showOpenedTenderDetails", async (req, res) => {
+ 
+  res.render("pages/showOpenedTenderDetails", {
+
+  });
+});
+
+
+router.get("/prepareView", async (req, res) => {
+ 
+  res.render("pages/prepareView", {
+
+  });
+});
+
+
+
+
 module.exports = router;

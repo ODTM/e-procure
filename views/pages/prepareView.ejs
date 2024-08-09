@@ -1,28 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
     
@@ -319,7 +295,7 @@ function openPopup(url) {
         
 
         <li class="First" id="Homepage">
-            <a href="/index.html">Homepage</a>
+            <a href="/">Homepage</a>
         </li>
         <li id="About">
             <a href="/epps/DisplayHeaderStaticTextAction.do" class="PopUp">About</a>
@@ -513,13 +489,13 @@ $j(document).ready(function () {
                 </li>
                 
                 <li>
-                    <a href="/index.html">Homepage</a>
+                    <a href="/">Homepage</a>
                 </li>
             
             <li>
                 
                               
-                        <a href="/epps/authenticate/logout">Log Out</a>  
+                        <a href="/logout">Log Out</a>  
                     
                            
                                  
@@ -678,7 +654,7 @@ $j('document').ready(function(ev){
    			 <a href="/epps/notices/viewPublishedNotices.do?formId=301">Upcoming Tenders</a>  
    			 </li>
         	<li>
- 				<a href="/epps/common/viewOpenedTenders.do">Opened Bid Details</a>
+ 				<a href="/viewOpenedTenders">Opened Bid Details</a>
         	</li>
         	
             <li>
@@ -744,7 +720,7 @@ $j('document').ready(function(ev){
 
 
 	
-	<h2>An error has occurred</h2>
+	<h2>Access Document</h2>
 
 
 
@@ -781,14 +757,34 @@ $j('document').ready(function(ev){
 
 
 
-<h3>An error has occurred			:</h3>
+<h3>Tender Document:</h3>
+
+
+<table id="T01">
+    <thead>
+    <tr>
+    <th>#</th>
+    <th>Supplier Name			</th>
+    <th>Document</th></tr></thead>
+    <tbody>
+    <tr>
+    <td>1</td>
+    <td>
+            <a href="#">Bright Treasure General Trading Limited</a>
+        </td>
+    <td>
+            <a href="/upload/ZPPA7287.pdf" download="ZPPA_Report.pdf">Download</a>
+
+        </td></tr>
+    </tbody>
+</table>
               
-<p>The following error has occurred:			</p>         
+<!-- <p>The following error has occurred:			</p>         
 
 
          
 
-    <div>You do not have sufficient rights for this operation.			</div>
+    <div>You do not have sufficient rights for this operation.			</div> -->
 
 
 

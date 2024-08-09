@@ -56,7 +56,11 @@ router.post("/login",(req, res, next) => {
 
     if(true){
 
-      res.redirect('/');
+      console.log(req.user)
+          
+      res.render("pages/getTaskList", {
+
+      });
     }
 
 });

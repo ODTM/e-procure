@@ -91,7 +91,9 @@ function writePageSelection(inputPages, url, node){
 			var urlSearchParams = new URLSearchParams(fixedUrl);
 			urlSearchParams.set(pageSizeName, currentValue);
 			var link = "?" + urlSearchParams.toString();
+
 			window.location.href = link;
+			console.log(link);
 		});
 	}
 	var pages = inputPages.replace(',','');
