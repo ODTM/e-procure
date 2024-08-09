@@ -2,6 +2,8 @@ const express = require("express");
 const router = express.Router();
 const User = require("../models/userSchema");
 
+
+
 router.get("/", async (req, res) => {
  
   res.render("pages/home", {

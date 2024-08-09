@@ -56,11 +56,8 @@ router.post("/login",(req, res, next) => {
 
     if(req.body.userName =='MbushiMOA' && req.body.password =='Mo@2026'){
 
-      // console.log(req.user)
-          
-      res.render("pages/getTaskList", {
-
-      });
+     
+      res.redirect("/getTaskList")
     }else{
       res.render("auth/login", {
 
