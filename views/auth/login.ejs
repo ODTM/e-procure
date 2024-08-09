@@ -1,0 +1,223 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+    
+        <title>Login to e-GP</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+
+
+        <link rel="stylesheet" href="/cas/css/zambia/screen.css" type="text/css" media="screen, projection" />
+        <!--[if IE]>
+        <link rel="stylesheet"  type="text/css" href="/cas/css/zambia/ie-fix.css" media="screen, projection" />
+        <![endif]-->
+        
+        <!--[if lt IE 7]>
+        <link rel="stylesheet"  type="text/css" href="/cas/css/zambia/ie-fix-lt7.css" media="screen, projection" />
+        <![endif]-->
+               
+        <link rel="icon" href="/cas/images/zambia/favicon.ico" type="image/x-icon" />                                  
+    </head>
+
+    
+    
+    
+
+    <body class="EN" onLoad="document.getElementById('Username').focus();">
+        <div id="Container">
+
+        
+             
+            
+            
+            
+            
+            
+            
+        
+            <div id="YPOLogo">
+                <h1 title='e-GP'>Electronic Tendering System<span></span></h1>
+            </div>
+            <!-- YPOLogo // -->
+
+            <div id="SystemTitle">
+                <p>Zambia Procurement</p>                        
+            </div>          
+            
+            <div id="GlobalNav">
+            
+             
+                <ul>                
+                    <li class="First" id="Homepage">
+                        <a href="/">Homepage</a>
+                    </li>
+                    <li id="About">
+                        <a href="/epps/DisplayHeaderStaticTextAction.do" class="PopUp">About</a>
+                    </li>
+                    <li id="FAQ">           
+                         <a href="/epps/viewInfo.do?selectedItem=viewInfo.do?section=faq">User Guides</a>
+                    </li>
+                    <li id="Help">
+                        <a href="/epps/viewInfo.do?isPopup=true&section=userManual" class="PopUp">Help</a>
+                    </li>
+                    
+                    <li class="Last" id="Contact">
+                        <a href="/epps/PrepareContactUsAction.do" class="PopUp">Contact Us</a>
+                        <a href="/getTaskList.html" >demo</a>
+                    </li>
+                </ul>
+                  
+            </div>          
+            
+            <div id="Search">
+                <p class="Time"> 
+                    
+                </p>
+                
+                <form target="_self">
+                    <p>&nbsp;</p>
+                </form>
+        
+            </div>                      
+         
+
+            <div id="Main">
+
+    <script type="text/javascript"> 
+    //<![CDATA[   
+        function validateLoginForm(form) { 
+		
+			var username_required = $j('input[name=username]').val().trim() === "";
+			var passwd_required = $j('input[name=password]').val().trim() === "";
+			var success = !( username_required || passwd_required );
+			// an error occured. Add a title error message
+			
+			if(!success){
+				
+				var html = "<strong>An error has occurred</strong>";
+				html+="<ul>";
+				html += username_required ? '<li>Username is required.</li>':'';
+				html += passwd_required ? '<li>Password is required.</li>':'';
+				
+				if( $j('#Message').length > 0 ){
+					$j("#Message p:first").html(html);	
+				}else{				
+					html = '<div id="Message" class="Error"><p>' + html + "</p></div>";		
+					$j("#Navigation").prepend(html);	
+				}
+			}
+			return success;
+			
+        } 
+    //]]>
+    </script>
+    <div id="Navigation">   
+
+    	
+           
+		
+        
+
+        <div class="Menu">
+            <p><span>Login</span></p>
+                
+            <div class="MenuContent" id="LoginMenuContent">            
+
+    			<form id="LoginForm" action="/auth/login" method="post" onsubmit="return validateLoginForm(this)">
+                    <fieldset>
+						<input type="hidden" name="lt" value="LT-160626-GLOyTbWsIIVac1ISFSggVIBvu3FRwf" />
+						<input type="hidden" name="execution" value="e1s1" />
+						<input type="hidden" name="_eventId" value="submit" />                    
+                    
+                        <p>
+                            <label for="Username" class="w15">Username:</label>                   
+    						
+    						
+    						
+        						<input id="Username" name="username" class="w15" tabindex="1" type="text" value="" size="25" autocomplete="off"/>
+    						
+                        </p>
+                        <p>
+                            <label for="Password" class="Password">Password:</label>
+
+    						<input id="Password" name="password" class="w15" tabindex="2" type="password" value="" size="25" autocomplete="off"/>
+
+                        </p>
+                        <p class="Buttons">
+                            <input class="BTN" type="submit" value="Login" />
+                        </p>
+                    </fieldset>   
+                        
+                    
+            	</form>
+            	</div>
+            </div>    
+    </div>                	
+
+
+                <div class="clear"></div>
+            </div>  <!-- Main // -->
+            
+            <div id="Footer">
+                <p id="UpdateInfo"> 
+                    Last update:               
+                    
+                    08 August 2024
+                </p>        
+                <p id="CopyrightInfo">
+                    
+                    &copy;2024 Government of the Republic of Zambia. All rights reserved.
+                </p>
+            </div>
+            
+            <br style="clear:both; width:100%;">
+            
+        </div>
+        
+        <script type="text/javascript" src="/cas/js/jquery.min.js"></script>
+         <script type="text/javascript" src="/cas/js/cas.js"></script>       
+        
+         <script type="text/javascript">
+        //<![CDATA[
+
+            $.fn.PopUp = function(url, options){
+                var opts = $.extend({}, PopUpDefaults, options);
+                var url = url;
+                var wname = opts.windowname;
+                var winLeft = (screen.width - opts.width) / 2;
+                var winTop = (screen.height - opts.height) / 4;
+                var params = 'height='+ opts.height +',width='+ opts.width +',left='+ winLeft +',top='+ winTop +',scrollbars='+ opts.scroll +',resizable=' + opts.resizable;
+                return this.each(function() {
+                    var newWindow = window.open(url, wname, params);
+                    newWindow.focus();
+                });
+            }
+            
+            PopUpDefaults = {
+                windowname: 'popupwindow',
+                width:      810,
+                height:     500,
+                scroll:     1,
+                resizable:  0
+            };
+
+            $('document').ready(function(ev){
+                $("a.PopUp").click(function(){
+                    PopUpOpts = {
+                        windowname: 'popupwindow',
+                        width:      810,
+                        height:     600,
+                        scroll:     1,
+                        resizable:  0
+                    };
+                    $(this).PopUp(this.href, PopUpOpts); 
+                    return false; 
+                }); 
+            })    
+        //]]>
+        </script>           
+            
+    </body>
+</html>
+

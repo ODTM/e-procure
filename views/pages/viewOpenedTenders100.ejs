@@ -1,0 +1,4365 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+        <!-- ceproc.ok -->
+    
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    
+
+    <head>
+        <title>e-GP Platform - Tenders of Opened Bids</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        <meta name="Description" content="e-Procurement platform home page"/>
+		<meta content="e-Procurement platform - Home page" name="Title"/>
+		<meta content="57" name="Type"/>
+		<meta content="DOCUMENTS/COMM/EN" name="Reference"/>
+		<meta content="European Dynamics" name="Creator"/>
+		<meta name="Language" content="En"/>
+		<meta content="25" name="Classification"/>
+		<meta content="tenders, e-procurement, documents, european law, legislation, economic operator, tenderer, procurement, contract, contracting authority, supplier, awarding authority, institutions, european union, eu" name="Keywords"/>
+        
+
+        <link rel="shortcut icon"   type="image/ico" href="images/favicon.ico" />
+
+        <link rel="stylesheet" type="text/css" href="/epps/css/screen.css" media="screen, projection" />
+        <!--[if IE]>
+        <link rel="stylesheet"	type="text/css" href="/epps/css/ie-fix.css" media="screen, projection" />
+        <![endif]-->
+        <!--[if IE 7]>
+        <link rel="stylesheet"	type="text/css" href="/epps/css/ie-fix-7.css" media="screen, projection" />
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link rel="stylesheet"	type="text/css" href="/epps/css/ie-fix-lt7.css" media="screen, projection" />
+        
+        <script type="text/javascript" src="/epps/scripts/buttonfix.js"></script>
+
+        <![endif]-->
+        
+        <link rel="stylesheet" type="text/css" href="/epps/css/font-awesome.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/epps/css/font-awesome.min.css" media="screen" />          
+        <link rel="stylesheet" type="text/css" href="/epps/css/print.css" media="print" />
+        
+        <script type="text/javascript" src="/epps/scripts/jquery.min.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jquery-migrate-1.2.1.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jquery.formatCurrency-1.4.0.min.js"></script>
+       	<script type="text/javascript"> 
+			var RESULTS_PER_PAGE_LITERAL = 'Results per page'; 
+         	var GOTO_PAGE_LITERAL = 'Goto page'; 
+            var INVALID_CHARACTERS = '<>&%';
+		</script>
+        <script type="text/javascript" src="/epps/scripts/common.js"></script>
+        <script type="text/javascript">
+        //<![CDATA[
+        var $j = jQuery.noConflict();
+        //]]>
+        </script>
+
+        <script type="text/javascript">
+        //<![CDATA[
+        jQuery(function($){
+            $.datepicker.regional["en"] = {
+                clearText: "Clear", 
+                clearStatus: "Erase the current date",
+                closeText: "Close", 
+                closeStatus: "Close without change",
+                prevText: "&#x3c;Prev", 
+                prevStatus: "Show the previous month",
+                nextText: "Next&#x3e;", 
+                nextStatus: "Show the next month",
+                    currentText: "Today", 
+                    currentStatus: "Show the current month",
+                    monthNames: ["January","February",
+                                "March", "April",
+                                "May","June",
+                                "July","August",
+                                "September", "October",
+                                "November","December"],
+                    monthNamesShort: ["Jan", "Feb", 
+                                "Mar", "Apr", 
+                                "May", "Jun", 
+                                "Jul", "Aug", 
+                                "Sep", "Oct", 
+                                "Nov", "Dec"],
+                    monthStatus: "Show a different month", 
+                    yearStatus: "Show a different year",
+                    weekHeader: "Wk", 
+                    weekStatus: "Week of the Year",
+                    dayNames: ["Sunday", "Monday", 
+                        "Tuesday", "Wednesday", 
+                        "Thursday", "Friday", 
+                        "Saturday"],
+                    dayNamesShort: ["Sun", "Mon", 
+                        "Tue", "Wed", 
+                        "Thu", "Fri", 
+                        "Sat"],
+                    dayNamesMin: ["Su","Mo",
+                        "Tu", "We",
+                        "Th","Fr",
+            "Sa"],
+                    dayStatus: "Set DD as first week day", 
+                    dateStatus: "Select DD, M d",
+                    dateFormat: "mm/dd/yy", 
+                    firstDay: 1, 
+                    initStatus: "Select a Date", isRTL: false};
+                $.datepicker.setDefaults($.datepicker.regional["en"]);
+            }); 
+        //]]>
+        </script>
+        <script type="text/javascript" src="/epps/scripts/jquery.cookie.js"></script>
+        <script type="text/javascript" src="/epps/scripts/popup.js"></script>
+        <script type="text/javascript" src="/epps/scripts/tender.structure.js"></script>	
+        <script type="text/javascript" src="/epps/scripts/add.criteria.js"></script>
+        <script type="text/javascript" src="/epps/scripts/ui.datepicker.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jqComm.js"></script>
+        <script type="text/javascript" src="/epps/scripts/tabber-minimized.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jqForm.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jqTableSet.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jqModal.js"></script>
+        <script type="text/javascript" src="/epps/scripts/jqDnR.js"></script>
+        <script type="text/javascript" src="/epps/scripts/staticValidatorScript.js"></script>
+        <script type="text/javascript" src="/epps/scripts/iframe.js"></script>
+        <script type="text/javascript">
+	        /*@cc_on
+			if (document && document.execCommand) {
+				try { 
+					document.execCommand("BackgroundImageCache",false, true); 
+				}
+				catch (e) {}
+			}
+			@*/
+        </script>	
+        
+        <script type="text/javascript">
+        //<![CDATA[
+        $j('document').ready(function(ev){
+			$j('#Content').showHideMenu("/epps");
+			$j('.Menu').showHideBox();
+            $j('#ToggleSubmenu').toggleCfTVisibility({hide:"Hide Menu", show:"Show Menu"});	
+            $j("#ShowCFTInfo").toggleNextDiv();					
+            $j('.tabber').tabify();
+            $j('.lottabber').tabify({ MenuClass:'ScrollList', ActiveClass:'Selected'});
+             $j('.lotstabber').tabify({ MenuClass:'LotList', ActiveClass:'Selected'});
+            $j("table").tableZebra();
+            $j('.countdown').textCountdown({remaining_text: " remaining characters"});
+            $j("button[id='MClose']").hideAlert();
+            $j("form").prepareForm();
+        });
+
+        function jcv_handleErrors(messages, focusField) {
+            if (focusField && focusField != null) {
+                var doFocus = true;
+                if (focusField.disabled || focusField.type == 'hidden') {
+                    doFocus = false;
+                }
+                if (doFocus &&
+                        focusField.style &&
+                        focusField.style.visibility &&
+                        focusField.style.visibility == 'hidden') {
+                    doFocus = false;
+                }
+                if (doFocus) {
+                    focusField.focus();
+                }
+            }
+
+            if ($j("#Message")) {
+                $j("#Message").remove();
+            }
+            var mesagesCont = document.createElement("div");
+            $j(mesagesCont)
+                .attr("id", "Message")
+                .addClass("Error");
+            var errorMSG = document.createElement("p");
+            $j(errorMSG)
+                .html("<strong>An error has occurred:</strong>");
+            var msg = document.createElement("ul");
+            for (i=0; i< messages.length; i++){
+                $j(msg)
+                    .append("<li>" + messages[i] + "</li>");
+            }
+            var closeP = document.createElement("p");
+            $j(closeP)
+                .addClass("Buttons")
+                .html("<button id=\"MClose\" type=\"submit\">Close</button>");
+            $j(mesagesCont)
+                .append(errorMSG)
+                .append(msg)
+                .append(closeP);
+            $j(mesagesCont).find("button").click(function() {
+                $j("#Message").remove();
+            });
+            $j("#Content h2")
+                .after(mesagesCont);
+        } 
+        //]]>
+        </script>	
+        
+        <script type="text/javascript">
+        //<![CDATA[
+        $j("document").ready(function(ev){
+			// fix IE7/IE6 pagination issue
+        	$j("div .THSort").each(function() {
+        		try {
+	        		var hrefValue = $j(this).parent("a").attr("href");
+					if (hrefValue != null && hrefValue.indexOf("javascript:" != -1)) {
+						var sJsFunction = hrefValue.substring("javascript:".length, hrefValue.length);
+						var jsFunction = new Function(sJsFunction);
+						$j(this).children("img").click(jsFunction);
+					}
+        		} catch (err) {}
+        	});
+        });
+        //]]>
+        </script>	
+        
+		<script type="text/javascript">
+
+			function setParentHref(link){
+				 window.location.href=link;
+			}
+		</script>
+    </head>
+	
+    <body>
+    
+    	
+
+
+
+
+
+
+
+
+
+
+    	
+        <div id="Container">
+            
+
+
+
+
+
+<div id="YPOLogo">
+	<h1 title="Electronic Tendering System">e-GP Platform <span></span></h1>
+</div>
+<!-- YPOLogo // -->
+
+
+<div id="SystemTitle">
+	<p>Electronic Tendering</p>
+</div>
+<!-- SystemTitle // -->
+
+
+            
+
+
+
+
+
+
+
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function openPopup(url) {    
+    newwindow=window.open(url,'name','height=550,width=810,scrollbars=yes,resizable=yes,left=60,top=10');
+    if (window.focus) {
+        newwindow.focus();
+    } 
+}
+
+    $j('document').ready(function(ev){
+    	$j("a.PopUp").click(function(){
+    		PopUpOpts = {
+        		windowname: 'popupwindow',
+        		width:		810,
+        		height:		600,
+        		scroll:		1,
+        		resizable:	0
+        	};
+           	$j(this).PopUp(this.href, PopUpOpts); 
+            return false; 
+        }); 
+    })    
+//]]>
+</script>
+
+
+
+
+<div id="GlobalNav">
+    <ul>
+        
+
+        <li class="First" id="Homepage">
+            <a href="/index.html">Homepage</a>
+        </li>
+        <li id="About">
+            <a href="/epps/DisplayHeaderStaticTextAction.do" class="PopUp">About</a>
+        </li>
+        <li id="FAQ">           
+             <a href="/epps/viewInfo.do?selectedItem=viewInfo.do%3Fsection%3Dfaq&amp;section=faq">Frequently Asked Questions</a>
+        </li>
+        <li id="Help">
+            <a href="/epps/viewInfo.do?isPopup=true&amp;section=userManual" class="PopUp">User Manuals</a>
+        </li>
+        
+        <li class="Last" id="Contact">
+            <a href="/epps/PrepareContactUsAction.do" class="PopUp">Contact Us</a>
+            
+            <a href="/showOpenedTenderDetails.html" >Opened Tenders demo</a>
+        </li>
+    </ul>
+</div><!-- Global_nav // -->
+
+            
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	function checkSubmit() {
+		var	quicSearchForm = document.forms["quickSearchForm"];
+		var col = document.getElementsByName("searchSelect")[0];
+		if (col.selectedIndex != 0) {
+			if(checkInputField(quicSearchForm))quicSearchForm.submit();
+    	}
+    	return false;
+	}
+	
+	function checkInputField(form){
+		var input = form[1].value;
+		if(containForbidenChars(input)){
+			form[1].value = '*';
+			alert("An invalid character was provided for search. Invalid characters include: <, >, &, % .");
+			return false;
+		}
+		return true;
+	}
+	
+	function containForbidenChars(input){
+    	return input.indexOf("<")!=-1 || input.indexOf(">")!=-1 || input.indexOf("%")!=-1 || input.indexOf("&")!=-1;
+    }
+	
+	$j(document).ready(function(){
+		$j('#SearchInput').mouseover(function() {
+		   $j(this).attr('title', "Tip: provide a relevant term within asterisks, eg. *consultancy*");
+
+	  	});
+	});
+	
+	function advancedSearch() {
+        if(true){
+            window.location.href = "/epps/prepareAdvancedSearch.do?type=cftFTS";
+        } else {
+            window.location.href = "/epps/prepareAdvancedSearch.do?type=cft";
+        }
+    }
+
+</script>
+
+
+
+
+<div id="Search">
+    <p class="Time"> 
+        16:47:36 CAT
+    </p>
+        
+    <form id="quickSearchForm" method="post" action="/epps/quickSearchAction.do" onsubmit="javascript: return checkSubmit()" target="_self">
+        <p>
+            <label for="SearchSelect">Search:</label> 
+            <select name="searchSelect"><option value="Select...">Select</option>
+                
+                
+                    
+                    
+                      <option value="6">Tenders</option>
+                    
+                
+                <option value="2">Organisation</option>
+				                       
+					
+				  
+				                       
+					
+				
+				<option value="5">Plan</option></select>
+            <input type="text" name="searchInput" value="" id="SearchInput" class="Text" />
+            <input type="submit" value="Search" class="SearchBTN" />
+            <button type="button" onclick="advancedSearch();" class="AdvancedSearchBTN">Advanced Search</button>
+            
+            <a href="/epps/quickSearchAction.do?searchSelect=6">Current Tenders</a>
+        </p>
+    </form>
+    
+
+	 
+</div><!-- Search -->
+
+
+            <div id="Main">
+                <div id="Navigation">
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+$j(document).ready(function() {
+
+     $j('#loginButton').click(function(event) {
+            $j.cookie('loginButton', null);
+            $j.cookie('loginButton', 'enabled');
+            if ($j.cookie('loginButton')) {
+            } else {
+
+              $j.cookie('loginButton', null);
+              
+              alert("Please enable session cookies for using this site with your web browser.");
+              event.preventDefault();
+            }
+          });
+
+});
+
+$j(document).ready(function () {
+    $j("#Username").attr("autocomplete","off");
+    });
+
+
+</script>
+
+
+
+    
+
+
+<div class="Menu">
+    <p><span>Log In</span></p>
+    <div class="MenuContent" id="LoginMenuContent">
+    
+
+     
+    
+        
+       
+        <div class="UserInfo">
+            Logged in as:<br />
+            <strong>
+                Comfort namboo 
+                (Supplier Admin			) 
+                - 
+            </strong>
+            NAMBOO BUSINESS SOLUTIONS ZAMBIA LIMITED <br />
+            
+            
+            
+                Last login on : <br />
+                08/08/2024 - 16:34:15
+            
+
+            
+        </div>
+        
+        <ul>
+            
+              
+                <li>
+                    <a href="/epps/prepareEditAccount.do?id=126561">Edit Profile</a>
+                </li>
+                
+                <li>
+                    <a href="/index.html">Homepage</a>
+                </li>
+            
+            <li>
+                
+                              
+                        <a href="/epps/authenticate/logout">Log Out</a>  
+                    
+                           
+                                 
+            </li>
+        </ul>
+    
+	    <ul>
+	        <li><a href="https://eprocure.zppa.org.zm/cpms">e-Contracts</a></li>
+        </ul>    
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+$j('document').ready(function(ev){
+	var contextRoot = "/epps";
+	var selectedItem = escape("common/viewOpenedTenders.do");
+	$j('.MenuContent li').find('a').each(function() {
+		var link = this.href;
+		var item = escape(link.substring(link.indexOf(contextRoot) + contextRoot.length + 1));
+		// check if this <a> is seleted item and add css class 'Selected'
+		if (item == selectedItem) {
+			$j(this).parent().addClass('Selected');	
+		}
+		// prepare links
+		if (link.indexOf('?') != -1) {
+			this.href = link + '&selectedItem=' + item;
+		} else {
+			this.href = link + '?selectedItem=' + item;
+		}
+	});
+});
+	
+//-->
+</script>
+
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 
+	
+	
+	
+	 
+	 
+	
+		<div class="Menu">
+		<p><span>Tender Management</span></p>
+		<div class="MenuContent" id="AdminMenuContent">
+		<ul>
+			
+		    
+		    	
+		       	
+				  	<li><a href="/epps/cft/listMyCFTFromFTS.do">List of my Tenders</a></li>
+		       	
+		    
+		</ul>
+		</div>
+		</div>
+		<div class="Menu">
+		<p><span>Supplier Administration			</span></p>
+		<div class="MenuContent" id="AdminMenuContent1">
+		<ul>
+			<li><a href="/epps/prepareViewEOOrganisation.do?id=34534">Supplier Management</a></li>
+
+			<li><a href="/epps/viewOrgAccounts.do?id=34534">User Management</a></li>
+			
+			
+				
+			    
+			    	
+			       	
+					  	<li><a href="/epps/reports/prepareAuditingReport.do?caId=34534&amp;isFts=true">Auditing Reports</a></li>
+			       	
+			    
+			
+		</ul>
+		</div>
+		</div>
+	
+	
+	
+
+	
+	
+	
+	
+	  
+	
+	
+	
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="Menu">
+    <p><span>Information</span></p>
+    <div class="MenuContent" id="InfoMenuContent">
+        <ul>
+    
+         
+	            
+	       	
+	       	
+	        
+	        <li>
+ 				<a href="/epps/app/viewPublication.do">Annual Procurement Plan Publication</a>
+        	</li>
+	        
+	        <li>
+                <a href="/epps/quickSearchAction.do?searchSelect=6">Current Tenders</a>
+            </li>
+        	
+        	<li>
+        	   
+   			 <a href="/epps/notices/viewPublishedNotices.do?formId=301">Upcoming Tenders</a>  
+   			 </li>
+        	<li>
+ 				<a href="/epps/common/viewOpenedTenders.do">Opened Bid Details</a>
+        	</li>
+        	
+            <li>
+               <a href="/epps/viewInfo.do?section=newItems">News</a>
+            </li>
+
+            
+            <li>
+              <a href="/epps/viewInfo.do?section=faq">Frequently Asked Questions</a>
+            </li>
+            <li>
+            	<a href="/epps/viewInfo.do?section=legal">Electronic Public Procurement</a>
+            </li>
+            <li>
+            	<a href="/epps/viewInfo.do?section=eproc">Procurement Legislation</a>
+            </li>
+            <li>
+            	<a href="/epps/viewInfo.do?section=statistics">Statistics</a>
+            </li>
+            <li>
+            	<a href="/epps/viewInfo.do?section=links">Relevant Links</a>
+            </li>
+            <li>
+            	<a href="/epps/viewInfo.do?section=calendar">Events Calendar</a>
+            </li>
+            <li>
+                <a href="/epps/viewInfo.do?section=userGuides">User Guides</a>
+            </li>
+            <li>
+                <a href="/epps/viewInfo.do?section=eLearning">e-Learning Materials</a>
+            </li>                        
+            
+         	
+        </ul>
+    </div><!-- MenuContent -->
+</div><!-- Menu // -->
+
+
+
+                </div><!-- Navigation -->
+
+                <div id="Content">
+                	
+
+
+
+
+<noscript>
+	<div class="NoScript">
+		<p>To enjoy the full functionality of this application, please ensure that Javascript is enabled in your browser.</p>
+	</div>
+</noscript>
+
+
+                    
+                    
+                        
+                    
+
+
+
+
+
+
+	
+	<h2>Tenders of Opened Bids</h2>
+
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="SearchResults">
+	<div class="Tabular Hscroll" id="OTDResults">
+		
+			
+<table id="T01">
+<thead>
+<tr>
+<th>#</th>
+<th>CfT Title
+	<a href="?d-3680181-s=title.keyword&amp;selectedItem=common%2FviewOpenedTenders.do&amp;d-3680181-o=2&amp;T01_ps=100&amp;d-3680181-p=1&amp;d-3680181-n=1">
+		<div class="THSort">
+			<img src="/epps/images/ascending.gif" alt="Sort ascending" />
+			<img src="/epps/images/descending.gif" alt="Sort descending" class="Descending" />
+		</div>
+	</a>
+</th>
+<th>Reference number
+	<a href="?d-3680181-s=caUniqueCfTNumber.keyword&amp;selectedItem=common%2FviewOpenedTenders.do&amp;d-3680181-o=2&amp;T01_ps=100&amp;d-3680181-p=1&amp;d-3680181-n=1">
+		<div class="THSort">
+			<img src="/epps/images/ascending.gif" alt="Sort ascending" />
+			<img src="/epps/images/descending.gif" alt="Sort descending" class="Descending" />
+		</div>
+	</a>
+</th>
+<th>PE
+	<a href="?d-3680181-s=caName.keyword&amp;selectedItem=common%2FviewOpenedTenders.do&amp;d-3680181-o=2&amp;T01_ps=100&amp;d-3680181-p=1&amp;d-3680181-n=1">
+		<div class="THSort">
+			<img src="/epps/images/ascending.gif" alt="Sort ascending" />
+			<img src="/epps/images/descending.gif" alt="Sort descending" class="Descending" />
+		</div>
+	</a>
+</th>
+<th>Bids Submission Deadline
+	<a href="?d-3680181-s=submissionDeadline&amp;selectedItem=common%2FviewOpenedTenders.do&amp;d-3680181-o=2&amp;T01_ps=100&amp;d-3680181-p=1&amp;d-3680181-n=1">
+		<div class="THSort">
+			<img src="/epps/images/ascending.gif" alt="Sort ascending" />
+			<img src="/epps/images/descending.gif" alt="Sort descending" class="Descending" />
+		</div>
+	</a>
+</th>
+<th>Procurement Method
+	<a href="?d-3680181-s=procedure&amp;selectedItem=common%2FviewOpenedTenders.do&amp;d-3680181-o=2&amp;T01_ps=100&amp;d-3680181-p=1&amp;d-3680181-n=1">
+		<div class="THSort">
+			<img src="/epps/images/ascending.gif" alt="Sort ascending" />
+			<img src="/epps/images/descending.gif" alt="Sort descending" class="Descending" />
+		</div>
+	</a>
+</th>
+<th>Opened Bids</th>
+<th>Award Date
+	<a href="?d-3680181-s=awardDate&amp;selectedItem=common%2FviewOpenedTenders.do&amp;d-3680181-o=2&amp;T01_ps=100&amp;d-3680181-p=1&amp;d-3680181-n=1">
+		<div class="THSort">
+			<img src="/epps/images/ascending.gif" alt="Sort ascending" />
+			<img src="/epps/images/descending.gif" alt="Sort descending" class="Descending" />
+		</div>
+	</a>
+</th>
+<th>Status
+	<a href="?d-3680181-s=status&amp;selectedItem=common%2FviewOpenedTenders.do&amp;d-3680181-o=2&amp;T01_ps=100&amp;d-3680181-p=1&amp;d-3680181-n=1">
+		<div class="THSort">
+			<img src="/epps/images/ascending.gif" alt="Sort ascending" />
+			<img src="/epps/images/descending.gif" alt="Sort descending" class="Descending" />
+		</div>
+	</a>
+</th></tr></thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8491815">REQUEST FOR QUOTATION FOR REPAIR OF DOOR MOTOR ON LIFT A AT HEAD OFFICE</a>
+					
+					
+				</td>
+<td>
+					5907/1/1718/2024
+				</td>
+<td>
+					ZESCO LIMITED
+				</td>
+<td>
+					
+						08/08/2024 14:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8491815">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>2</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8491758">Tender for the Provision of One Round-Trip Ticket: Lusaka to Diani, Kenya (23.08.2024), Diani to Port Louis, Mauritius (01.09.2024), and Port Louis to Lusaka (07.09.2024) for the Securities and Exchange Commission</a>
+					
+					
+				</td>
+<td>
+					74581/3/158/2024
+				</td>
+<td>
+					Securities and Exchange Commission
+				</td>
+<td>
+					
+						08/08/2024 14:30:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8491758">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>3</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8487985">Supply and delivery of Toner cartridges and stationery</a>
+					
+					
+				</td>
+<td>
+					27515/2/91/2024
+				</td>
+<td>
+					Zambia Development Agency
+				</td>
+<td>
+					
+						08/08/2024 16:30:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8487985">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>4</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8484697">Request to service Xerox machine - Print control room</a>
+					
+					
+				</td>
+<td>
+					23338/2/96/2024
+				</td>
+<td>
+					EVELYN HONE COLLEGE MANAGEMENT BOARD 
+				</td>
+<td>
+					
+						08/08/2024 15:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8484697">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>5</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8485652">Service of ZDA Toyota Motor Vehicles</a>
+					
+					
+				</td>
+<td>
+					27515/3/90/2024
+				</td>
+<td>
+					Zambia Development Agency
+				</td>
+<td>
+					
+						08/08/2024 16:00:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8485652">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>6</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8478713">TENDER FOR SUPPLY AND DELIVERY OF 100 ROUNDNECK T-SHIRTS.</a>
+					
+					
+				</td>
+<td>
+					20115/2/477/2024
+				</td>
+<td>
+					National Savings and Credit Bank
+				</td>
+<td>
+					
+						08/08/2024 08:55:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8478713">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>7</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8473750">Procurement of conference facilities</a>
+					
+					
+				</td>
+<td>
+					21739/2/147/2024
+				</td>
+<td>
+					Ministry of Tourism
+				</td>
+<td>
+					
+						08/08/2024 10:30:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8473750">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>8</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8470376">Tender for the supply  and delivery of uPVC casing pipes (Plain and Screen)</a>
+					
+					
+				</td>
+<td>
+					31735/2/220/2024
+				</td>
+<td>
+					Lusaka Water Supply and Sanitation Company Limited
+				</td>
+<td>
+					
+						08/08/2024 15:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8470376">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>9</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8471337">Procurement of grader blade of earth moving equipment</a>
+					
+					
+				</td>
+<td>
+					80683/2/60/2024
+				</td>
+<td>
+					Rufunsa Town Council
+				</td>
+<td>
+					
+						08/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8471337">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>10</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8468783">Urgent RFQ for the service of Nissan hardbody Reg No. BAV1016</a>
+					
+					
+				</td>
+<td>
+					17702/3/384/2024
+				</td>
+<td>
+					Zambia National Broadcasting Corporation
+				</td>
+<td>
+					
+						08/08/2024 10:30:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8468783">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>11</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8466005">Procurement of Return Ticket to Nairobi Kenya- DASS</a>
+					
+					
+				</td>
+<td>
+					31430/3/497/2024
+				</td>
+<td>
+					Civil Aviation Authority
+				</td>
+<td>
+					
+						07/08/2024 16:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8466005">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>12</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8467678">TENDER FOR THE PROCUREMENT OF AIRTIME-ZAMTEL</a>
+					
+					
+				</td>
+<td>
+					75975/3/726/2024
+				</td>
+<td>
+					JUDICIARY OF ZAMBIA 
+				</td>
+<td>
+					
+						07/08/2024 16:00:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8467678">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>13</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8467120">TENDER FOR THE SUPPLY AND DELIVERY OF MAINTENANCE ELECTRICALS</a>
+					
+					
+				</td>
+<td>
+					85470/2/278/2024
+				</td>
+<td>
+					UNIVERSITY TEACHING HOSPITAL-CHILDRENS HOSPITAL
+				</td>
+<td>
+					
+						08/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8467120">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>14</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8466778">TENDER FOR THE SUPPLY  AND DELIVERY OF CONFERENCE PACKAGE FOR SCHOOL OF HUMANITIES AT UNIVERSITY OF ZAMBIA</a>
+					
+					
+				</td>
+<td>
+					28896/3/792/2024
+				</td>
+<td>
+					The University of Zambia
+				</td>
+<td>
+					
+						08/08/2024 15:01:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8466778">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>15</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8465711">Tender for the supply and delivery of assorted tonners</a>
+					
+					
+				</td>
+<td>
+					62907/2/14/2024
+				</td>
+<td>
+					Chipata College of Nursing and Midwifery
+				</td>
+<td>
+					
+						08/08/2024 14:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8465711">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>16</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8463702">RFQ - PROVISION OF FULL DAY CONFERENCE FACILITIES FOR THE TORONTO CENTRE TRAINING</a>
+					
+					
+				</td>
+<td>
+					20820/3/502/2024
+				</td>
+<td>
+					Pensions and Insurance Authority
+				</td>
+<td>
+					
+						07/08/2024 16:30:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8463702">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>17</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8460215">Tender for the supply and delivery of stationery for SF Workshop</a>
+					
+					
+				</td>
+<td>
+					32076/2/402/2024
+				</td>
+<td>
+					Cabinet Office
+				</td>
+<td>
+					
+						08/08/2024 14:30:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8460215">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>18</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8457926">REQUEST FOR QUOTATION FOR THE SUPPLY AND DELIVERY OF MICROPHONES- MD/PROC/OS/2009/2024</a>
+					
+					
+				</td>
+<td>
+					5907/2/1705/2024
+				</td>
+<td>
+					ZESCO LIMITED
+				</td>
+<td>
+					
+						07/08/2024 15:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8457926">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>19</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8454512">Tender for the supply and delivery of Tyre&#039;s 750/R16</a>
+					
+					
+				</td>
+<td>
+					85704/2/22/2024
+				</td>
+<td>
+					Chisamba District Health Office
+				</td>
+<td>
+					
+						08/08/2024 12:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8454512">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>20</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8455856">Supply and Delivery of Refreshments for Officers undertaking social survey for 125 hectares on mubamba council land</a>
+					
+					
+				</td>
+<td>
+					76812/2/192/2024
+				</td>
+<td>
+					Nchelenge Town Council
+				</td>
+<td>
+					
+						08/08/2024 11:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8455856">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>21</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8453299">REQUEST FOR QUOTATION FOR THE SUPPLY AND DELIVERY OF STAY ASSEMBLIES FOR MAZABUKA</a>
+					
+					
+				</td>
+<td>
+					5907/2/1699/2024
+				</td>
+<td>
+					ZESCO LIMITED
+				</td>
+<td>
+					
+						08/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8453299">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>22</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8454280">Supply and Delivery of Refreshments for Community Sensitisations under CDF</a>
+					
+					
+				</td>
+<td>
+					76812/2/191/2024
+				</td>
+<td>
+					Nchelenge Town Council
+				</td>
+<td>
+					
+						08/08/2024 12:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8454280">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>23</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8452336">PROCUREMENT OF HP 63 INK CATRIDGE</a>
+					
+					
+				</td>
+<td>
+					47249/2/13/2024
+				</td>
+<td>
+					Gemstone Processing And Lapidary Training Center
+				</td>
+<td>
+					
+						08/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8452336">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>24</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8452476">Supply and Delivery of Stationery for WDCs to be used for CDF meetings and activites in their wards</a>
+					
+					
+				</td>
+<td>
+					76812/2/190/2024
+				</td>
+<td>
+					Nchelenge Town Council
+				</td>
+<td>
+					
+						08/08/2024 11:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8452476">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Approval
+				</td></tr>
+<tr>
+<td>25</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8450532">Supply and Delivery of Stationary for Community Sensitizations on the CDF guidelines and procedures</a>
+					
+					
+				</td>
+<td>
+					76812/2/189/2024
+				</td>
+<td>
+					Nchelenge Town Council
+				</td>
+<td>
+					
+						08/08/2024 11:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8450532">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Approval
+				</td></tr>
+<tr>
+<td>26</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8442926">TENDER TO SUPPLY AND FIX  FOUR TYRES FOR GRZ 660 CX</a>
+					
+					
+				</td>
+<td>
+					81376/2/155/2024
+				</td>
+<td>
+					Kafue General Hospital
+				</td>
+<td>
+					
+						07/08/2024 15:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8442926">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>27</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8447705">Procurement of various pharmaceutical supplies</a>
+					
+					
+				</td>
+<td>
+					87405/2/24/2024
+				</td>
+<td>
+					Chawama First Level Hospital
+				</td>
+<td>
+					
+						08/08/2024 16:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8447705">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>28</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8444162">Procurement of Insurance of Assets at Zambia National Public Health Institute</a>
+					
+					
+				</td>
+<td>
+					86146/3/151/2024
+				</td>
+<td>
+					Zambia National Public Health Institute
+				</td>
+<td>
+					
+						07/08/2024 15:00:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8444162">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Awaiting Bid Opening
+				</td></tr>
+<tr>
+<td>29</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8445919">TENDER FOR SUPPLY AND DELIVERY OF DAILY MAIL NEWS PAPERS AT NATSAVE</a>
+					
+					
+				</td>
+<td>
+					20115/2/474/2024
+				</td>
+<td>
+					National Savings and Credit Bank
+				</td>
+<td>
+					
+						08/08/2024 09:35:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8445919">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>30</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8424512">TENDER FOR SUPPLY AND DELIVERY OF TIMES OF ZAMBIA NEWS PAPERS AT NATSAVE HEAD OFFICE.</a>
+					
+					
+				</td>
+<td>
+					20115/2/471/2024
+				</td>
+<td>
+					National Savings and Credit Bank
+				</td>
+<td>
+					
+						08/08/2024 09:35:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8424512">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>31</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8443756">Procurement of various pharmaceutical supplies</a>
+					
+					
+				</td>
+<td>
+					87405/2/23/2024
+				</td>
+<td>
+					Chawama First Level Hospital
+				</td>
+<td>
+					
+						08/08/2024 12:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8443756">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>32</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8443383">Tender for the provision of decoration services - re-tendered</a>
+					
+					
+				</td>
+<td>
+					23569/2/323/2024
+				</td>
+<td>
+					THE COPPERBELT UNIVERSITY
+				</td>
+<td>
+					
+						07/08/2024 15:00:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8443383">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>33</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8445975">TENDER FOR SUPPLY AND DELIVERY OF BRANDED ITEMS FOR WORLD BREASTFEEDING AWARENES WEEK</a>
+					
+					
+				</td>
+<td>
+					32197/2/283/2024
+				</td>
+<td>
+					Levy Mwanawasa Medical University Lusaka
+				</td>
+<td>
+					
+						07/08/2024 15:30:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8445975">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>34</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8445661">Tender for the procurement and supply of office furniture -PS SD</a>
+					
+					
+				</td>
+<td>
+					32076/2/401/2024
+				</td>
+<td>
+					Cabinet Office
+				</td>
+<td>
+					
+						08/08/2024 09:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8445661">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>35</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8445456">TENDER FOR THE PROCUREMENT TWO PLATE  STOVE WITH  AN OVEN FOR UNZASU PRESIDENTIAL ROOM GERC AT THE UNIVERSITY OF ZAMBIA –STUDENT AFFAIRS UNIT</a>
+					
+					
+				</td>
+<td>
+					28896/2/786/2024
+				</td>
+<td>
+					The University of Zambia
+				</td>
+<td>
+					
+						07/08/2024 13:00:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8445456">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>36</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8442576">TENDER FOR THE SUPPLY AND DELIVERY OF HIV/SYPHILIS UPDATED DUAL DAR REGISTER</a>
+					
+					
+				</td>
+<td>
+					27333/2/183/2024
+				</td>
+<td>
+					Eastern Provincial Health Office
+				</td>
+<td>
+					
+						07/08/2024 12:00:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8442576">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>37</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8442418">TENDER FOR SUPPLY OF COLOR PRINTER</a>
+					
+					
+				</td>
+<td>
+					47289/2/383/2024
+				</td>
+<td>
+					Ministry of Justice
+				</td>
+<td>
+					
+						08/08/2024 08:30:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8442418">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>38</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8437057">TENDER FOR THE PROVISION OF CATERING SERVICES FOR END OF SEMESTER EXAMINATIONS AT LEVY MWANAWASA MEDICAL UNIVERSITY</a>
+					
+					
+				</td>
+<td>
+					32197/2/282/2024
+				</td>
+<td>
+					Levy Mwanawasa Medical University Lusaka
+				</td>
+<td>
+					
+						07/08/2024 12:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8437057">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>39</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8441953">RFQ - PROVISION OF ACCOMMODATION FOR 4 FACILITATORS UNDER THE TORONTO CENTRE TRAINING</a>
+					
+					
+				</td>
+<td>
+					20820/3/500/2024
+				</td>
+<td>
+					Pensions and Insurance Authority
+				</td>
+<td>
+					
+						07/08/2024 12:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8441953">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>40</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8439672">Tender For the Supply and Delivery of Spades, Picks and Shovels (South)</a>
+					
+					
+				</td>
+<td>
+					25204/2/1111/2024
+				</td>
+<td>
+					Southern Water and Sanitation Company Limited
+				</td>
+<td>
+					
+						07/08/2024 17:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8439672">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>41</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8441145">REQUEST FOR QUOTATION NO. BOZ/HQ/RFQ/272/2024 – AEROBICS FACILITATOR FOR THE WELLNESS DAY EVENT</a>
+					
+					
+				</td>
+<td>
+					7232/3/2290/2024
+				</td>
+<td>
+					Bank of Zambia
+				</td>
+<td>
+					
+						07/08/2024 14:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8441145">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Approval
+				</td></tr>
+<tr>
+<td>42</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8439185">Supply and delivery of tissue at NPA-HQ</a>
+					
+					
+				</td>
+<td>
+					51035/2/332/2024
+				</td>
+<td>
+					National Prosecution Authority
+				</td>
+<td>
+					
+						07/08/2024 12:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8439185">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Approval
+				</td></tr>
+<tr>
+<td>43</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8436244">TENDER TO BID FOR SUPPLY OF MEDICINE AND MEDICAL SUPPLIES</a>
+					
+					
+				</td>
+<td>
+					81376/2/154/2024
+				</td>
+<td>
+					Kafue General Hospital
+				</td>
+<td>
+					
+						07/08/2024 15:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8436244">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>44</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8439990">TENDER FOR THE SUPPLY AND DELIVERY OF TV</a>
+					
+					
+				</td>
+<td>
+					85470/2/272/2024
+				</td>
+<td>
+					UNIVERSITY TEACHING HOSPITAL-CHILDRENS HOSPITAL
+				</td>
+<td>
+					
+						08/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8439990">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>45</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8437450">INVITATION FOR TENDER: TENDER FOR THE PROCUREMENT OF HALF DAY CONFERENCE PACKAG FOR TWENTY FIVE (25No.) PEOPLE ON  9th of AUGUST 2024</a>
+					
+					
+				</td>
+<td>
+					74581/3/154/2024
+				</td>
+<td>
+					Securities and Exchange Commission
+				</td>
+<td>
+					
+						07/08/2024 14:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8437450">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Approval
+				</td></tr>
+<tr>
+<td>46</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8438529">Tender for the supply and delivery of  NO.4 Tablets</a>
+					
+					
+				</td>
+<td>
+					73066/2/52/2024
+				</td>
+<td>
+					Citizens Economic Empowerment Commission 
+				</td>
+<td>
+					
+						08/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8438529">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Approval
+				</td></tr>
+<tr>
+<td>47</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8436197">Tender for the procurement of conference facility for the development of audio and video lessons to support remote learning</a>
+					
+					
+				</td>
+<td>
+					1892/3/554/2024
+				</td>
+<td>
+					Ministry of Education
+				</td>
+<td>
+					
+						08/08/2024 15:30:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8436197">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>48</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8436106">TENDER FOR SUPPLY OF TYRES FOR BAX 8108, BAL 3381 AND TYRES AND BATTERY FOR BAD 3301</a>
+					
+					
+				</td>
+<td>
+					27333/2/182/2024
+				</td>
+<td>
+					Eastern Provincial Health Office
+				</td>
+<td>
+					
+						07/08/2024 09:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8436106">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>49</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8438154">RFQ - ACQUISITION OF RETURN AIRTICKETS AND TRAVEL INSURANCE TO MAURITIUS</a>
+					
+					
+				</td>
+<td>
+					20820/3/499/2024
+				</td>
+<td>
+					Pensions and Insurance Authority
+				</td>
+<td>
+					
+						06/08/2024 17:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8438154">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>50</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8432500">REQUEST FOR QUOTATIONS FOR THE PROCUREMENT OF ACCOMMODATION AND DINNER FOR FOUR (4) RDA STAFF FOR FOUR (4) DAYS</a>
+					
+					
+				</td>
+<td>
+					7234/3/113/2024
+				</td>
+<td>
+					Road Development Agency
+				</td>
+<td>
+					
+						08/08/2024 10:30:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8432500">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>51</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8436585">Tender For the Supply and Delivery of Cleaning Materials (South)</a>
+					
+					
+				</td>
+<td>
+					25204/2/1110/2024
+				</td>
+<td>
+					Southern Water and Sanitation Company Limited
+				</td>
+<td>
+					
+						07/08/2024 17:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8436585">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>52</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8435224">TENDER FOR REPAIR AND SERVCING OF A PHOTOCOPIER MACHINE FOR MEDIA AND COMMUNINCATION STUDIES AT THE UNIVERSITY OF ZAMBIA</a>
+					
+					
+				</td>
+<td>
+					28896/1/783/2024
+				</td>
+<td>
+					The University of Zambia
+				</td>
+<td>
+					
+						07/08/2024 14:00:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8435224">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>53</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8436717">REQUEST FOR QUOTATION NO: CTTI -RFQ-173-TENDER SUPPLY AND DELIVERY OF CARPENTRY EXAM MATERIALS-REISSUED</a>
+					
+					
+				</td>
+<td>
+					37291/2/224/2024
+				</td>
+<td>
+					CHIPATA TRADES TRAINING INSTITUTE
+				</td>
+<td>
+					
+						06/08/2024 19:00:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8436717">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Approval
+				</td></tr>
+<tr>
+<td>54</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8435838">Tender for the supply and dleivery of pipes for the raiser main in zimba</a>
+					
+					
+				</td>
+<td>
+					25204/2/1109/2024
+				</td>
+<td>
+					Southern Water and Sanitation Company Limited
+				</td>
+<td>
+					
+						07/08/2024 11:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8435838">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>55</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8435049">request for quotation for supply of tonner cartridge</a>
+					
+					
+				</td>
+<td>
+					39500/2/93/2024
+				</td>
+<td>
+					Lukulu Town Council
+				</td>
+<td>
+					
+						07/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8435049">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>56</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8433865">Tender for the Supply and Delivery of Drugs and Medical Supplies for Shibuyunji District</a>
+					
+					
+				</td>
+<td>
+					85752/2/32/2024
+				</td>
+<td>
+					Shibuyunji District Health Office
+				</td>
+<td>
+					
+						07/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8433865">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Approval
+				</td></tr>
+<tr>
+<td>57</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8434787">TENDER FOR REMOVAL AND ASSESSMENT OF 25HP SUBMERSIBLE PUMP</a>
+					
+					
+				</td>
+<td>
+					24350/2/181/2024
+				</td>
+<td>
+					NATIONAL ASSEMBLY
+				</td>
+<td>
+					
+						07/08/2024 11:30:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8434787">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>58</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8435266">TENDER FOR SUPPLY OF LAPTOP STANDS AND CORDLESS MOUSE TO THE  NATIONAL PENSION SCHEME AUTHORITY - LIVINGSTONE</a>
+					
+					
+				</td>
+<td>
+					18303/2/1337/2024
+				</td>
+<td>
+					National Pension Scheme Authority
+				</td>
+<td>
+					
+						08/08/2024 14:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8435266">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>59</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8434100">Tender for the supply and delivery of furniture for the Boardroom.</a>
+					
+					
+				</td>
+<td>
+					19257/2/354/2024
+				</td>
+<td>
+					Ministry of Energy
+				</td>
+<td>
+					
+						08/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8434100">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>60</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8432982">Supply and Delivery of Toner Cartridges and Other Stationery goods at the Tropical Diseases Research Centre</a>
+					
+					
+				</td>
+<td>
+					27007/2/244/2024
+				</td>
+<td>
+					Tropical Diseases Research Centre
+				</td>
+<td>
+					
+						08/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8432982">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>61</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8432250">Tender for provision of 24- hour toll-free hotline to National Pension Scheme Authority on a one year running contract subject to review for another year based on perfomance</a>
+					
+					
+				</td>
+<td>
+					18303/3/1336/2024
+				</td>
+<td>
+					National Pension Scheme Authority
+				</td>
+<td>
+					
+						07/08/2024 14:00:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8432250">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>62</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8401111">Tender for the Hire of transport services to move household goods from Chipata to Lusaka.</a>
+					
+					
+				</td>
+<td>
+					39396/3/90/2024
+				</td>
+<td>
+					Competition and Consumer Protection Commission
+				</td>
+<td>
+					
+						07/08/2024 12:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8401111">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>63</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8429553">Procurement of various medical supplies</a>
+					
+					
+				</td>
+<td>
+					87405/2/22/2024
+				</td>
+<td>
+					Chawama First Level Hospital
+				</td>
+<td>
+					
+						08/08/2024 12:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8429553">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>64</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8425966">TENDER TO SUPPLY MEDICINE AND MEDICAL SUPPLIES FOR THE HOSPITAL</a>
+					
+					
+				</td>
+<td>
+					81376/2/152/2024
+				</td>
+<td>
+					Kafue General Hospital
+				</td>
+<td>
+					
+						07/08/2024 14:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8425966">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>65</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8431461">Tender for supply and dedlivery of Stationery for finance department (revenue)</a>
+					
+					
+				</td>
+<td>
+					53559/2/253/2024
+				</td>
+<td>
+					Chipata City Council
+				</td>
+<td>
+					
+						07/08/2024 10:30:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8431461">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>66</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8430856">Procurement of Events Manager (Re-Advertised)</a>
+					
+					
+				</td>
+<td>
+					21804/2/89/2024
+				</td>
+<td>
+					Zambia Environmental Management Agency
+				</td>
+<td>
+					
+						08/08/2024 10:30:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8430856">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>67</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8428980">Request for quotation for the supply and delivery of Toner 36A and A4 bond paper</a>
+					
+					
+				</td>
+<td>
+					60657/2/108/2024
+				</td>
+<td>
+					Ministry of Small and Medium Enterprise Development
+				</td>
+<td>
+					
+						08/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8428980">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>68</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8428839">TENDER DESCRIPTION: SUPPLY AND DELIVERY OF TONNER TO THE NATIONAL PENSION SCHEME AUTHORITY – COPPERBELT AREA  OFFICE</a>
+					
+					
+				</td>
+<td>
+					18303/2/1335/2024
+				</td>
+<td>
+					National Pension Scheme Authority
+				</td>
+<td>
+					
+						08/08/2024 15:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8428839">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>69</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8430696">TENDER ENQUIRY NO. BOZ-RFQ-DB-160-2024 – TENDER FOR THE COLLECTION AND DISPOSAL OF GARBAGE AT BANK OF ZAMBIA REGIONAL OFFICE IN NDOLA FOR ONE MONTH (JUNE)</a>
+					
+					
+				</td>
+<td>
+					7232/3/2289/2024
+				</td>
+<td>
+					Bank of Zambia
+				</td>
+<td>
+					
+						08/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8430696">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Approval
+				</td></tr>
+<tr>
+<td>70</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8430525">RETENDERED PROCUREMENT OF ADAPTORS  FOR DEPARTMENT OF FINANCE PROVINCIAL ADMIN</a>
+					
+					
+				</td>
+<td>
+					48249/2/554/2024
+				</td>
+<td>
+					PROVINCIAL ADMINISTRATION - WESTERN PROVINCE
+				</td>
+<td>
+					
+						06/08/2024 15:35:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8430525">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>71</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8430282">TENDER ENQUIRY NO. BOZ-RFQ-DB-185-2024 – TENDER FOR THE COLLECTION AND DISPOSAL OF GARBAGE AT BANK OF ZAMBIA REGIONAL OFFICE IN NDOLA FOR ONE MONTH (MAY)</a>
+					
+					
+				</td>
+<td>
+					7232/3/2288/2024
+				</td>
+<td>
+					Bank of Zambia
+				</td>
+<td>
+					
+						08/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8430282">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Approval
+				</td></tr>
+<tr>
+<td>72</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8428714">Tender for supply and supply of 20  pad Locks</a>
+					
+					
+				</td>
+<td>
+					53559/3/251/2024
+				</td>
+<td>
+					Chipata City Council
+				</td>
+<td>
+					
+						07/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8428714">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>73</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8429616">TENDER ENQUIRY NO. BOZ-RFQ-DB-161-2024 – TENDER FOR THE COLLECTION AND DISPOSAL OF MONEY BRIQUETTES AT BANK OF ZAMBIA REGIONAL OFFICE IN NDOLA FOR ONE MONTH (JUNE)</a>
+					
+					
+				</td>
+<td>
+					7232/3/2287/2024
+				</td>
+<td>
+					Bank of Zambia
+				</td>
+<td>
+					
+						08/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8429616">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Approval
+				</td></tr>
+<tr>
+<td>74</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8426794">TENDER DESCRIPTION: SUPPLY AND DELIVERY OF STATIONARY TO THE NATIONAL PENSION SCHEME AUTHORITY – COPPERBELT AREA  OFFICE</a>
+					
+					
+				</td>
+<td>
+					18303/2/1334/2024
+				</td>
+<td>
+					National Pension Scheme Authority
+				</td>
+<td>
+					
+						08/08/2024 15:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8426794">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>75</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8426546">Tender for the Supply of Stationery for DRID</a>
+					
+					
+				</td>
+<td>
+					28896/2/780/2024
+				</td>
+<td>
+					The University of Zambia
+				</td>
+<td>
+					
+						07/08/2024 16:00:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8426546">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>76</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8425769">TENDER FOR THE SUPPLY AND DELIVERY OF CLEANING MATERIALS</a>
+					
+					
+				</td>
+<td>
+					85470/2/269/2024
+				</td>
+<td>
+					UNIVERSITY TEACHING HOSPITAL-CHILDRENS HOSPITAL
+				</td>
+<td>
+					
+						08/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8425769">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>77</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8424341">TENDER DESCRIPTION: SUPPLY AND DELIVERY OF 2KG SUGAR TO THE NATIONAL PENSION SCHEME AUTHORITY – COPPERBELT AREA OFFICE</a>
+					
+					
+				</td>
+<td>
+					18303/2/1333/2024
+				</td>
+<td>
+					National Pension Scheme Authority
+				</td>
+<td>
+					
+						08/08/2024 15:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8424341">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>78</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8424139">SUPPLY AND DELIVERY OF TONNERS</a>
+					
+					
+				</td>
+<td>
+					39720/2/36/2024
+				</td>
+<td>
+					MULOBEZI TOWN COUNCIL
+				</td>
+<td>
+					
+						06/08/2024 15:45:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8424139">View Opened Bids</a>
+				</td>
+<td>
+					
+						06/08/2024 16:37:47						
+									
+				</td>
+<td>	
+					
+					Awarded
+				</td></tr>
+<tr>
+<td>79</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8416880">Office materials(stationery) for cdf handovers</a>
+					
+					
+				</td>
+<td>
+					39639/2/215/2024
+				</td>
+<td>
+					KALABO TOWN COUNCIL
+				</td>
+<td>
+					
+						08/08/2024 09:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8416880">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>80</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8422221">Tender for the supply of Stationery for Academic Affairs</a>
+					
+					
+				</td>
+<td>
+					28896/2/779/2024
+				</td>
+<td>
+					The University of Zambia
+				</td>
+<td>
+					
+						07/08/2024 16:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8422221">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>81</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8423523">TENDER FR THE PROVISION OF UNBLOCKING THE SEWER LINE AT COMMERCIAL COURT</a>
+					
+					
+				</td>
+<td>
+					75975/3/720/2024
+				</td>
+<td>
+					JUDICIARY OF ZAMBIA 
+				</td>
+<td>
+					
+						06/08/2024 13:00:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8423523">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>82</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8421172">Tender for: Supply and Delivery of Irrigation</a>
+					
+					
+				</td>
+<td>
+					80523/2/64/2024
+				</td>
+<td>
+					Zambia  Forestry College
+				</td>
+<td>
+					
+						08/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8421172">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>83</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8420851">Tender for the supply and delivery of assorted stationery items Reprographics</a>
+					
+					
+				</td>
+<td>
+					30865/2/60/2024
+				</td>
+<td>
+					David Livingstone College of Education
+				</td>
+<td>
+					
+						08/08/2024 14:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8420851">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Approval
+				</td></tr>
+<tr>
+<td>84</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8414485">TENDER FOR SUPPLY AND DELIVERY OF BRANDED BROCHURES FOR THE HOME INSURANCE CAMPAIGN</a>
+					
+					
+				</td>
+<td>
+					27283/2/355/2024
+				</td>
+<td>
+					ZSIC GENERAL INSURANCE LIMITED
+				</td>
+<td>
+					
+						07/08/2024 10:30:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8414485">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Approval
+				</td></tr>
+<tr>
+<td>85</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8420414">Tender for the Supply and installation of UPS Batteries</a>
+					
+					
+				</td>
+<td>
+					73066/2/51/2024
+				</td>
+<td>
+					Citizens Economic Empowerment Commission 
+				</td>
+<td>
+					
+						08/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8420414">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Approval
+				</td></tr>
+<tr>
+<td>86</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8414961">TENDER FOR THE SUPPLY OF MEDICINE AND MEDICAL SUPPLIES FOR HIGH COST PHARMACY</a>
+					
+					
+				</td>
+<td>
+					81376/2/151/2024
+				</td>
+<td>
+					Kafue General Hospital
+				</td>
+<td>
+					
+						07/08/2024 12:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8414961">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Approval
+				</td></tr>
+<tr>
+<td>87</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8419852">Tender for the provision of Air Ticket for VC&#039;s Dept at the University of Zambia</a>
+					
+					
+				</td>
+<td>
+					28896/3/778/2024
+				</td>
+<td>
+					The University of Zambia
+				</td>
+<td>
+					
+						06/08/2024 16:00:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8419852">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Approval
+				</td></tr>
+<tr>
+<td>88</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8419371">provision for print media advertising space</a>
+					
+					
+				</td>
+<td>
+					34148/3/893/2024
+				</td>
+<td>
+					National Health Insurance Management Authority
+				</td>
+<td>
+					
+						07/08/2024 11:20:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8419371">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>89</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8417682">PROCUREMENT OF REFRESHMENTS FOR THE BOARD MEETING</a>
+					
+					
+				</td>
+<td>
+					91678/2/62/2024
+				</td>
+<td>
+					MWENSE TRADES TRAINING INSTITUTE
+				</td>
+<td>
+					
+						07/08/2024 08:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8417682">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>90</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8416156">Supply and Delivery of assorted consumables at the Tropical Diseases Research Centre</a>
+					
+					
+				</td>
+<td>
+					27007/2/243/2024
+				</td>
+<td>
+					Tropical Diseases Research Centre
+				</td>
+<td>
+					
+						08/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8416156">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>91</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8415316">TENDER FOR MOTOR VEHICLE SERVICE AND REPLACEMENT OF PARTS FOR ALM9718</a>
+					
+					
+				</td>
+<td>
+					49977/3/165/2024
+				</td>
+<td>
+					Tobacco Board of Zambia
+				</td>
+<td>
+					
+						06/08/2024 16:00:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8415316">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>92</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8416680">TENDER FOR THE SUPPLY OF A RETUR AIR TICKET FROM NDOLA TO LUSAKA FOR MR.IAN BESA MUPETA</a>
+					
+					
+				</td>
+<td>
+					28124/2/35/2024
+				</td>
+<td>
+					Zambia Compulsory Standards Agency
+				</td>
+<td>
+					
+						06/08/2024 12:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8416680">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Approval
+				</td></tr>
+<tr>
+<td>93</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8416439">TENDER FOR SUPPLY OF STATIONERY</a>
+					
+					
+				</td>
+<td>
+					39720/2/35/2024
+				</td>
+<td>
+					MULOBEZI TOWN COUNCIL
+				</td>
+<td>
+					
+						06/08/2024 10:30:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8416439">View Opened Bids</a>
+				</td>
+<td>
+					
+						06/08/2024 12:46:53						
+									
+				</td>
+<td>	
+					
+					Awarded
+				</td></tr>
+<tr>
+<td>94</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8415092">TENDER FOR THE SUPPLY AND DELIVERY OF VENUE,CATERING AND DECOR TO THE NATIONAL PENSION SCHEME AUTHORITY - NDOLA OFFICE -retender</a>
+					
+					
+				</td>
+<td>
+					18303/2/1332/2024
+				</td>
+<td>
+					National Pension Scheme Authority
+				</td>
+<td>
+					
+						07/08/2024 15:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8415092">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>95</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8413972">TENDER FOR THE SUPPLY AND DELIVERY OF MAINTENANCE ELECTRICAL</a>
+					
+					
+				</td>
+<td>
+					85470/2/268/2024
+				</td>
+<td>
+					UNIVERSITY TEACHING HOSPITAL-CHILDRENS HOSPITAL
+				</td>
+<td>
+					
+						07/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8413972">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Cancelled
+				</td></tr>
+<tr>
+<td>96</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8413848">TENDER FOR THE SUPPLY AND DELIVERY OF STATIONERY</a>
+					
+					
+				</td>
+<td>
+					85470/2/267/2024
+				</td>
+<td>
+					UNIVERSITY TEACHING HOSPITAL-CHILDRENS HOSPITAL
+				</td>
+<td>
+					
+						07/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8413848">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>97</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8413299">tender for the supply of various water fittings maamba (central region)</a>
+					
+					
+				</td>
+<td>
+					25204/2/1106/2024
+				</td>
+<td>
+					Southern Water and Sanitation Company Limited
+				</td>
+<td>
+					
+						06/08/2024 13:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8413299">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>98</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8413401">tender for the supply of Nylon ropes 14mm (central region)</a>
+					
+					
+				</td>
+<td>
+					25204/2/1107/2024
+				</td>
+<td>
+					Southern Water and Sanitation Company Limited
+				</td>
+<td>
+					
+						06/08/2024 13:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8413401">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>99</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8413523">tender for the supply of various water fittings batoka nwc (central region)</a>
+					
+					
+				</td>
+<td>
+					25204/2/1108/2024
+				</td>
+<td>
+					Southern Water and Sanitation Company Limited
+				</td>
+<td>
+					
+						06/08/2024 13:00:00				
+					
+				</td>
+<td>
+					
+						
+						Simplified Bidding
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8413523">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr>
+<tr>
+<td>100</td>
+<td>
+					
+						<a href="/epps/cft/prepareViewCfTWS.do?resourceId=8412757">TENDER FOR THE SERVICING OF THE ACCESS CONTROL AND REPLACEMENT OF CCTV UNITS</a>
+					
+					
+				</td>
+<td>
+					57250/3/216/2024
+				</td>
+<td>
+					Zambia Medicines Regulatory Authority
+				</td>
+<td>
+					
+						07/08/2024 10:00:00				
+					
+				</td>
+<td>
+					
+						
+						Direct Bidding 
+					
+				</td>
+<td>
+					<a href="/epps/eawarding/showDetailsOpenedTender.do?resourceId=8412757">View Opened Bids</a>
+				</td>
+<td>
+									
+				</td>
+<td>	
+					
+					Evaluation
+				</td></tr></tbody></table><input type="hidden" name="tableUid" value="searchOTD"><div class="Pagination"><p class="Results">38,685 results in total.    Displaying: <strong>1-100</strong></p><p class="PageNav">Page <strong>1</strong> of <strong>387</strong><button type="button" class="SearchBtn Disabled" title="First">&laquo;</button><button type="button" class="SearchBtn Disabled" title="Previous">&lsaquo;</button><button type="button" class="SearchBtn" title="Next" onclick=window.location.href=this.getAttribute("href") href="?selectedItem=common%2FviewOpenedTenders.do&amp;T01_ps=100&amp;d-3680181-p=2">&rsaquo;</button><button type="button" class="SearchBtn" title="Last" onclick=window.location.href=this.getAttribute("href") href="?selectedItem=common%2FviewOpenedTenders.do&amp;T01_ps=100&amp;d-3680181-p=387">&raquo;</button></p><p class="PageNav"><script type="text/javascript">writePageSelection("387","?selectedItem=common%2FviewOpenedTenders.do&amp;T01_ps=100&amp;d-3680181-p=",this);</script></p></div>
+		
+	</div>
+</div>
+                </div><!-- Content -->
+                <div class="clear"></div>
+            </div><!-- Main -->
+
+            
+
+
+<div id="Footer">
+    <p id="UpdateInfo">	
+	Last Update: 
+	
+	08 August 2024
+        
+    </p>
+    <p id="CopyrightInfo">
+        &copy;2024 Government of the Republic of Zambia. All rights reserved.		
+    </p>
+    <ul>
+
+    </ul>
+</div><!-- Footer // -->
+
+            <br style="clear:both; width:100%;" />
+        </div><!-- Container -->
+    </body>
+</html>

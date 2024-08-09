@@ -1,0 +1,55 @@
+/* CSS Document */
+
+body 	{font: 8.5pt Verdana, Arial, Helvetica, sans-serif;
+		color: #3f3f3f;
+		text-align:justify;
+		line-height:12pt;}
+
+body a	{text-decoration:none; color: #3f3f3f;}
+
+body p {padding:0 0 4pt 0; margin:0;}
+
+h1		{display: block-inline;font:normal 18pt "arial narrow",tahoma,arial,sans-serif; color: #3f3f3f; text-align:center; padding:0 0 15pt 70pt; margin:0 0 5pt 0; border-bottom:2pt solid #ccc;}
+h2		{font-size: 11pt; color: #3f3f3f; padding:0; margin: 10pt 0;}
+h3		{font-size: 9.5pt; color: #3f3f3f; margin:8pt 0; padding:0;}
+.ListHeading	{font-size: 8.5pt; font-weight: bold; margin:4pt 0 0 0; padding:0;}
+
+#RepublicLogo	{position:absolute; top:0; left:0; width:70pt; border-right:1pt solid #ccc; text-align:center;}
+
+#Navigation,		
+#GlobalNav,		
+#SearchDisabled,
+#Footer			{display:none;} 
+
+#Content ul		{padding-top:0; margin-top:4pt; padding-bottom:0; margin-bottom:8pt;}
+#Content ul li	{margin-bottom:4pt;}
+
+.ExtraInfo, 
+.Submenu,
+#Search form,
+#ShowHideMenu,
+p.Applet,
+p.Buttons,
+.THSort,
+.Pagination button,
+.ContextMenu 		{display:none;}
+
+
+img.Right		{display:block; margin-bottom:8pt;}
+
+dl				{padding:0; margin:0;}
+dt				{font-weight:bold;}
+dt span			{display:block; font-weight:normal;}
+dd				{margin:4pt 0; padding:0;}
+
+table				{border-collapse:collapse;}
+th					{margin:0; padding:2pt; border:0.5pt solid #CCCCCC;}
+td					{margin:0; padding:8pt 4pt; vertical-align: top; border:0.5pt solid  #CCCCCC;}
+td.Numeration		{text-align:center; font-weight:bold;}
+tr					{margin:0; padding:0;}
+p.TableHeading		{font-weight:bold; margin:0; padding:0 0 6pt 0;}
+
+#Content fieldset		{border: 0px;)
+
+body.EN h1 span.NewLine		{display:block;}
+.Numeration		{vertical-align: text-top;}

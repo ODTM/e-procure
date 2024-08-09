@@ -1,0 +1,4076 @@
+/* =============== */
+/* START RESET CSS */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent;
+}:focus {
+    outline: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*   END RESET CSS   */
+/* =============== */
+/* ================== */
+/* START TEMPLATE CSS */
+body {
+    /*background: url(../../images/zambia/bg_body.gif) #fcfcfc 0 0 repeat-x;*/
+    color: #324030;
+    font: normal 70% arial, verdana, helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    /* background-color:#8a935e; */
+}
+
+input, button, select {
+    font: normal 100% arial, verdana, helvetica, sans-serif;
+}
+
+#Container {
+    width: 940px;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 0 10px;
+}
+
+#YPOLogo {
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 96px;
+    padding: 0;
+    margin: 0 0 0 0px;
+    float: left;
+    z-index: 1;
+}
+
+/*{display:block; position:relative; width:150px; height:76px; padding:0; margin:0 -13px 0 0; float:right; z-index:1;background:url(../../images/zambia/logo_YPO.gif) transparent no-repeat 0 0;}*/
+#YPOLogo h1 {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 96px;
+    overflow: hidden;
+    text-align: center;
+}
+
+body #YPOLogo span {
+    display: block;
+    width: 300px;
+    height: 96px;
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    z-index: 2;
+    background: url(../../images/zambia/logo.png) no-repeat #FFFFFF;
+}
+
+#SystemTitle {
+    display:none;
+    /*display: block;*/
+    position: relative;
+    width: 334px;
+    height: 72px;
+    padding: 0;
+    margin: 0 -13px 0 0;
+    float: right;
+    z-index: 1;
+    background: url(../../images/zambia/tendering_portal.gif) transparent no-repeat 0 0;
+    text-indent: -5000em;
+}
+
+#GlobalNav      {float:right; margin-top:50px;}
+
+/*{float:left; width:auto; font-size:160%; margin:10px 0 0 5px; position:absolute; top:-2px; width:325px; height:30px; background:url(../../images/zambia/tendering_portal.gif) 0 0 no-repeat; text-indent:-5000em;}*/
+#GlobalNav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    float: right;
+    width: 494px;
+    border-top: 0px solid #38b8e4;
+}
+
+#GlobalNav li {
+    text-align: center;
+    float: left;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    width: 98px;
+    border-right: 1px solid #dfe7a8;
+}
+
+#GlobalNav li.Last {
+    border: 0;
+}
+
+#GlobalNav a {
+    color: #1B8F5A;
+    text-decoration: none;
+}
+
+#GlobalNav a:hover {
+    text-decoration: underline;
+}
+
+#Search {
+    background: rgba(0, 0, 0, 0) -moz-linear-gradient(center bottom , #1B8F5A, #1B8F5A 100%) repeat scroll 0 0;
+    padding: 0;
+    margin: 0;
+    height: 31px;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+#Search .Time {
+    display: none;
+}
+
+#Search form {
+    display: none;
+}
+
+#Search p {
+    padding: 0;
+    margin: 6px 21px 0 0;
+}
+
+#Search label {
+    color: #eeeeed;
+    font-weight: bold;
+    padding: 0;
+    margin: 0 10px 0 0;
+    float: left;
+    line-height: 17px;
+}
+
+#Search select, #Search input.Text {
+    background: url(../../images/zambia/bg_field.gif) #fff 0 0 repeat-x;
+    border: 1px solid #d2d7d9;
+    height: 17px;
+    line-height: 17px;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+#Search select {
+    height: 19px;
+    line-height: 18px;
+}
+
+#SearchSelect option:hover {
+    background-color: 404b52;
+}
+
+#Search input.Text {
+    width: 180px;
+    margin: 0 0 0 10px;
+}
+
+#Search button, #Search input.SearchBTN {
+    background: url(../../images/zambia/btn_search.gif) #d5dda3 repeat-x 0 0;
+    height: 19px;
+    width: 63px;
+    padding: 0 0 3px 0;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+    color: #fefefe;
+    float: left;
+    border: 1px solid transparent;
+    border-color: #eff3f6 #3b3838 #3b3838 #eff3f6;
+    color: #303840;
+}
+
+#Search a {
+    color: #fff;
+    padding: 2px 0 0 5px;
+    float: left;
+    width: auto;
+}
+
+#Search a:hover {
+    text-decoration: none;
+}
+
+#Search a.SearchPic {
+    margin: 0 0 0 10px;
+    padding: 0;
+    background: url(../../images/zambia/btn_adv_search.gif) no-repeat 0 0 #87b0cb;
+    float: left;
+    width: 33px;
+    height: 19px;
+    display: block;
+    text-indent: -5000px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#Main {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 30px 0 0 0;
+}
+
+#Navigation {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#ShowHideMenu {
+    display: inline;
+    float: left;
+    width: 15px;
+    height: 195px;
+    margin: 0 0 0 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #396425;
+    font-weight: bold;
+}
+
+.Menu {
+    float: left;
+    margin: 0;
+    padding: 0 0 36px 40%;
+}
+
+.Menu p {
+    float: left;
+    display: block;
+    width: 180px;
+    margin: 0;
+    padding: 0;
+}
+
+.Menu p span {
+    display: block;
+    line-height: 15px;
+    padding: 0 0 4px 0;
+    color: #1B8F5A;
+    font-weight: bold;
+    font-size: 120%;
+    border-bottom: 4px solid #FCD947;
+    margin-bottom: 9px;
+}
+
+.Menu p span a {
+    display: block;
+    width: 16px;
+    height: 13px;
+    float: right;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    overflow: hidden;
+    background-color: #44a0d0;
+}
+
+.Menu p span a span {
+    visibility: hidden;
+}
+
+.Menu p span a.Minimize {
+    background-image: url(../../images/zambia/btn_collapse.gif);
+}
+
+.Menu p span a.Maximize {
+    background-image: url(../../images/zambia/btn_expand.gif);
+}
+
+.Menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Menu ul li {
+    display: block;
+    background-color: #eaeae7;
+    float: right;
+}
+
+.Menu ul li.Selected {
+    background-color: #e9ebe9;
+}
+
+.Menu ul li a {
+    display: block;
+    width: 155px;
+    background: url(../../images/zambia/arrow_nav.gif) 5px 12px no-repeat;
+    line-height: 14px;
+    padding: 8px 5px 8px 20px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #d6d6d6;
+    color: #003366;
+    text-decoration: none;
+}
+
+.Menu ul li.Selected a {
+    font-weight: bold;
+}
+
+.Menu ul li.Selected a:hover {
+    text-decoration: none;
+    cursor: default;
+}
+
+.Menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.Menu form {
+    display: block;
+    width: 160px;
+    float: left;
+    background: #EDF1EC;
+    padding: 10px;
+    margin: 0;
+    text-align: left;
+    clear: both;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.Menu form fieldset {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.Menu form p {
+    background: transparent;
+    width: 160px;
+    padding: 0;
+    clear: both;
+    margin: 3px 0;
+}
+
+.Menu form label {
+    background: transparent;
+    display: block;
+    padding: 0;
+    clear: both;
+    margin: 0 0 3px 0;
+    width: 160px;
+}
+
+.Menu form input {
+    float: none;
+    width: 158px;
+    background: #FFFFFF url(../../images/zambia/bg_input.gif) repeat-x 0 0;
+    border: 1px solid #aeb2b4;
+}
+
+.Menu form p.Buttons {
+    text-align: right;
+}
+
+.Menu form input.BTN {
+    background: repeat-x scroll 0 0 #43A047;
+    border-color: #FFFFFF #f3f7f2 #f3f7f2 #FFFFFF;
+    padding: 1px 3px;
+    margin: 0;
+    width: auto;
+    cursor: pointer;
+    color: #fff;
+}
+
+.Menu .UserInfo {
+    display: block;
+    width: 160px;
+    background: #eaeae7;
+    padding: 10px;
+    margin: 0;
+    line-height: 180%;
+    float: left;
+    border-bottom: 1px solid #d6d6d6;
+    color: #003366;
+}
+
+.Menu .Calendar {
+    display: block;
+    width: 180px;
+    background: #F2F4EF url(../../images/zambia/bg_menu_item.gif) 0 50% repeat-x;
+    padding: 1px 0;
+    margin: 0;
+    text-align: center;
+}
+
+.Menu .Calendar table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 1px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    clear: none;
+}
+
+.Menu .Calendar table thead input {
+    padding: 1px;
+    font-weight: bold
+}
+
+.Menu .Calendar table th, .Menu .Calendar table td {
+    padding: 3px 3px;
+    vertical-align: middle
+}
+
+.Menu .Calendar table thead td {
+    padding: 0 0 2px;
+}
+
+.Menu .Calendar table th {
+    border: 1px solid #A9B2A1;
+    background: #B9BFB1 url(../../images/zambia/bg_calendar_th.gif) repeat-x 0 50%;
+    color: #000;
+}
+
+.Menu .Calendar table tbody td {
+    border: 1px solid #C9CFC3;
+    background: #F0F1EC url(../../images/zambia/bg_calendar_td.gif) repeat-x 0 50%;
+}
+
+.Menu .Calendar table tbody td.Today {
+    border: 1px solid #000;
+    background: #272D21 url(../../images/zambia/bg_calendar_td_today.gif) repeat-x 0 50%;
+    color: #EBEEE5;
+}
+
+.Menu .Calendar table tbody td.Active {
+    background: #D0D9BE url(../../images/zambia/bg_calendar_td_active.gif) repeat-x right top;
+}
+
+.Menu .Calendar table tbody td.Active a {
+    font-weight: bold;
+    color: #485539;
+}
+
+.Menu .Calendar table tbody td.Active a:hover {
+    text-decoration: none;
+}
+
+img.Left {
+    float: left;
+    padding: 5px 10px 5px 0;
+    margin: 0;
+}
+
+img.Right {
+    float: right;
+    padding: 5px 0 5px 10px;
+    margin: 0;
+}
+
+img.InformationBut {
+    margin-left: 10px;
+}
+
+#Footer {
+    float: left;
+    background: #ECF1ED;
+    width: 100%;
+    margin: 15px 0;
+    padding: 0 0 20px 0;
+    color:#324030;
+}
+
+#UpdateInfo {
+    float: left;
+    padding: 20px 0 0 10px;
+    margin: 0;
+    color:
+}
+
+#CopyrightInfo {
+    float: right;
+    padding: 20px 10px 0 0;
+    margin: 0;
+}
+
+#Footer ul {
+    clear: both;
+    margin: 0;
+    padding: 15px 0 0 0;
+    list-style: none;
+    text-align: center;
+}
+
+#Footer ul li {
+    display: inline;
+    border-right: 1px solid #b8c9b8;
+    padding: 0;
+    margin: 0;
+}
+
+#Footer ul li.Last {
+    border: none;
+}
+
+#Footer ul li a {
+    color: #fff;
+    padding: 0;
+    margin: 0 10px;
+}
+
+#Footer ul li a:hover {
+    text-decoration: none;
+}
+
+.clear {
+    display: block;
+    width: 100%;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+}
+
+#Content {
+    margin: 0 0 0 230px;
+    line-height: 16px;
+    text-align: justify;
+}
+
+.Bigger #Content {
+    margin-left: 45px;
+}
+
+.NoScript {
+    background-color: #f1f7fb;
+    float: left;
+    width: 96%;
+    margin-bottom: 20px;
+    padding: 10px 2%;
+    border-top: 1px solid #CCC;
+}
+
+.NoScript p {
+    padding-bottm: 5px;
+}
+
+.NoScript ul {
+    list-style-position: inside;
+    padding: 5px 0;
+}
+
+/*   END TEMPLATE CSS   */
+/* ================== */
+/* ================== */
+/* START MAINAREA CSS */
+.Left {
+    float: left;
+    display: block;
+}
+
+.Right {
+    float: right;
+    display: block;
+}
+
+.wCheck {
+    width: 5px;
+}
+
+.w05 {
+    width: 5%;
+}
+
+.w10 {
+    width: 10%;
+}
+
+.w12 {
+    width: 11.7%;
+}
+
+.w15 {
+    width: 15.5%;
+}
+
+.w20 {
+    width: 20%;
+}
+
+.w25 {
+    width: 25%;
+}
+
+.w33 {
+    width: 32.5%;
+}
+
+.w34 {
+    width: 33.3%;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w55 {
+    width: 55%;
+}
+
+.w60 {
+    width: 60%;
+}
+
+.w65 {
+    width: 64%;
+}
+
+.w70 {
+    width: 70%;
+    max-width: 700px;
+}
+
+.w75 {
+    width: 75%;
+}
+
+.w90 {
+    width: 90%;
+}
+
+.w98 {
+    width: 98%;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+#Content .mb10 {
+    margin-bottom: 10px;
+}
+
+#Content p.UserRole {
+    display: block;
+    float: right;
+    padding: 0 0 0 10px;
+    border-left: 1px solid #d8d5d2;
+    line-height: 13px;
+    margin-top: 3px;
+}
+
+#Content .ExtraInfo {
+    background: #155794;
+    color: #e5e8e9;
+    padding: 10px 1%;
+    float: left;
+    width: 98%;
+    border-bottom: 1px solid #155794;
+    position: relative;
+}
+
+#Content h2 {
+    border-bottom: 4px solid #909859;
+    padding: 0 0 7px 0;
+    margin: -3px 0 20px 0;
+    font-size: 150%;
+    font-weight: normal;
+    color: #ECF1ED;
+}
+
+#Content h3 {
+    margin: 10px 0 10px 0;
+    padding: 5px 1%;
+    float: left;
+    width: 98%;
+    background: url(../../images/zambia/btn_search.gif) #f2f2f2 repeat-x 0 100%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #c0c0c0;
+    color: #082d44;
+}
+
+h5 {
+    float: left;
+    width: 100%;
+}
+
+#Content .Sidebar h3 {
+    margin: 0;
+}
+
+#Content a {
+    color: #005f94;
+}
+
+#Content a:hover {
+    text-decoration: none;
+}
+
+#Content p.Buttons a {
+    background: url(../../images/zambia/bg_button-link.gif) #eaeae7 0 0 repeat-x;
+    padding: 4px 6px 3px 6px;
+    margin: 0 5px;
+    text-decoration: none;
+    display: block;
+    float: left;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff #c4c1c1 #c4c1c1 #fff;
+}
+
+#Content p.Buttons a:hover {
+    background: url(../../images/zambia/bg_button-link.gif) #f3f4e9 0 -40px repeat-x;
+    color: #082d44;
+}
+
+#Content p.Buttons span {
+    background-color: #d9dcd5;
+    float: right;
+    padding: 5px 0;
+    margin-right: 5px;
+}
+
+Body.EN #Content p.Buttons span {
+    width: 270px;
+}
+
+Body.EL #Content p.Buttons span {
+    width: 300px;
+}
+
+#Content p.Buttons span button, #Content p.Buttons span select, #Content p.Buttons input.BTN {
+    float: none;
+}
+
+#Content .ContextMenu {
+    display: block;
+    float: left;
+    width: 98%;
+    padding: 10px 1%;
+    background: #343b3b;
+    border-top: 1px solid #181d1d;
+    border-bottom: 1px solid #181d1d;
+}
+
+#Content .ExtraInfo .ContextMenu {
+    float: left;
+    width: auto;
+    padding: 0;
+    border: 0;
+    background: none;
+}
+
+#Content .ContextMenu ul {
+    list-style: none;
+}
+
+#Content .ContextMenu ul li {
+    float: left;
+    margin: 0 5px;
+}
+
+#Content .ContextMenu ul.Grouped {
+    background: #404a4f;
+    float: left;
+    padding: 5px 0 5px 5px;
+    margin: -6px 0;
+    border: 1px solid #131617;
+    border-left: 0;
+}
+
+#Content .ContextMenu ul.Grouped li {
+    margin: 0 5px 0 0;
+}
+
+#Content .ContextMenu a {
+    display: block;
+    padding: 2px 6px 3px 6px;
+    text-decoration: none;
+    background: url(../../images/zambia/bg_button-link-context.gif) #e1e4e1 0 0 repeat-x;
+    color: #20313b;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eff3ef #000 #000 #eff3ef;
+}
+
+#Content .ContextMenu a:hover {
+    background: url(../../images/zambia/bg_button-link-context.gif) #cbcfd1 0 -40px repeat-x;
+}
+
+#Content .ContextMenu div {
+    float: right;
+}
+
+#Content .ContextMenu p {
+    background: #404a4f;
+    float: left;
+    padding: 8px 0 9px 5px;
+    margin: -6px 0;
+    border: 1px solid #131617;
+    border-right: 0;
+    color: #9eacb2;
+}
+
+#Content dl.Grid {
+    background: #f8f8f8;
+    padding: 0 1% 10px 1%;
+    float: left;
+    width: 98%;
+}
+
+#Content dl.Grid dt {
+    display: block;
+    float: left;
+    background: #eaeae7;
+    padding: 2px;
+    margin: 5px 5px 0 0;
+    clear: both;
+    width: 50%;
+    text-align: left;
+}
+
+#Content dl.Grid dt.w33 {
+    width: 33%;
+}
+
+#Content dl.Grid dd {
+    display: block;
+    float:left;
+    padding: 2px;
+    margin: 5px 0 0 0;
+    text-align: left;
+    width:47%;
+}
+
+#Content dl.Info {
+    background: #828669;
+    padding: 5px 1% 10px 1%;
+    color: #B7C0C0;
+    border-top: 1px solid #828669;
+    border-bottom: 1px solid #828669;
+    margin-bottom: 10px;
+}
+
+#Content dl.Info dt {
+    background: #94987b;
+    color: #E5E8E9;
+}
+
+#Content dl.Info dd {
+    color: #B7C0C0;
+}
+
+#Content #MoreCFTInfo a {
+    color: #FFF;
+}
+
+#Content .Tabular {
+    background: #f8f8f8;
+    float: left;
+    width: 100%;
+}
+
+form .Tabular {
+    margin-top: 5px;
+}
+
+#Content table {
+    width: 100%;
+}
+
+#Content .HasSidebar table {
+    width: 100.3%;
+}
+
+#Content table th, #Content table td {
+    border: 1px solid #fff;
+    padding: 4px;
+}
+
+#Content table th {
+    text-align: left;
+    vertical-align: top;
+}
+
+#Content table tr.Even td {
+    background-color: #E5E7E9;
+}
+
+#Content table tr.Criteria td {
+    background-color: #deded3;
+}
+
+#Content table tfoot tr td {
+    background-color: #d6d6bf;
+    font-weight: bold;
+}
+
+th {
+    background: url(../../images/zambia/bg_table.gif) repeat-x #5d8ebc;
+    color: #fff;
+}
+
+td {
+    vertical-align: top;
+}
+
+td.Highlighted {
+    background-color: #C3C9D0;
+}
+
+#Content form {
+    background: #f8f8f8;
+    padding: 10px 1%;
+    float: left;
+    width: 98%;
+}
+
+#Content legend {
+    margin-top: 10px;
+    border-bottom: 1px solid #ECF1ED;
+    width:
+    100%;
+    float: left;
+}
+
+#Content fieldset {
+    float: left;
+    width: 100%;
+}
+
+#Content fieldset.FolTab {
+    margin-bottom: 15px;
+}
+
+#Content select, #Content textarea, #Content input {
+    background: #FFFFFF url(../../images/zambia/bg_input.gif) repeat-x 0 0;
+    border: 1px solid #aeb2b4;
+    float: left;
+    padding: 2px;
+    margin: 0 5px 0 0;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 100%;
+}
+
+#Content table input.WBut {
+    float: left;
+    margin-right: 3px;
+}
+
+#Content textarea {
+    height: 80px;
+}
+
+#Content input.Check, #Content input.Radio {
+    background: none;
+    border: 0;
+    padding: 0;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+#Content th input.Check, #Content th input.Radio {
+    margin-top: 0;
+}
+
+#Content button, #Content input.BTN {
+    padding: 2px 6px;
+    margin: 0 5px 0 0;
+    cursor: pointer;
+    overflow: visible;
+    background: url(../../images/zambia/bg_btn.gif) #f3f7f2 repeat-x 0 0;
+    border: 1px solid transparent;
+    border-color: #fff #f3f7f2 #f3f7f2 #fff;
+    color: #fff;
+}
+
+#Content table input {
+    float: none;
+    margin: 0;
+}
+
+#Content a.ACTB {
+    background: url(../../images/zambia/bg_button.gif) #728653 0 50% repeat-x;
+    color: #20313b;
+    padding: 0;
+    margin: 0 5px 5px 0;
+    border: 1px solid #99a199;
+    width: 16px;
+    height: 16px;
+    text-decoration: none;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 15px;
+}
+
+#Content form p {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+    margin: 5px 0 0 0;
+}
+
+#Content p.Buttons {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+    text-align: right;
+    background: #eaeae7;
+    padding: 10px 0;
+    margin: 10px 0 0 0;
+    clear: none;
+}
+
+#Content p.Buttons span {
+    font-weight: bold;
+}
+
+#Content #TStruct p.Buttons {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #C1C8CD;
+    border-bottom: 1px solid #a5abaf;
+}
+
+#Content #TStruct p.Buttons button {
+    color: #303840;
+    padding: 3px 10px;
+    background: url(../../images/zambia/bg_button_ts.gif) #6099bf 0 0 repeat-x;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #edf3f7 #8eb5d0 #8eb5d0 #edf3f7;
+}
+
+#Content p.Footnotes {
+    padding: 10px 0 0 0;
+    margin: 10px 0 0 0;
+    border-top: 4px solid #eaeae7;
+}
+
+#Content span.RCOptions, #Content label {
+    display: block;
+    float: left;
+    background: #eaeae7;
+    padding: 2px;
+    margin: 0 5px 0 0;
+    text-align: left;
+}
+
+#Content label.TextareaRem {
+    height: 100px;
+}
+
+#Content label.TextareaNM {
+    height: 82px;
+}
+
+#Content label.TextareaTall {
+    height: 200px;
+}
+
+#Content .Tall {
+    height: 180px;
+}
+
+#Content .Medium {
+    height: 80px;
+}
+
+#Content label.SMulti {
+    height: 53px;
+}
+
+#Content label.Radio {
+    display: inline;
+    width: auto;
+    clear: none;
+    background: none;
+}
+
+#Content form .remaining {
+    float: left;
+}
+
+#Content .Mandatory {
+    color: #c03;
+}
+
+#Content .Information {
+    color: #3366CC;
+}
+
+#Content .HasSidebar {
+    width: 65%;
+    float: left;
+}
+
+#Content .HasSidebar h3 {
+    margin-top: 10px;
+}
+
+#Content .Sidebar {
+    width: 33%;
+    float: right;
+    margin-top: 10px;
+}
+
+#Content .Sidebar form {
+    width: 94%;
+    padding: 0 3% 10px 3%;
+}
+
+#Content .Sidebar textarea {
+    width: 97%;
+    margin: 0;
+    padding: 2px;
+}
+
+#Content .Sidebar label {
+    width: 97%;
+    margin: 10px 0 5px 0;
+    padding: 2px 3px;
+}
+
+#Message {
+    line-height: 140%;
+    zoom: 1;
+    float: left;
+    width: 92%;
+    padding: 15px 1% 15px 7%;
+    margin: 10px 0 10px 0;
+}
+
+.Info {
+    background: url(../../images/zambia/message_info.gif) #e9f1f7 10px 8px no-repeat;
+}
+
+.Success {
+    background: url(../../images/zambia/message_success.gif) #007229 5px 8px no-repeat;
+    color: #fff;
+}
+
+.Error {
+    background: url(../../images/zambia/message_error.gif) #b5282e 5px 10px no-repeat;
+    color: #fff;
+}
+
+.Alert {
+    background: url(../../images/zambia/message_info.gif) #e9f1f7 10px 8px no-repeat;
+}
+
+#Content #Message ul {
+    list-style: square;
+    margin: 10px 0 0 15px;
+}
+
+#Content .Success a, #Content .Error a {
+    color: #FFF;
+}
+
+#Content #Message p.Buttons {
+    background: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    border: 0;
+}
+
+#Content #Message p.Buttons button {
+    background: #43555F url(../../images/zambia/bg_button_alertbox.gif) repeat-x 0 100%;
+    border-color: #a7acaf #000 #000 #a7acaf;
+    color: #FFF;
+}
+
+#Content .Legend {
+    background: transparent;
+    float: left;
+    width: 98%;
+    padding: 5px 1%;
+    margin: 10px 0 0 0;
+    border-top: 1px dotted #b7bbbd;
+    border-bottom: 1px dotted #b7bbbd;
+}
+
+#Content .Legend img {
+    vertical-align: middle;
+}
+
+#Content .Clarification {
+    display: block;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+
+#Content .Clarification p {
+    float: left;
+    margin: 10px 0;
+    padding: 0 1%;
+    width: 97%;
+}
+
+#Content .Clarification table {
+    float: left;
+    width: 100%;
+}
+
+#Content .Clarification h4, #Content .tabbertab h4, #Content h4.TabH {
+    display: block;
+    float: left;
+    width: 98%;
+    padding: 5px 1%;
+    margin: 5px 0 0 0;
+    background: #f2f2f2 url(../../images/zambia/btn_search.gif) repeat-x 0 100%;
+    color: #082d44;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#Content h4.TabH {
+    cursor: default;
+}
+
+#Content h4.ListH {
+    float: left;
+    width: 100%;
+    margin: 15px 0 5px 0;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid #dfe5e9;
+    background: none;
+    border-top: 0;
+    color: #ECF1ED;
+    cursor: default;
+}
+
+#Content #Active h4.Envelope {
+    background-image: url(../../images/zambia/bg_h4_active.gif);
+}
+
+#Content h4.Envelope {
+    cursor: pointer;
+}
+
+#Content #Active form p {
+    margin: 5px 0 0 0;
+}
+
+#Content #Active form p.Buttons {
+    margin: 13px 0 8px 0;
+}
+
+#Content .Clarification h5, h5.tabbertab, #Content .tabbertab h5 {
+    margin-top: 5px;
+    padding: 5px 1%;
+    float: left;
+    width: 98%;
+    border-bottom: 1px solid #d2d3cf;
+    border-top: 1px solid #fff;
+    font-size: 100%;
+    color: #082d44;
+    background: #D5D7D9;
+}
+
+#Content .Clarification h4 .RankOrder {
+    float: right;
+    font-weight: normal;
+}
+
+#Content .ScrollList {
+    float: left;
+    width: 100%;
+    max-height: 70px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px dotted #c5ccd0;
+    margin: 10px 0 20px 0;
+}
+
+#Content ul.ScrollList {
+    list-style: none;
+    float: left;
+    width: 100%;
+}
+
+#Content ul.ScrollList li {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+#Content ul.ScrollList li a {
+    padding: 4px 1%;
+    display: block;
+    float: left;
+    width: 98%;
+}
+
+#Content ul.ScrollList li a:hover {
+    background-color: #e9f1f7;
+}
+
+#Content ul.ScrollList li.Selected a {
+    background-color: #eaeae7;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+#Content ul.ScrollList li.Selected a {
+    text-decoration: none;
+    color: #303840;
+}
+
+#Content ul.ScrollList li.Selected a:hover {
+    background-color: #eaeae7;
+}
+
+#Content div#MoreCFTInfo {
+    display: block;
+    float: left;
+    width: 98%;
+    margin: 10px -1px 0 -1px;
+    padding: 7px 1%;
+    background: #487db0;
+    color: #e5e8e9;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #2d2e26 #578cbf #578cbf #2d2e26;
+}
+
+#Content div#MoreCFTInfo p {
+    padding: 5px 1%;
+    width: 98%;
+    margin: 0;
+}
+
+#Content p#ShowCFTInfo {
+    cursor: pointer;
+    background: url(../../images/zambia/arrow_show_more.gif) no-repeat 2px 50%;
+    padding-left: 15px;
+    padding-right: 220px;
+    text-align: left;
+}
+
+#Content div#MoreCFTInfo h3 {
+    background: #3a6fa2;
+    border: 0;
+    margin: 0;
+    color: #E5E8E9;
+}
+
+#Content div#MoreCFTInfo dl.Grid {
+    background: transparent;
+    padding: 0;
+    width: 100%;
+}
+
+#Content div#MoreCFTInfo dl.Grid dt {
+    background: #5388bb;
+}
+
+#Content .tabber {
+    margin: 15px 0 0 0;
+    float: left;
+    width: 100%;
+}
+
+#Content .tabber .tabber {
+    margin: 0;
+}
+
+#Content .tabberlive .tabbertabhide {
+    display: none;
+}
+
+#Content .tabberlive {
+    margin: 15px 0 0 0;
+    float: left;
+    width: 100%;
+}
+
+#Content ul.tabbernav, #Content ul.Cycles {
+    margin: 0 0 10px 0;
+    padding: 0;
+    border-bottom: 4px solid #155794;
+    float: left;
+    width: 100%;
+}
+
+#Content ul.tabbernav li, #Content ul.Cycles li {
+    list-style: none;
+    margin: 0 5px 0 0;
+    display: block;
+    float: left;
+}
+
+#Content ul.tabbernav li a, #Content ul.Cycles li a {
+    display: block;
+    padding: 3px 5px;
+    background: #3b91c3;
+    color: #fff;
+    text-decoration: none;
+}
+
+#Content ul.Cycles li a.TabNumber {
+    width: 23px;
+    padding: 3px 0;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#Content ul.Cycles li a.First {
+    width: 51px;
+}
+
+#Content ul.tabbernav li a:hover, #Content ul.Cycles li a:hover {
+    background: #3685b2;
+}
+
+#Content ul.tabbernav li.tabberactive a, #Content ul.Cycles li.active a {
+    background: #155794;
+    color: #fff;
+}
+
+#Content ul.tabbernav li.tabberactive a:hover, #Content ul.Cycles li.active a:hover {
+    background: #155794;
+    color: #fff;
+    cursor: default;
+}
+
+#Content .LowerTabs {
+    margin: 0;
+}
+
+#Content ul.tabbernav li.tabberdisabled a, #Content ul.tabbernav li.tabberdisabled a:hover {
+    background: #3a6fa2;
+    color: #b6babf;
+    cursor: default;
+}
+
+#Content #ToggleSubmenu {
+    display: block;
+    float: right;
+    width: 190px;
+    height: 20px;
+    line-height: 19px;
+    padding: 0 5px;
+    margin: 0 0 -5px 10px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    background: url(../../images/zambia/btn_cft-menu.gif) #dae8a3 0 0 no-repeat;
+}
+
+#Content #ToggleSubmenu:hover {
+    background: url(../../images/zambia/btn_cft-menu.gif) #d6e4a0 0 -40px no-repeat;
+}
+
+#Content div.Submenu {
+    display: block;
+    clear: both;
+    padding: 5px;
+    background-color: #155794 !important;
+    overflow: hidden;
+    z-index: 999;
+}
+
+#Content div.Submenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#Content div.Submenu li {
+    display: block;
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 1px;
+}
+
+#Content div.Submenu li a {
+    display: block;
+    width: 94%;
+    padding: 3px 3%;
+    color: #fff;
+    background: #909859;
+    text-decoration: none;
+}
+
+#Content div.Submenu li a:hover {
+    background: #a7af70;
+}
+
+#Content div.Submenu li.Selected a, #Content div.Submenu li.Selected a:hover {
+    background: #a7af70;
+    color: #FFF;
+    cursor: text;
+}
+
+#Content div.Submenu ul.Bottom {
+    border-top: 5px solid #155794;
+    padding-top: 1px;
+}
+
+#Content .Pagination {
+    display: block;
+    float: left;
+    width: 98%;
+    padding: 10px 1%;
+    background: #edeff0;
+}
+
+#Content .Pagination p.Results {
+    padding: 4px 0 0;
+    width: 50%;
+    display: block;
+    float: left;
+    margin-top: 0;
+}
+
+#Content .Pagination p.PageNav {
+    padding: 0;
+    text-align: right;
+    float: none;
+    clear: none;
+    width: auto;
+    margin-top: 0;
+}
+
+#Content .Pagination button {
+    font-weight: bold;
+    width: 25px;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 0 0 5px;
+}
+
+#Content .Pagination button.Disabled {
+    background: #cdcdcd;
+    border-color: #bbbbbb;
+}
+
+#Content form#DefineTS {
+    margin: 15px 0 0 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+    background: transparent;
+}
+
+#Content div.DesignTS {
+    float: left;
+    width: 100%;
+}
+
+#Content div.DesignTS ul {
+    float: left;
+    width: 98%;
+    border-bottom: 4px solid #eaeae7;
+    padding: 0 1%;
+    margin: 15px 0 0 0;
+}
+
+#Content div.DesignTS ul li {
+    display: block;
+    float: left;
+    background: #eaeae7;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    margin: 0 1% 0 0;
+    padding: 0;
+    width: 24%;
+    text-align: center;
+}
+
+#Content div.DesignTS ul li#DTSLots {
+    width: 50%;
+    margin: 0;
+}
+
+#Content div.DesignTS ul li a {
+    display: block;
+    float: left;
+    width: 100%;
+    background: #7B8187;
+    text-decoration: none;
+    color: #fff;
+}
+
+#Content div.DesignTS ul li a:hover {
+    background: #626b70;
+}
+
+#Content div.DesignTS ul li label {
+    padding: 0;
+    width: 17%;
+    margin: 0;
+    line-height: 20px;
+    margin: 7px 0 3px 5px;
+    text-align: left;
+}
+
+#Content div.DesignTS label {
+    text-indent: 5px;
+    background: #dedede;
+}
+
+#Content div.DesignTS ul select {
+    margin: 2px 8px 0 0;
+    width: 75.5%;
+    float: none;
+    vertical-align: middle;
+}
+
+#Content div.LotConfig {
+    float: left;
+    width: 98%;
+    padding: 5px 1% 0 1%;
+    background: #eaeae7;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+#Content div.LotConfig dt {
+    width: 23%;
+}
+
+#Content div.LotConfig p {
+    background: url(../../images/zambia/separator_lot-config.gif) 0 0 repeat-x;
+    margin: 0;
+    padding: 10px 0 8px 0;
+}
+
+#Content div.LotConfig label, #Content div.LotConfig span.RCOptions {
+    width: 23.5%;
+    background: #dedede;
+}
+
+#Content div.LotConfig input {
+    width: 62.3%;
+}
+
+#Content div.LotConfig input.w10 {
+    width: 12%;
+}
+
+#Content div.LotConfig select {
+    width: 63.1%;
+}
+
+#Content div.LotConfig button {
+    width: 10%;
+}
+
+#Content div.LotConfig div#HandleFinancial {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#Content div.LotConfig div#HandleFinancial p a {
+    display: block;
+    float: left;
+    width: 24%;
+    color: #d95f02;
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 3px 0;
+    background: #f3f1e9 url(../../images/zambia/bg_button-link.gif) repeat-x 0 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffffff #bdc2b6 #bdc2b6 #ffffff;
+    text-align: center;
+}
+
+#Content div.LotConfig div#HandleFinancial p a:hover {
+    background: url(../../images/zambia/bg_button-link.gif) #f3f4e9 0 -40px repeat-x;
+    color: #7f4003;
+}
+
+#TSTools, #TSToolsBottom {
+    float: left;
+    width: 98%;
+    padding: 10px 1%;
+    background: #c1c8cd;
+    border-bottom: 1px solid #a5abaf;
+    margin: 30px 0 15px 0;
+}
+
+#TSTools ul, #TSToolsBottom ul {
+    list-style: none;
+    padding: 0;
+    float: right;
+    width: auto;
+}
+
+#TSTools ul li, #TSToolsBottom ul li {
+    display: block;
+    float: left;
+    margin: 0 0 0 8px;
+    text-align: center;
+}
+
+#TSTools a, #TSToolsBottom a {
+    display: block;
+    float: right;
+    color: #303840;
+    text-decoration: none;
+    padding: 3px 10px;
+    background: url(../../images/zambia/bg_button_ts.gif) #46718e 0 0 repeat-x;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff #46718e #46718e #fff;
+    width: 165px;
+    text-align: center;
+}
+
+#TSTools a.SectionHandleLink, #TSToolsBottom a.SectionHandleLink {
+    margin-right: 5px;
+}
+
+#TSTools a:hover, #TSToolsBottom a:hover {
+    background: url(../../images/zambia/bg_button_ts.gif) #46718e 0 0 repeat-x;
+    border-color: #fff #46718e #46718e #fff;
+}
+
+#DefineTS .noMTop {
+    margin-top: 0;
+}
+
+#Content #TStruct div {
+    text-align: right;
+    color: #fff;
+    margin: -1px 1px 0 -1px;
+}
+
+#Content #TStruct fieldset {
+    background: #f5f3f2;
+    padding: 0;
+    float: left;
+    width: 100%;
+}
+
+#Content #TStruct fieldset fieldset {
+    background: #f9f8f3;
+    width: 97%;
+    float: right;
+    border: 1px solid #fff;
+    border-right: 0;
+    margin: 0 0 3% -1px;
+}
+
+#Content #TStruct fieldset fieldset fieldset {
+    background: #f5f3f2;
+}
+
+#Content #TStruct fieldset fieldset fieldset fieldset {
+    background: #f9f8f3;
+}
+
+#Content #TStruct fieldset fieldset fieldset fieldset fieldset {
+    background: #f5f3f2;
+}
+
+#Content #TStruct fieldset.CritFset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    width: 100%;
+}
+
+#Content #TStruct p {
+    padding: 0;
+    margin: 0;
+    float: left;
+    position: relative;
+}
+
+#Content #TStruct ul {
+    list-style: none;
+    float: right;
+    position: relative;
+    top: -25px;
+    z-index: 100;
+    margin: 0 0 -8px 0;
+}
+
+#Content #TStruct ul li {
+    display: block;
+    float: left;
+    width: 21px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #fff;
+    border-right: 0;
+    text-indent: -500em;
+}
+
+#Content #TStruct ul li strong {
+    display: none;
+}
+
+#Content #TStruct ul li.Weight, #Content #TStruct ul li.Threshold {
+    text-indent: 0;
+    width: 35px;
+    text-align: right;
+    padding-right: 3px;
+}
+
+#Content #TStruct ul li.Weight {
+    background: url(../../images/zambia/bg_weight.gif) 4px 50% no-repeat;
+}
+
+#Content #TStruct ul li.Threshold {
+    background: url(../../images/zambia/bg_threshold.gif) 4px 50% no-repeat;
+}
+
+#Content #TStruct ul li.Mandatory {
+    background: url(../../images/zambia/bg_mandatory.gif) 50% 50% no-repeat;
+}
+
+#Content #TStruct ul li.ESRscore {
+    background: url(../../images/zambia/bg_ESR_eval.gif) 50% 50% no-repeat;
+}
+
+#Content #TStruct ul li.ReadOnly {
+    background: url(../../images/zambia/bg_read_only.gif) 50% 50% no-repeat;
+}
+
+#Content #TStruct ul li.MvUp {
+    background: url(../../images/zambia/arrow_move-up-disabled.gif) 50% 50% no-repeat;
+}
+
+#Content #TStruct ul li.MvDn {
+    background: url(../../images/zambia/arrow_move-down-disabled.gif) 50% 50% no-repeat;
+}
+
+#Content #TStruct ul li a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 21px;
+}
+
+#Content #TStruct ul li.MvUp a {
+    background: url(../../images/zambia/arrow_move-up.gif) 50% 50% no-repeat;
+}
+
+#Content #TStruct ul li.MvDn a {
+    background: url(../../images/zambia/arrow_move-down.gif) 50% 50% no-repeat;
+}
+
+#Content #TStruct ul li.MvUp a:hover, #Content #TStruct ul li.MvDn a:hover {
+    background-color: #c1c8cd;
+}
+
+#Content #TStruct ul li.ValidityMN {
+    background: url(../../images/zambia/bg_manual.gif) 7px 50% no-repeat;
+}
+
+#Content #TStruct ul li.ValidityAU {
+    background: url(../../images/zambia/bg_auto.gif) 7px 50% no-repeat;
+    text-indent: 0;
+    width: 40px;
+    text-align: right;
+    padding-right: 3px;
+}
+
+#Content #TStruct ul li.Dates {
+    text-indent: 0;
+    width: 125px;
+    text-align: center;
+    padding-right: 3px;
+}
+
+#Content #TStruct ul li.Status {
+    background: url(../../images/zambia/bg_status.gif) 5px 50% no-repeat;
+    text-indent: 0;
+    width: 45px;
+    text-align: left;
+    padding: 0 0px 0 16px;
+}
+
+#Content #TStruct p a {
+    display: block;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 3%;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 120%;
+    text-align: center;
+}
+
+#Content #TStruct p a:hover, #Content #TStruct ul li a:hover {
+    background-color: #3b91c3;
+}
+
+#Content #TStruct input {
+    width: 3%;
+    margin: -1px 0 0 0;
+    padding: 0;
+    float: none;
+    vertical-align: middle;
+}
+
+#Content #TStruct input.active {
+    background: transparent;
+}
+
+#Content #TStruct label {
+    margin: 0;
+    padding: 0 19% 0 3%;
+    position: relative;
+    width: 78%;
+    text-align: left;
+    z-index: 1;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+#Content .TSHead label {
+    background: #989898;
+}
+
+#Content #TStruct .TSHead span.Actions {
+    position: absolute;
+    left: 87.2%;
+    top: 3px;
+    width: 80px;
+    z-index: 999;
+}
+
+#Content #TStruct .TSHead span.Actions a {
+    float: left;
+    width: 19px;
+    position: relative;
+    margin-left: 5px;
+    border: none;
+}
+
+#Content #TStruct .TSHead span.Actions a:hover {
+    background-color: transparent;
+}
+
+#Content .TSCriterion label, #Content .TSCriterionFin label {
+    background: #d7dee3;
+    color: #ECF1ED;
+}
+
+#Content .TSHeadAboutToExpire label {
+    background: #d2691e;
+}
+
+#Content .TSHeadEXPIRED label {
+    background: #dc143c;
+}
+
+#Content .TSCriterion label {
+    background: #b0b7bb;
+}
+
+#Content .TSCriterionAboutToExpire label {
+    background: #d2691e;
+}
+
+#Content .TSCriterionEXPIRED label {
+    background: #dc143c;
+}
+
+#Content #TStruct dl {
+    padding: 0 0 0 25px;
+    margin: 0;
+    float: none;
+    clear: both;
+    text-align: left;
+    color: #082d44;
+}
+
+#Content #TStruct dt {
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 120px;
+}
+
+#Content #TStruct dt img {
+    float: left;
+}
+
+#Content #TStruct dd {
+    padding: 0;
+    margin: 0 0 0 135px;
+    float: none;
+}
+
+#Content #TStruct dl.Cert dt {
+    margin: 0 0 5px;
+    width: 150px;
+}
+
+#Content #TStruct dl.Cert dd {
+    margin: 0 0 5px 165px;
+}
+
+#Content #TStruct div.TSCriterion {
+    float: right;
+    width: 97%;
+    margin: 0 0 0 3%;
+    padding: 0 0 15px 0;
+}
+
+#Content #TStruct div.TSCriterion p {
+    float: left;
+    width: 100%;
+}
+
+#Content #TStruct div.TSCriterion label {
+    padding: 0 19% 0 0;
+}
+
+#Content #TStruct div.TSCriterion span.Actions {
+    width: 80px;
+    position: absolute;
+    left: 87%;
+    top: 3px;
+    z-index: 999;
+}
+
+#Content #TStruct div.TSCriterion span.Actions a {
+    float: left;
+    width: auto;
+    position: relative;
+    display: inline;
+    margin-left: 5px;
+    border: none;
+}
+
+#Content #TStruct div.TSCriterion span.Actions a:hover {
+    background-color: transparent;
+}
+
+#Content #TStruct div.TSCriterionAboutToExpire {
+    float: right;
+    width: 97%;
+    margin: 0 0 0 3%;
+    padding: 0 0 15px 0;
+}
+
+#Content #TStruct div.TSCriterionAboutToExpire label {
+    padding: 0 19% 0 0;
+    width: 81%;
+}
+
+#Content #TStruct div.TSCriterionAboutToExpire span.Actions {
+    width: 80px;
+    position: absolute;
+    left: 87%;
+    top: 3px;
+    z-index: 999;
+}
+
+#Content #TStruct div.TSCriterionAboutToExpire span.Actions a {
+    float: left;
+    width: auto;
+    position: relative;
+    display: inline;
+    margin-left: 5px;
+    border: none;
+}
+
+#Content #TStruct div.TSCriterionAboutToExpire span.Actions a:hover {
+    background-color: transparent;
+}
+
+#Content #TStruct div.TSCriterionEXPIRED {
+    float: right;
+    width: 97%;
+    margin: 0 0 0 3%;
+    padding: 0 0 15px 0;
+}
+
+#Content #TStruct div.TSCriterionEXPIRED label {
+    padding: 0 19% 0 0;
+    width: 81%;
+}
+
+#Content #TStruct div.TSCriterionEXPIRED span.Actions {
+    width: 80px;
+    position: absolute;
+    left: 87%;
+    top: 3px;
+    z-index: 999;
+}
+
+#Content #TStruct div.TSCriterionEXPIRED span.Actions a {
+    float: left;
+    width: auto;
+    position: relative;
+    display: inline;
+    margin-left: 5px;
+    border: none;
+}
+
+#Content #TStruct div.TSCriterionEXPIRED span.Actions a:hover {
+    background-color: transparent;
+}
+
+#Content #TStruct div.TSCriterionFin {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 15px 0;
+}
+
+#Content #TStruct div.TSCriterionFin label {
+    padding: 0 19% 0 0;
+    width: 81%;
+}
+
+#Content #TStruct div.TSCriterionFin label.active {
+    background-color: #c1c8cd;
+}
+
+#Content #TStruct div.TSCriterionFin span.Actions {
+    width: 80px;
+    position: absolute;
+    left: 87%;
+    top: 3px;
+    z-index: 999;
+}
+
+#Content #TStruct div.TSCriterionFin span.Actions a {
+    float: left;
+    width: auto;
+    position: relative;
+    display: inline;
+    margin-left: 5px;
+    border: none;
+}
+
+#Content #TStruct div.TSCriterionFin span.Actions a:hover {
+    background-color: transparent;
+}
+
+#Content #TStruct p, #Content #TStruct ul li, #Content #TStruct p a, #Content #TStruct ul li a, #Content #TStruct label {
+    height: auto;
+    line-height: 23px;
+}
+
+#Content #TStruct ul li, #Content #TStruct p a, #Content #TStruct ul li a {
+    height: 23px;
+}
+
+/* ================== */
+/*   END MAINAREA CSS  */
+.ACT img {
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+#Content label.active {
+    background-color: #f0f2e4;
+}
+
+#Content .TSHead label.active, #Content .TSCriterion label.active, #Content .TSHeadAboutToExpire label.active, #Content .TSHeadEXPIRED label.active, #Content .TSCriterion label.active, #Content .TSCriterionAboutToExpire label.active, #Content .TSCriterionEXPIRED label.active, #Content .TSCriterionFin label.active {
+    background-color: #949da1;
+}
+
+#Content .TSEvaluators {
+    padding-bottom: 20px;
+}
+
+#Content #TStruct .TSEvaluators dt {
+    width: auto;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+#Content #TStruct .TSEvaluators dd {
+    margin-left: 0;
+}
+
+#Content input.active, #Content select.active, #Content textarea.active {
+    border: 1px solid #76b2da;
+    background-color: #e9f2f8;
+    background-image: none;
+}
+
+#CAPTCHA {
+    display: inline;
+    clear: both;
+    margin: 5px 0 0 34%;
+    vertical-align: top;
+    width: 230px;
+    height: 75px;
+}
+
+#Content p.Captcha button {
+    margin: 5px 0 0 2px;
+}
+
+body#PopUp {
+    background-image: none;
+    background-color: #FFF;
+}
+
+#PopUp #Content {
+    margin: 8px;
+}
+
+#PopUp h1 {
+    border-bottom: 1px solid #909859;
+    padding: 0 0 7px 0;
+    margin: 0 0 20px 0;
+    font-size: 150%;
+    font-weight: normal;
+}
+
+#PopUp h2 {
+    font-size: 100%;
+    font-weight: bold;
+    border-bottom: 1px solid #dfe5e9;
+    margin: 10px 0 5px 0;
+    padding: 5px 0 2px;
+}
+
+#PopUp #main #options {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+#PopUp #main #optNum p, #PopUp #main #options p {
+    margin-left: 0 !important;
+    margin-left: 3px;
+}
+
+#PopUp #main #options span.crtValue {
+    padding: 2px 5px 2px 2px;
+    display: block;
+    width: 20px;
+    float: left;
+}
+
+.THSort {
+    float: right;
+    width: 7px;
+    margin-top: 2px;
+}
+
+.THSort img {
+    clear: both;
+    float: right;
+    margin-bottom: 3px;
+}
+
+p.Pop {
+    margin: 15px 0;
+}
+
+#Content form p.Highlighted {
+    background-color: #e5e2e1;
+    padding: 5px 0;
+}
+
+#Content form p.Highlighted label {
+    margin-left: 5px;
+}
+
+#Content td a.popup, #Content td a.popup {
+    width: 8px;
+    height: 11px;
+    background-color: #3b91c3;
+    border: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 1px 2px;
+    font-size: 9px;
+    line-height: 11px;
+    margin-left: 5px;
+}
+
+#Content td a.popup:hover, #Content td a.popup:hover {
+    background-color: #404b52;
+    color: #fff;
+    text-decoration: none;
+}
+
+#TenderEvaluationForm span.Status, th span.Status {
+    display: block;
+    color: #c4c4c4;
+}
+
+#Content .Text {
+    padding: 5px 0 10px 0;
+    float: left;
+    width: 100%;
+}
+
+#Content .Text p {
+    padding: 5px 0 0 0;
+}
+
+#Content .Agreement {
+    background-color: #f3f5f0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 350px;
+    float: left;
+    width: 98%;
+    padding: 5px 1%;
+}
+
+#Content .Agreement p {
+    padding: 5px 10px;
+    float: none;
+    text-align: justify;
+}
+
+#Content .Agreement h3 {
+    margin-top: 5px;
+    padding: 5px 0;
+    background: none;
+    margin: 0;
+    border-width: 0;
+    float: none;
+    border-bottom: 1px solid #bfc9b1;
+    width: 100%;
+    font-size: 110%;
+}
+
+#Content .Agreement h4 {
+    padding: 10px 0 5px 0;
+    background: none;
+    margin: 0;
+    float: none;
+    border-bottom: 1px solid #bfc9b1;
+}
+
+#Content .Agreement h5 {
+    padding: 10px 0 5px 0;
+    background: none;
+    margin: 0;
+    float: none;
+    font-weight: normal;
+    border-bottom: 1px solid #bfc9b1;
+}
+
+#Content ol.Roman {
+    list-style: upper-roman;
+    padding-left: 30px;
+}
+
+#Content ol.Roman span {
+    font-weight: bold;
+}
+
+#Content ol.Roman li {
+    margin-top: 10px;
+}
+
+#Content ol.RomanLow {
+    list-style: lower-roman;
+    padding-left: 20px;
+}
+
+#Content ol.RomanLow li {
+    margin-top: 10px;
+}
+
+#Content .Agreement ol p {
+    padding: 5px 0;
+}
+
+#Content .Text ul, #Content .Agreement ul {
+    padding: 3px 0 0 15px;
+    margin: 0;
+    list-style: url(../../images/zambia/bullet.gif) square;
+}
+
+#Content .Text ul li, #Content .Agreement ul li {
+    padding-bottom: 5px;
+}
+
+#Content .Text ul li ul, #Content .Agreement ul li ul {
+    list-style: url(../../images/zambia/bullet_sm.gif) disc;
+}
+
+#Content .Text ul li ul li ul, #Content .Agreement ul li ul li ul {
+    list-style: url(../../images/zambia/bullet_smr.gif) disc;
+}
+
+#Content PRE {
+    float: left;
+    display: block;
+    width: 100%;
+    overflow: auto;
+}
+
+span.InputInfo {
+    clear: both;
+    float: left;
+    margin: 5px 0 10px 0;
+    width: 61%;
+    padding-left: 33.5%;
+    color: #7f898f;
+}
+
+/*  calendar */
+/* ================== */
+#Calendar {
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+}
+
+#Calendar table {
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    border: 0;
+    width: 180px;
+    float: left;
+}
+
+#Calendar table th, #Calendar table td {
+    vertical-align: middle;
+    text-align: center;
+    line-height: 20px;
+    width: 25px;
+    height: 22px;
+    font-size: 90%;
+}
+
+#Calendar table td {
+    background: url(../../images/zambia/bg_date.gif);
+}
+
+#Calendar table th {
+    background: url(../../images/zambia/bg_day.gif) 0 0;
+    color: #ECF1ED;
+}
+
+#Calendar table .Today {
+    background: url(../../images/zambia/bg_today.gif) 0 0;
+    color: #ebece4;
+}
+
+#Calendar table .Active {
+    background: url(../../images/zambia/bg_date_active.gif) 0 0;
+}
+
+#Calendar table .Active a {
+    font-weight: bold;
+    color: #48553b;
+    text-decoration: none;
+}
+
+#Calendar table .Active a:hover {
+    text-decoration: underline;
+}
+
+#Calendar form {
+    padding: 10px 5px;
+    width: 170px;
+}
+
+#Calendar form select.Year {
+    position: absolute;
+    right: 5px;
+}
+
+/* ================== */
+/*   calendar */
+.Hscroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    float: left;
+}
+
+.Hscroll table {
+    margin-bottom: 20px;
+}
+
+#Content th.Criterion {
+    background-color: #3b91c3;
+    background-image: none;
+    padding: 0;
+    line-height: 21px;
+}
+
+#Content th.Criterion a.ExpCol {
+    width: 14px;
+    background-color: #3b91c3;
+    border: 1px solid #fff;
+    border: 1px 1px 0 0;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    line-height: 16px;
+    padding: 4px 3px;
+}
+
+#Content th.Criterion a.ExpCol:hover {
+    background-color: #404b52;
+    color: #fff;
+    text-decoration: none;
+}
+
+th.NoWrap {
+    white-space: nowrap;
+}
+
+tr.Values th {
+    background-image: none;
+    background-color: #4C563C;
+    font-weight: normal;
+}
+
+th.OverallP {
+    background-image: none;
+    background-color: #5e5e5e;
+}
+
+#Content td.RSeparator {
+    border-right-color: #cbcec7;
+}
+
+#Content div.tableSet       {*float:left; position:relative; /* mda fixed issue 2009/02/17 width:100%; overflow-x:auto; padding-bottom:18px;*/}
+
+#Content div.showhide {
+    width: 160px;
+    display: none;
+    padding-bottom: 5px;
+    background: #E5E7E9;
+    border: 1px solid #fff;
+    border-width: 1px 0 0 1px;
+    position: absolute;
+    top: -1px;
+    *top: 0;
+    right:
+    0;
+}
+
+#Content div.left {
+    left: 0;
+}
+
+#Content div.showhide p {
+    margin: 0;
+    width: 100%;
+    padding: 2px;
+    float: none;
+    text-align: left;
+}
+
+#Content div.showhide p:after {
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;
+    visibility: hidden;
+}
+
+#Content div.showhide p.smalltitle  {width: 156px;margin:0 0 5px 0; line-height:24px; *line-height:21px; border-bottom:1px solid #fff; background:#65707C; font-weight:bold; color:#FFFFFF;}
+
+#Content div.showhide p input {
+    margin: 0 0 0 -18px;
+    padding: 0;
+    border: none;
+    vertical-align: middle;
+    float: left;
+}
+
+#Content div.showhide p label {
+    background: none;
+    line-height: normal;
+    margin: 0;
+    padding: 0 0 0 20px;
+    float: left;
+    vertical-align: middle;
+    text-align: left;
+}
+
+th.extra {
+    width: 16px;
+}
+
+td.extra {
+    background-color: #eaeae7;
+}
+
+#Content table tr td.Hover {
+    background-color: #e3ecf2;
+}
+
+#Content form p.password {
+    position: relative;
+}
+
+.indicatorContainer, .passwordMessage {
+    height: 17px;
+    width: 113px;
+    position: absolute;
+    top: 0;
+    left: 50.7%;
+}
+
+.indicatorContainer {
+    background: url(../../images/zambia/bg_pswd_strength.gif) repeat-x;
+    border: 1px solid #a6a9a0;
+}
+
+#Content .passwordMessage p {
+    margin: 0;
+    line-height: 19px;
+    text-align: center;
+}
+
+.indicatorContainer div {
+    background: url(../../images/zambia/indicator.gif) 0;
+    height: 17px;
+    width: 0;
+}
+
+#Content input.ACT {
+    margin: 0 5px;
+    padding: 1px;
+    float: left;
+    border: none;
+    background: none;
+    width: 18px;
+    height: 18px;
+}
+
+#Content button.Disabled {
+    background: #afbdaf;
+}
+
+.jqmWindow {
+    margin-left: -300px;
+    width: 600px;
+    display: none;
+    position: fixed;
+    top: 150px;
+    left: 50%;
+}
+
+.jqmOverlay {
+    background-color: #000;
+}
+
+.jqDrag {
+    cursor: move;
+}
+
+.message {
+    padding: 0 5px 5px 5px;
+    border: 2px solid #D2691E;
+    background: #FFF;
+}
+
+.message h4 {
+    margin: 0 -5px 5px -5px;
+    padding: 1em 0 1em 13px;
+    color: #FFF;
+    background: #546e87 url(../../images/zambia/bg_table.gif) repeat-x scroll 0% 0%;
+    * /
+}
+
+.message a.jqmClose, .message a.jqmClose:visited {
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+}
+
+hr {
+    margin: 10px 0 5px 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #dfe5e9;
+    border-bottom: 1px solid #fff;
+    height: 2px;
+    line-height: 1px;
+}
+
+#Content #TenderEvaluationForm {
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+#TenderEvaluationForm fieldset {
+    clear: both;
+}
+
+#TenderEvaluationForm fieldset.Documents {
+    padding: 1% 1% 0 1%;
+    width: 98%;
+    border-top: 10px solid white;
+}
+
+#TenderEvaluationForm .Sect_1 {
+    border-top: 2px solid #0e1012;
+}
+
+#TenderEvaluationForm dl {
+    width: 100%;
+    float: left;
+    background: #f9f8f3 url(../../images/zambia/icon_gray.gif) no-repeat -85px 50%;
+    border-bottom: 1px solid #d2d1c6;
+}
+
+#TenderEvaluationForm dl.Hover {
+    background-color: #e4f3fd;
+}
+
+#TenderEvaluationForm dl dt {
+    display: block;
+    width: 95%;
+    padding: 2px 2% 2px 3%;
+    float: left;
+    position: relative;
+    background-color: #989898;
+    color: #fff;
+    font-weight: bold;
+    overflow: hidden;
+    text-align: left;
+}
+
+/*#TenderEvaluationForm dl dt       {display:block; width:100%; padding:2px 0 2px 0; float:left; background-color:#404b52; color:#fff; font-weight:bold; overflow:hidden; text-align:left;}*/
+#TenderEvaluationForm fieldset.Supplier dl dt.Supplier {
+    background-color: #989898;
+}
+
+#TenderEvaluationForm .Financial p {
+    display: block;
+    width: 95%;
+    padding: 2px 2% 2px 3%;
+    float: left;
+    position: relative;
+    background-color: #404b52;
+    color: #fff;
+    font-weight: bold;
+    overflow: hidden;
+    text-align: left;
+    margin: 0 0 1px;
+}
+
+#TenderEvaluationForm dl.Criteria dt {
+    background-color: #d7dee3;
+    color: #ECF1ED;
+}
+
+#TenderEvaluationForm .Sect_2 dl {
+    width: 98%;
+    padding-left: 2%;
+    background-position: -71px 50%;
+}
+
+#TenderEvaluationForm .Sect_3 dl {
+    width: 96%;
+    padding-left: 4%;
+    background-position: -56px 50%;
+}
+
+#TenderEvaluationForm .Sect_4 dl {
+    width: 94%;
+    padding-left: 6%;
+    background-position: -41px 50%;
+}
+
+#TenderEvaluationForm .Sect_5 dl {
+    width: 92%;
+    padding-left: 8%;
+    background-position: -27px 50%;
+}
+
+#TenderEvaluationForm dl dt a {
+    display: block;
+    float: left;
+    width: 14px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #989898;
+    border: 1px solid #fff;
+    border-width: 0 1px 1px 0;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*#TenderEvaluationForm dl dt a          {display:block; float:left; width:14px; background-color:#404b52; border:1px solid #fff; border-width:0 1px 0 0; text-align:center; color:#fff; text-decoration:none;}*/
+#TenderEvaluationForm dl dt a:hover {
+    background-color: #3b91c3;
+    color: #fff;
+    text-decoration: none;
+}
+
+#TenderEvaluationForm .Financial p a {
+    display: block;
+    float: left;
+    width: 14px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #404b52;
+    border: 1px solid #fff;
+    border-width: 0 1px 1px 0;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+#TenderEvaluationForm .Financial p a:hover {
+    background-color: #3b91c3;
+    color: #fff;
+    text-decoration: none;
+}
+
+#TenderEvaluationForm .Financial input {
+    width: 100px;
+}
+
+.Bigger #TenderEvaluationForm .Financial input {
+    width: 140px;
+}
+
+#TenderEvaluationForm dl dd {
+    display: block;
+    float: left;
+    padding: 5px 0;
+    text-align: left;
+    background: transparent url(../../images/zambia/divider.gif) repeat-y 100% 0;
+}
+
+#Content dd.Ref, #Content dd.ASc, #Content dd.Thr, #Content dd.Wgh, #Content dd.WghSc, #Content dd.Var, #Content dd.AvSc, #Content dd.ConSc {
+    width: 51px;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-align: right;
+}
+
+#Content dd.Thr, #Content dd.Wgh {
+    width: 33px;
+}
+
+#Content dd.Var {
+    width: 68px;
+}
+
+#Content dd.AvSc {
+    width: 40px;
+}
+
+#Content dd.ConSc {
+    width: 60px;
+}
+
+#Content dd.ConSc input {
+    float: none;
+}
+
+#Content .Header dd.ASc {
+    font-family: Verdana;
+    font-size: 100%;
+}
+
+#Content dd.SumPOValueFR input, #Content dd.SumPOValue input, #Content dd.OverallValueFR input, #Content dd.OverallValue input {
+    float: none;
+    width: 35px;
+}
+
+#Content dd.FNValue {
+    width: 130px;
+    padding-left: 2px;
+    padding-right: 2px;
+    position: relative;
+}
+
+.Bigger #Content dd.FNValue {
+    width: 170px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#Content dd.FR {
+    width: 127px;
+    padding-left: 20px;
+}
+
+.Bigger #Content dd.FR {
+    width: 165px;
+    padding-left: 27px;
+}
+
+#Content dd.Ref {
+    width: 20px;
+}
+
+#Content dd.Sc {
+    width: 70px;
+    padding: 5px 2px 4px;
+    overflow: hidden;
+}
+
+#Content dd.PN {
+    width: 16px;
+    padding: 4px 2px 2px;
+    text-align: center;
+}
+
+#Content dd.EOValue {
+    width: 162px;
+    padding-left: 15px;
+    padding-right: 2px;
+}
+
+#Content .Elems_0 dd.EOValue {
+    width: 254px;
+    padding-left: 15px;
+    padding-right: 2px;
+}
+
+#Content .Elems_1 dd.EOValue {
+    width: 256px;
+    padding-left: 15px;
+    padding-right: 2px;
+}
+
+#Content dd.POValue {
+    padding: 3px 2px 4px 2px;
+    width: 201px;
+    position: relative
+}
+
+#Content dd.Sc a.popup, #Content dd.FNValue a.popup {
+    display: block;
+    float: left;
+    width: 8px;
+    height: 11px;
+    background-color: #3b91c3;
+    border: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 1px;
+    font-size: 9px;
+    line-height: 11px;
+}
+
+#Content dd.FNValue a.popup {
+    position: absolute;
+    right: 2px;
+    top: 5px;
+}
+
+#Content dd.Sc a.popup:hover, #Content dd.FNValue a.popup:hover {
+    background-color: #1d7fb5;
+    color: #fff;
+    text-decoration: none;
+}
+
+#Content dd.POValue a.popup {
+    display: block;
+    width: 18px;
+    height: 11px;
+    background-color: #50a5d6;
+    border: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 1px;
+    position: absolute;
+    top: 3px;
+    right: 1px;
+    font-size: 9px;
+    line-height: 11px
+}
+
+#Content dd.POValue a.popup:hover {
+    background-color: #1d7fb5;
+    color: #fff;
+    text-decoration: none;
+}
+
+#Content dd.PN img {
+    vertical-align: middle;
+}
+
+#Content .Sect_2 dd.EOValue {
+    width: 147px;
+}
+
+#Content .Elems_0 .Sect_2 dd.EOValue {
+    width: 275px;
+}
+
+#Content .Elems_1 .Sect_2 dd.EOValue {
+    width: 242px;
+}
+
+#Content .Sect_3 dd.EOValue {
+    width: 133px;
+}
+
+#Content .Elems_0 .Sect_3 dd.EOValue {
+    width: 260px;
+}
+
+#Content .Elems_1 .Sect_3 dd.EOValue {
+    width: 225px;
+}
+
+#Content .Sect_4 dd.EOValue {
+    width: 118px;
+}
+
+#Content .Elems_0 .Sect_4 dd.EOValue {
+    width: 245px;
+}
+
+#Content .Elems_1 .Sect_4 dd.EOValue {
+    width: 210px;
+}
+
+#Content .Sect_5 dd.EOValue {
+    width: 103px;
+}
+
+#Content .Elems_0 .Sect_5 dd.EOValue {
+    width: 230px;
+}
+
+#Content .Elems_1 .Sect_5 dd.EOValue {
+    width: 195px;
+}
+
+.Bigger #Content dd.EOValue {
+    width: 241px;
+}
+
+.Bigger #Content .Elems_0 dd.EOValue {
+    width: 333px;
+}
+
+.Bigger #Content .Elems_1 dd.EOValue {
+    width: 321px;
+}
+
+.Bigger #Content dd.POValue {
+    width: 307px;
+}
+
+.Bigger #Content .Sect_2 dd.EOValue {
+    width: 223px;
+}
+
+.Bigger #Content .Elems_0 .Sect_2 dd.EOValue {
+    width: 335px;
+}
+
+.Bigger #Content .Elems_1 .Sect_2 dd.EOValue {
+    width: 301px;
+}
+
+.Bigger #Content .Sect_3 dd.EOValue {
+    width: 205px;
+}
+
+.Bigger #Content .Elems_0 .Sect_3 dd.EOValue {
+    width: 316px;
+}
+
+.Bigger #Content .Elems_1 .Sect_3 dd.EOValue {
+    width: 282px;
+}
+
+.Bigger #Content .Sect_4 dd.EOValue {
+    width: 187px;
+}
+
+.Bigger #Content .Elems_0 .Sect_4 dd.EOValue {
+    width: 297px;
+}
+
+.Bigger #Content .Elems_1 .Sect_4 dd.EOValue {
+    width: 264px;
+}
+
+.Bigger #Content .Sect_5 dd.EOValue {
+    width: 169px;
+}
+
+.Bigger #Content .Elems_0 .Sect_5 dd.EOValue {
+    width: 277px;
+}
+
+.Bigger #Content .Elems_1 .Sect_5 dd.EOValue {
+    width: 245px;
+}
+
+#Content .withWeight dd.SumPOValue {
+    width: 122px;
+}
+
+.Bigger #Content .withWeight dd.SumPOValue {
+    width: 173px;
+}
+
+#Content .Sum_3 .withWeight dd.SumPOValue {
+    width: 171px;
+}
+
+#Content .Sum_2 .withWeight dd.SumPOValue {
+    width: 258px;
+}
+
+#Content .Sum_1 .withWeight dd.SumPOValue {
+    width: 562px;
+}
+
+.Bigger #Content .Sum_3 .withWeight dd.SumPOValue {
+    width: 232px;
+}
+
+.Bigger #Content .Sum_2 .withWeight dd.SumPOValue {
+    width: 349px;
+}
+
+.Bigger #Content .Sum_1 .withWeight dd.SumPOValue {
+    width: 746px;
+}
+
+#Content dd.SumPOValue {
+    width: 147px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#Content fieldset.Sect_1 dd.SumPOValue {
+    text-align: right;
+}
+
+.Bigger #Content dd.SumPOValue {
+    width: 201px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#Content .Sum_3 dd.SumPOValue {
+    width: 200px;
+}
+
+#Content .Sum_2 dd.SumPOValue {
+    width: 300px;
+}
+
+#Content .Sum_1 dd.SumPOValue {
+    width: 601px;
+}
+
+.Bigger #Content .Sum_3 dd.SumPOValue {
+    width: 271px;
+}
+
+.Bigger #Content .Sum_2 dd.SumPOValue {
+    width: 411px;
+}
+
+.Bigger #Content .Sum_1 dd.SumPOValue {
+    width: 812px;
+}
+
+#Content .withWeight dd.SumPOValueFR {
+    width: 122px;
+}
+
+#Content .Sum_3 .withWeight dd.SumPOValueFR {
+    width: 152px;
+}
+
+#Content .Sum_2 .withWeight dd.SumPOValueFR {
+    width: 240px;
+}
+
+#Content .Sum_1 .withWeight dd.SumPOValueFR {
+    width: 502px;
+}
+
+.Bigger #Content .withWeight dd.SumPOValueFR {
+    width: 156px;
+}
+
+.Bigger #Content .Sum_3 .withWeight dd.SumPOValueFR {
+    width: 215px;
+}
+
+.Bigger #Content .Sum_2 .withWeight dd.SumPOValueFR {
+    width: 334px;
+}
+
+.Bigger #Content .Sum_1 .withWeight dd.SumPOValueFR {
+    width: 687px;
+}
+
+#Content .Supplier dd.SumPOValueFR, #Content .Supplier dd.SumPOValue {
+    width: 122px;
+}
+
+.Bigger #Content .Supplier dd.SumPOValueFR {
+    width: 156px;
+}
+
+.Bigger #Content .Supplier dd.SumPOValue {
+    width: 173px;
+}
+
+#Content fieldset.Supplier dd.SumPOValueFR, #Content fieldset.Supplier dd.SumPOValue {
+    text-align: right;
+}
+
+#Content dd.SumPOValueFR {
+    width: 141px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#Content fieldset.Sect_1 dd.SumPOValueFR {
+    text-align: right;
+}
+
+#Content .Sum_3 dd.SumPOValueFR {
+    width: 186px;
+}
+
+#Content .Sum_2 dd.SumPOValueFR {
+    width: 290px;
+}
+
+#Content .Sum_1 dd.SumPOValueFR {
+    width: 594px;
+}
+
+.Bigger #Content dd.SumPOValueFR {
+    width: 164px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.Bigger #Content .Sum_3 dd.SumPOValueFR {
+    width: 229px;
+}
+
+.Bigger #Content .Sum_2 dd.SumPOValueFR {
+    width: 364px;
+}
+
+.Bigger #Content .Sum_1 dd.SumPOValueFR {
+    width: 779px;
+}
+
+#Content fieldset.withWeight .Sect_2 dd.SumPOValueFR {
+    width: 108px;
+}
+
+#Content .Sum_3 .withWeight .Sect_2 dd.SumPOValueFR {
+    width: 137px;
+}
+
+#Content .Sum_2 .withWeight .Sect_2 dd.SumPOValueFR {
+    width: 225px;
+}
+
+#Content .Sum_1 .withWeight .Sect_2 dd.SumPOValueFR {
+    width: 487px;
+}
+
+.Bigger #Content .withWeight .Sect_2 dd.SumPOValueFR {
+    width: 138px;
+}
+
+.Bigger #Content .Sum_3 fieldset.withWeight .Sect_2 dd.SumPOValueFR {
+    width: 197px;
+}
+
+.Bigger #Content .Sum_2 fieldset.withWeight .Sect_2 dd.SumPOValueFR {
+    width: 316px;
+}
+
+.Bigger #Content .Sum_1 fieldset.withWeight .Sect_2 dd.SumPOValueFR {
+    width: 669px;
+}
+
+#Content .Sect_2 dd.SumPOValueFR {
+    width: 126px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#Content .Sum_3 .Sect_2 dd.SumPOValueFR {
+    width: 171px;
+}
+
+#Content .Sum_2 .Sect_2 dd.SumPOValueFR {
+    width: 275px;
+}
+
+#Content .Sum_1 .Sect_2 dd.SumPOValueFR {
+    width: 579px;
+}
+
+.Bigger #Content .Sect_2 dd.SumPOValueFR {
+    width: 146px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.Bigger #Content .Sum_3 .Sect_2 dd.SumPOValueFR {
+    width: 211px;
+}
+
+.Bigger #Content .Sum_2 .Sect_2 dd.SumPOValueFR {
+    width: 346px;
+}
+
+.Bigger #Content .Sum_1 .Sect_2 dd.SumPOValueFR {
+    width: 761px;
+}
+
+#Content fieldset.withWeight .Sect_3 dd.SumPOValueFR {
+    width: 94px;
+}
+
+#Content .Sum_3 .withWeight .Sect_3 dd.SumPOValueFR {
+    width: 123px;
+}
+
+#Content .Sum_2 .withWeight .Sect_3 dd.SumPOValueFR {
+    width: 211px;
+}
+
+#Content .Sum_1 .withWeight .Sect_3 dd.SumPOValueFR {
+    width: 473px;
+}
+
+.Bigger #Content .withWeight .Sect_3 dd.SumPOValueFR {
+    width: 120px;
+}
+
+.Bigger #Content .Sum_3 fieldset.withWeight .Sect_3 dd.SumPOValueFR {
+    width: 179px;
+}
+
+.Bigger #Content .Sum_2 fieldset.withWeight .Sect_3 dd.SumPOValueFR {
+    width: 298px;
+}
+
+.Bigger #Content .Sum_1 fieldset.withWeight .Sect_3 dd.SumPOValueFR {
+    width: 651px;
+}
+
+#Content .Sect_3 dd.SumPOValueFR {
+    width: 112px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#Content .Sum_3 .Sect_3 dd.SumPOValueFR {
+    width: 157px;
+}
+
+#Content .Sum_2 .Sect_3 dd.SumPOValueFR {
+    width: 261px;
+}
+
+#Content .Sum_1 .Sect_3 dd.SumPOValueFR {
+    width: 565px;
+}
+
+.Bigger #Content .Sect_3 dd.SumPOValueFR {
+    width: 128px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.Bigger #Content .Sum_3 .Sect_3 dd.SumPOValueFR {
+    width: 193px;
+}
+
+.Bigger #Content .Sum_2 .Sect_3 dd.SumPOValueFR {
+    width: 328px;
+}
+
+.Bigger #Content .Sum_1 .Sect_3 dd.SumPOValueFR {
+    width: 743px;
+}
+
+#Content fieldset.withWeight .Sect_4 dd.SumPOValueFR {
+    width: 80px;
+}
+
+#Content .Sum_3 .withWeight .Sect_4 dd.SumPOValueFR {
+    width: 109px;
+}
+
+#Content .Sum_2 .withWeight .Sect_4 dd.SumPOValueFR {
+    width: 197px;
+}
+
+#Content .Sum_1 .withWeight .Sect_4 dd.SumPOValueFR {
+    width: 459px;
+}
+
+.Bigger #Content .withWeight .Sect_4 dd.SumPOValueFR {
+    width: 102px;
+}
+
+.Bigger #Content .Sum_3 fieldset.withWeight .Sect_4 dd.SumPOValueFR {
+    width: 161px;
+}
+
+.Bigger #Content .Sum_2 fieldset.withWeight .Sect_4 dd.SumPOValueFR {
+    width: 280px;
+}
+
+.Bigger #Content .Sum_1 fieldset.withWeight .Sect_4 dd.SumPOValueFR {
+    width: 633px;
+}
+
+#Content .Sect_4 dd.SumPOValueFR {
+    width: 97px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#Content .Sum_3 .Sect_4 dd.SumPOValueFR {
+    width: 143px;
+}
+
+#Content .Sum_2 .Sect_4 dd.SumPOValueFR {
+    width: 247px;
+}
+
+#Content .Sum_1 .Sect_4 dd.SumPOValueFR {
+    width: 551px;
+}
+
+.Bigger #Content .Sect_4 dd.SumPOValueFR {
+    width: 109px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.Bigger #Content .Sum_3 .Sect_4 dd.SumPOValueFR {
+    width: 175px;
+}
+
+.Bigger #Content .Sum_2 .Sect_4 dd.SumPOValueFR {
+    width: 310px;
+}
+
+.Bigger #Content .Sum_1 .Sect_4 dd.SumPOValueFR {
+    width: 725px;
+}
+
+#Content fieldset.withWeight .Sect_5 dd.SumPOValueFR {
+    width: 66px;
+}
+
+#Content .Sum_3 .withWeight .Sect_5 dd.SumPOValueFR {
+    width: 95px;
+}
+
+#Content .Sum_2 .withWeight .Sect_5 dd.SumPOValueFR {
+    width: 183px;
+}
+
+#Content .Sum_1 .withWeight .Sect_5 dd.SumPOValueFR {
+    width: 445px;
+}
+
+.Bigger #Content .withWeight .Sect_5 dd.SumPOValueFR {
+    width: 84px;
+}
+
+.Bigger #Content .Sum_3 fieldset.withWeight .Sect_5 dd.SumPOValueFR {
+    width: 143px;
+}
+
+.Bigger #Content .Sum_2 fieldset.withWeight .Sect_5 dd.SumPOValueFR {
+    width: 262px;
+}
+
+.Bigger #Content .Sum_1 fieldset.withWeight .Sect_5 dd.SumPOValueFR {
+    width: 615px;
+}
+
+#Content .Sect_5 dd.SumPOValueFR {
+    width: 84px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#Content .Sum_3 .Sect_5 dd.SumPOValueFR {
+    width: 129px;
+}
+
+#Content .Sum_2 .Sect_5 dd.SumPOValueFR {
+    width: 233px;
+}
+
+#Content .Sum_1 .Sect_5 dd.SumPOValueFR {
+    width: 537px;
+}
+
+.Bigger #Content .Sect_5 dd.SumPOValueFR {
+    width: 92px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.Bigger #Content .Sum_3 .Sect_5 dd.SumPOValueFR {
+    width: 157px;
+}
+
+.Bigger #Content .Sum_2 .Sect_5 dd.SumPOValueFR {
+    width: 292px;
+}
+
+.Bigger #Content .Sum_1 .Sect_5 dd.SumPOValueFR {
+    width: 707px;
+}
+
+#Content div.Overall dl {
+    background-color: #C8C9CB;
+    color: #082d44;
+    font-weight: bold;
+    border-bottom: 1px solid #e1dddd;
+    border-top: 1px solid white;
+}
+
+#Content div.Overall dt {
+    background-color: #C8C9CB;
+    color: #ECF1ED;
+    font-weight: bold;
+    float: left;
+    width: 570px;
+    padding: 5px 2px 5px 2px;
+}
+
+#Content .Elems_0 div.Overall dt {
+    width: 95.4%;
+}
+
+#Content .Elems_1 div.Overall dt {
+    width: 88.7%;
+}
+
+.Bigger #Content div.Overall dt {
+    width: 770px
+}
+
+.Bigger #Content .Elems_0 div.Overall dt {
+    width: 96.4%;
+}
+
+.Bigger #Content .Elems_1 div.Overall dt {
+    width: 90.5%;
+}
+
+#Content .Consensus dd.OverallValueFR, #Content .Consensus dd.OverallValue {
+    text-align: right;
+}
+
+#Content .Consensus dd.OverallValueFR {
+    width: 94px;
+}
+
+#Content .Consensus dd.OverallValue {
+    width: 175px;
+}
+
+.Bigger #Content .Consensus dd.OverallValue {
+    width: 236px;
+}
+
+#Content .Sum_4 div.Overall dt {
+    width: 603px;
+}
+
+#Content .Sum_3 div.Overall dt {
+    width: 603px;
+}
+
+#Content .Sum_3 div.Consensus dt {
+    width: 50px;
+}
+
+#Content .Sum_4 div.Consensus dt {
+    width: 50px;
+}
+
+#Content .Sum_2 div.Overall dt {
+    width: 603px;
+}
+
+#Content .Sum_1 div.Overall dt {
+    width: 603px;
+}
+
+.Bigger #Content .Sum_4 div.Overall dt {
+    width: 788px;
+}
+
+.Bigger #Content .Sum_3 div.Overall dt {
+    width: 788px;
+}
+
+.Bigger #Content .Sum_3 div.Consensus dt {
+    width: 113px;
+}
+
+.Bigger #Content .Sum_4 div.Consensus dt {
+    width: 113px;
+}
+
+.Bigger #Content .Sum_2 div.Overall dt {
+    width: 788px;
+}
+
+.Bigger #Content .Sum_1 div.Overall dt {
+    width: 788px;
+}
+
+#Content div.Overall dd {
+    background-color: #C8C9CB;
+    color: #404B52;
+    font-weight: bold;
+}
+
+.HscrollEv {
+    overflow: hidden;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    float: left;
+    width: 100%;
+}
+
+#TenderEvaluationForm div.Header dl {
+    background: #5d8ebc url(../../images/zambia/bg_table.gif) repeat-x 0 0;
+}
+
+#TenderEvaluationForm div.Header dt {
+    padding-left: 2%;
+    width: 96%;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    display: none;
+}
+
+#TenderEvaluationForm div.Header dd {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#TenderEvaluationForm div.Header dd.Ref {
+    text-align: left;
+}
+
+#Content dd.Ref a {
+    display: block;
+    width: 16px;
+    height: 16px;
+    float: left;
+    overflow: hidden;
+}
+
+#Content dd.Ref a.Word {
+    background: #0e1012 url(../../images/zambia/word.gif) no-repeat 50% 50%;
+}
+
+#Content dd.Ref a.Acrobat {
+    background: url(../../images/zambia/acrobat.gif) no-repeat 50% 50%;
+}
+
+#Content dd.Ref a.Excel {
+    background: #0e1012 url(../../images/zambia/excel.gif) no-repeat 50% 50%;
+}
+
+#Content dd.Ref a.Unknown {
+    background: url(../../images/zambia/icon_download.gif) no-repeat 50% 50%;
+}
+
+#Content dd.Ref a span {
+    display: block;
+    width: 16px;
+    height: 16px;
+    float: left;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.DBAddList {
+    color: #4B7487;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.NUTSlist, .NUTSlist ul {
+    list-style-type: none;
+}
+
+.NUTSlist li {
+    padding: 3px 0;
+}
+
+.NUTSlist li img {
+    vertical-align: middle;
+}
+
+.NUTSlist li li {
+    margin-left: 20px;
+}
+
+.IntroText img {
+    float: right;
+    margin: 2px 0 8px 30px;
+}
+
+.TwoFields {
+    text-align: justify;
+    line-height: 15px;
+    margin: 30px 0 0;
+    padding: 0;
+}
+
+.TwoFields p {
+    margin-bottom: 10px;
+}
+
+#Content .DisplayField h3 {
+    background-color: transparent;
+    background-image: none;
+    border-bottom: 4px solid #eaeae7;
+    color: #ECF1ED;
+    display: block;
+    font-size: 150%;
+    font-weight: normal;
+    margin: 0 0 10px 0;
+    padding: 4px 0 7px 0;
+    text-align: left;
+}
+
+#Content .TwoFields ul {
+    margin-bottom: 10px;
+    list-style: square outside url("../../images/zambia/bullet.gif");
+    margin: 0;
+    padding: 3px 0 0 15px;
+}
+
+#Content .TwoFields a.ArrowLink {
+    padding: 10px 0 0 10px;
+    background: url(../../images/zambia/arrow_nav_orange.gif) no-repeat 0 13px;
+    font-weight: bold;
+}
+
+ul.NormalList {
+    float: left;
+    width: auto;
+}
+
+#Content .TwoFields h3 {
+    background-color: transparent;
+    background-image: none;
+    border-bottom: 4px solid #eaeae7;
+    color: #ECF1ED;
+    display: block;
+    font-size: 150%;
+    font-weight: normal;
+    margin: 0 0 10px;
+    padding: 4px 0 7px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.FieldLeft {
+    padding: 0;
+    margin: 0 3% 0 0;
+    width: 48%;
+    float: left;
+}
+
+.FieldRight {
+    padding: 0;
+    margin: 0 0 0 0;
+    width: 48%;
+    float: right;
+}
+
+.Fields {
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.DisplayField {
+    margin-top: 30px;
+    height: auto;
+}
+
+.DisplayField a {
+    color: #3f7524;
+    text-decoration: underline;
+}
+
+.DisplayField a:hover {
+    text-decoration: none;
+}
+
+.DisplayField dt {
+    display: block;
+    float: left;
+    width: 245px;
+    padding: 4px 5px;
+    background: #e5e8e3;
+    clear: both;
+    margin: 0 0 5px 0;
+    line-height: 15px;
+}
+
+.DisplayField dd {
+    display: block;
+    margin: 0 0 5px 258px;
+    background: #eaede7;
+    padding: 4px 5px;
+    zoom: 1;
+    line-height: 15px;
+    text-align: justify;
+}
+
+.Intro {
+    padding: 10px 1%;
+    background-color: #eef2e3;
+    border-bottom: 1px solid #e6eae0;
+    float: left;
+    width: 98%;
+    line-height: 20px;
+}
+
+.Intro img {
+    float: left;
+    margin-right: 5px;
+}
+
+#Content .DisplayField ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#Content .DisplayField ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0 0;
+}
+
+#Content .DisplayField ul.ListArrow li {
+    padding: 10px 0 0 15px;
+    background: url(../../images/zambia/arrow_nav_orange.gif) no-repeat 0 14px;
+}
+
+#Content .DisplayField ul.ListData {
+    display: block;
+    width: 100%;
+}
+
+#Content .DisplayField ul.ListData li {
+    float: left;
+    display: block;
+    width: 99%;
+}
+
+#Content .DisplayField ul.ListData li span {
+    display: none;
+}
+
+#Content .DisplayField ul.ListData li span.Date {
+    display: block;
+    width: 20%;
+    overflow: hidden;
+    float: left
+}
+
+#Content .DisplayField ul.ListData li a {
+    display: block;
+    float: right;
+    width: 78%;
+}
+
+#Content p.UpdateInfoStats {
+    padding: 10px 5px;
+    color: #70746b;
+}
+
+#Content .PageResults {
+    margin-bottom: 10px;
+}
+
+#Container .AddEO {
+    float: left;
+    width: 100%;
+    padding-top: 20px;
+}
+
+#Content input.Countdown {
+    font: bold 14px 'Lucida Console', 'Courier New', monospace;
+    padding: 5px;
+    background: transparent;
+    border: 0px;
+}
+
+ul.SECTIONDropDown {
+    background-color: #A8B4BA;
+    border: 3px solid #CBD4D9;
+    float: right !important;
+    width: 181px;
+    padding: 0;
+    clear: left;
+    position: absolute;
+    z-index: 99999999;
+    top: 33px;
+    right: 1%;
+    display: none;
+    list-style: none;
+}
+
+ul.SECTIONDropDown li {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 0 0 0 0;
+    border-width: 1px 0;
+    border-color: #CBD4D9;
+    border-style: solid;
+}
+
+ul.SECTIONDropDown li a {
+    display: block;
+    float: left;
+    width: 94%;
+    padding: 3px 3%;
+    background-color: #7B8387;
+    text-decoration: none;
+    color: #fff !important;
+    text-align: left !important;
+}
+
+ul.SECTIONDropDown li a:hover {
+    background-color: #7B8387;
+}
+
+ul.SECTIONDropDown li button {
+    width: 100%;
+    display: block;
+    padding: 3px 2%;
+    background-image: none !important;
+    background-color: #7B8387 !important;
+    text-decoration: none;
+    color: #fff !important;
+    text-align: left !important;
+    border-width: 0 !important;
+}
+
+ul.SectionHandle {
+    right: 190px !important;
+}
+
+ul.SECTIONDropDown li.TEdit, ul.SECTIONDropDown li.TDel {
+    margin: 5px 0 0 !important;
+}
+#Content .lotstabber {
+ float: left; width: 100%; 
+ }
+#Content .LotList { 
+float: left; 
+width: 100%; 
+max-height: 70px; 
+overflow-y: scroll; 
+overflow-x: hidden; 
+border: 1px dotted #d2dbed; 
+margin: 10px 0 20px 0; 
+}
+#Content ul.LotList {
+ list-style: none; 
+ float: left; 
+ width: 100%; 
+ }
+#Content ul.LotList li {
+ display: block; 
+ float: left; 
+ width: 100%; 
+ }
+#Content ul.LotList li a {
+ padding: 4px 1%; 
+ display: block; 
+ float: left; 
+ width: 98%; 
+ }
+#Content ul.LotList li a:hover {
+ background-color: #cff2f7; 
+ }
+#Content ul.LotList li.Selected a {
+ background-color: #e9edf6; border-top: 1px solid #fff; border-bottom: 1px solid #fff; 
+ }
+#Content ul.LotList li.Selected a {
+ text-decoration: none; color: #303840; 
+ }
+#Content ul.LotList li.Selected a:hover {
+ background-color: #cff2f7; 
+ }
+ form h4 {display:block; float: left;} /* bug 36217 */      
